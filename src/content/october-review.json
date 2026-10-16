@@ -1,0 +1,86 @@
+{
+  "checkedAt": "2026-10-16",
+  "scope": "2026년 10월 1~16일 확인한 공식 발표 4건 · 계약·개발 협력·기술 공개·전시 발표를 구분",
+  "events": [
+    {
+      "id": "leopard2-transmission-order-202610",
+      "date": "2026-10-14",
+      "kind": "계약 확대",
+      "title": "Leopard 2 계열 변속기 공급 계약 확대",
+      "summary": "KNDS와 RENK가 Leopard 2 계열용 변속기와 제어장치 등의 공급 계약을 약 1억 3천만 유로 확대했다고 발표했습니다. 납품 예정 기간은 2029~2032년입니다.",
+      "meaning": "검토 관점: 완성차 생산 확대와 구동계 부품 공급 일정을 함께 확인할 수 있는 사례입니다.",
+      "limit": "계약 발표이며 현재 납품·배치 완료를 뜻하지 않습니다. Leopard 2 계열 대상이며 특정 2A7 차량의 개조 완료로 해석하지 않습니다.",
+      "equipmentIds": ["leopard-2a7"],
+      "source": {
+        "title": "RENK Group and KNDS sign contract extension for the LEOPARD 2",
+        "url": "https://knds.com/en/press-releases/nato-defense-capabilities-renk-group-and-knds-sign-contract-extension-for-the-leopard-2",
+        "publisher": "KNDS",
+        "sourceType": "Manufacturer",
+        "checkedAt": "2026-10-16",
+        "accessedDate": "2026-10-16",
+        "confidence": "High",
+        "notes": "원문 본문 발표일 2026-10-14 기준. 계약 발표 확인이며 납품 완료 증거가 아님."
+      }
+    },
+    {
+      "id": "knds-robotics-reveal-202610",
+      "date": "2026-10-14",
+      "kind": "기술 공개",
+      "title": "KNDS, 차량 로봇화·드론 연계 기술 공개",
+      "summary": "KNDS가 프랑스 National Infantry Days에서 차량용 드론 연계 모듈, AMX-32 기반 REFURBOT 로봇화 프로젝트와 무인 플랫폼용 통신 기술을 소개했습니다.",
+      "meaning": "검토 관점: 기존 차량에 추가하는 임무 모듈과 무인 플랫폼의 통신·지휘 인터페이스를 구분해 살펴볼 수 있습니다.",
+      "limit": "제조사 기술 공개 내용입니다. 기존 수록 장비에 모두 적용됐거나 실전 성능이 독립 검증됐다는 뜻은 아닙니다.",
+      "equipmentIds": [],
+      "source": {
+        "title": "KNDS presents its innovations for infantry combat at the 2026 National Infantry Days",
+        "url": "https://knds.com/en/press-releases/knds-presents-its-innovations-for-infantry-combat-at-the-2026-national-infantry-days",
+        "publisher": "KNDS",
+        "sourceType": "Manufacturer",
+        "checkedAt": "2026-10-16",
+        "accessedDate": "2026-10-16",
+        "confidence": "High",
+        "notes": "원문 본문 발표일과 내용 확인. 기술 공개와 실전 운용을 구분."
+      }
+    },
+    {
+      "id": "gdls-primordial-agreement-202610",
+      "date": "2026-10-07",
+      "kind": "개발 협력",
+      "title": "GDLS·Primordial Labs, 차량 자연어 조작 기능 협력",
+      "summary": "GDLS와 Primordial Labs가 자연어 기반 지휘·조작 소프트웨어 Anura를 지상 전투차량에 통합하기 위한 협약을 발표했습니다. 발표에는 Abrams 및 차세대 전투차량이 언급됐습니다.",
+      "meaning": "검토 관점: 임무장비가 늘어날 때 승무원 조작 부담을 줄이는 사용자 인터페이스 접근으로 살펴봅니다.",
+      "limit": "개발·통합 협약입니다. M1A2 전 차량 적용, 양산 채택 또는 실전 운용 완료를 확인한 자료는 아닙니다.",
+      "equipmentIds": ["m1a2-abrams"],
+      "source": {
+        "title": "GDLS and Primordial Labs to Bring Natural Language Control to Ground Combat Vehicles",
+        "url": "https://www.gdls.com/general-dynamics-land-systems-and-primordial-labs-to-bring-natural-language-control-to-ground-combat-vehicles/",
+        "publisher": "General Dynamics Land Systems",
+        "sourceType": "Manufacturer",
+        "checkedAt": "2026-10-16",
+        "accessedDate": "2026-10-16",
+        "confidence": "High",
+        "notes": "공식 뉴스 목록과 원문 발표일·본문 교차 확인. 제조사 협약 발표."
+      }
+    },
+    {
+      "id": "gdls-ausa-announcement-202610",
+      "date": "2026-10-05",
+      "kind": "전시 발표",
+      "title": "AUSA 2026: Wolf XM30 모형·PERCH 2.0 전시 발표",
+      "summary": "GDLS는 10월 12~14일 AUSA 전시에 Wolf XM30의 1/8 축소 모형과 Abrams M1A2 SEPv3·Stryker용 PERCH 2.0 모듈을 소개할 계획이라고 발표했습니다.",
+      "meaning": "검토 관점: Bradley 후속 경쟁 사업과 기존 차량의 임무 모듈 확장 동향을 별도로 비교합니다.",
+      "limit": "10월 5일 전시 계획 발표를 기록합니다. 행사 종료만으로 실제 전시·납품·양산 채택을 확인한 것으로 바꾸지 않습니다. Wolf XM30은 기존 Bradley 자체의 개량형이 아닙니다.",
+      "equipmentIds": ["m2a2-bradley", "m1a2-abrams", "stryker"],
+      "source": {
+        "title": "General Dynamics Business Units to Participate in AUSA 2026",
+        "url": "https://www.gdls.com/general-dynamics-business-units-to-participate-in-ausa-2026/",
+        "publisher": "General Dynamics Land Systems",
+        "sourceType": "Manufacturer",
+        "checkedAt": "2026-10-16",
+        "accessedDate": "2026-10-16",
+        "confidence": "High",
+        "notes": "발표일은 공식 뉴스 목록의 2026-10-05, 행사 일정과 내용은 원문 확인."
+      }
+    }
+  ]
+}

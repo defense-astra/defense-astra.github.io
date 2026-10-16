@@ -23,12 +23,16 @@ for (const v of versions.filter(v => v.id !== manifest.current)) {
 const escape = s => s.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll('"', "&quot;");
 for (const v of versions) {
   const dir = join("dist", "versions", v.id);
+  if (v.id !== manifest.current) {
+    const snapshot = JSON.parse(readFileSync(`version-archive/${v.id}.json`, "utf8"));
+    if (snapshot.publicBase === `/versions/${v.id}/`) continue;
+  }
   let html = readFileSync(join(dir, "index.html"), "utf8");
   if (!html.includes(`/versions/${v.id}/assets/`)) throw new Error(`Wrong asset base for ${v.id}`);
   html = html.replace("<body>", `<body><script>if(location.pathname.endsWith('/')&&!/^\\/versions\\/v[0-9]+\\/$/.test(location.pathname)){history.replaceState(null,'',location.pathname.slice(0,-1)+location.search+location.hash)}</script><nav style="padding:10px 20px;background:#10283d;color:white;font:14px system-ui;display:flex;justify-content:space-between;gap:16px"><span>${escape(v.id)} · ${escape(v.title)} · ${escape(v.status)}</span><a style="color:#d5eaff;white-space:nowrap" href="/">버전 목록</a></nav>`);
   writeFileSync(join(dir, "index.html"), html);
   const equipment = JSON.parse(readFileSync(join(dir, "data/equipment.json"), "utf8"));
-  for (const route of ["insights", "sources", "equipment", "compare", "development", "technologies", "cases", ...equipment.map(e => `equipment/${e.id}`)]) {
+  for (const route of ["insights", "sources", "equipment", "compare", "development", "technologies", "cases", ...(v.id === manifest.current ? ["feedback"] : []), ...equipment.map(e => `equipment/${e.id}`)]) {
     mkdirSync(join(dir, route), { recursive: true });
     writeFileSync(join(dir, route, "index.html"), html);
   }

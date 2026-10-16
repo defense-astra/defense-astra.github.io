@@ -1,10 +1,11 @@
 import { useState } from "react";
 import review from "../content/september-review.json";
+import octoberReview from "../content/october-review.json";
 import type { Equipment } from "../types";
 const stages = ["전체", "개발·공개", "시험·시연", "계약", "배치·운용"];
-const stageByKind: Record<string, string> = { "인터페이스 공개": "개발·공개", "전시 예정": "개발·공개", "시제품 인도": "시험·시연", "연동 시연": "시험·시연", "조달 합의": "계약", "추가 발주": "계약" };
+const stageByKind: Record<string, string> = { "인터페이스 공개": "개발·공개", "전시 예정": "개발·공개", "시제품 인도": "시험·시연", "연동 시연": "시험·시연", "조달 합의": "계약", "추가 발주": "계약", "계약 확대": "계약", "기술 공개": "개발·공개", "개발 협력": "개발·공개", "전시 발표": "개발·공개" };
 const events = [
-  ...review.events.map(e => ({ ...e, stage: stageByKind[e.kind], dateLabel: "발표일", planned: e.kind === "전시 예정" })),
+  ...[...octoberReview.events, ...review.events].map(e => ({ ...e, stage: stageByKind[e.kind], dateLabel: "발표일", planned: e.kind === "전시 예정" || e.kind === "전시 발표" || e.kind === "계약 확대" })),
   { id: "challenger3-contract-2021", equipmentIds: ["challenger-3"], date: "2021-05-07", dateLabel: "발표일", planned: false, stage: "계약", kind: "개량 계약", title: "Challenger 3 148대 개량 계약 발표", summary: "영국 국방부가 RBSL과 8억 파운드 규모의 Challenger 3 개량 계약을 발표했습니다.", limit: "계약 당시 납품 목표를 현재 배치 완료로 해석하지 않습니다.", source: { url: "https://www.gov.uk/government/news/british-army-to-possess-most-lethal-tank-in-europe", publisher: "UK Ministry of Defence", checkedAt: "2026-09-10" } }
 ];
 export function EquipmentTimeline({ equipment }: { equipment?: Equipment }) {

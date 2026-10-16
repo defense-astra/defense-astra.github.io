@@ -60,7 +60,7 @@ async function main() {
     shortlistActionButtons: await desktop.locator(".shortlist-actions button").count()
   };
 
-  if (desktopChecks.navButtons !== 3) throw new Error("Expected three primary navigation buttons");
+  if (desktopChecks.navButtons !== 4) throw new Error("Expected four primary navigation buttons");
   if (desktopChecks.hiddenWholeEquipmentNav !== 0) throw new Error("Expected duplicate whole equipment navigation to be hidden");
   if (desktopChecks.kpis !== 4) throw new Error("Expected 4 KPI cards");
   if (desktopChecks.searchFields !== 1) throw new Error("Expected equipment search field");
@@ -115,6 +115,7 @@ async function main() {
   await desktop.goto(new URL("/", desktop.url()).href, { waitUntil: "networkidle" });
   await desktop.waitForSelector(".equipment-row", { timeout: 15000 });
 
+  await desktop.locator(".catalog-options > summary").click();
   await desktop.locator(".catalog-preset-grid button").first().click();
   const presetRows = await desktop.locator(".equipment-row").count();
   const presetFilterTags = await desktop.locator(".active-filter-tags button").count();

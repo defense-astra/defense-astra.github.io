@@ -21,6 +21,9 @@ import { matchesEquipmentQuery } from "./search";
 import { EquipmentTimeline } from "./components/EquipmentTimeline";
 import { EquipmentHistory } from "./components/EquipmentHistory";
 import { LatestUpdates, EquipmentReview } from "./components/LatestUpdates";
+import { FeedbackPage } from "./components/FeedbackPage";
+import { loadFeedbackDraft, saveFeedbackDraft } from "./feedback";
+import octoberReview from "./content/october-review.json";
 
 const VehicleModelPanel = lazy(() => import("./components/VehicleModelPanel"));
 
@@ -165,7 +168,8 @@ const catalogPresets: CatalogPreset[] = [
 const navItems = [
   { path: "/", label: "장비 검색" },
   { path: "/insights", label: "전장 인사이트" },
-  { path: "/sources", label: "출처" }
+  { path: "/sources", label: "출처" },
+  { path: "/feedback", label: "개선 의견" }
 ];
 
 function inferSourceType(url: string): "Official" | "Manufacturer" | "Think Tank" | "News" | "OSINT" | "Other" {
@@ -457,7 +461,10 @@ export function App() {
   const [briefStatus, setBriefStatus] = useState("");
   const [shortlistStatus, setShortlistStatus] = useState("");
   const [shortlistIds, setShortlistIds] = useState<string[]>(initialCatalogState.shortlistIds);
+  const [feedbackDraft, setFeedbackDraft] = useState(loadFeedbackDraft);
   const canonicalPath = canonicalRouteFor(path);
+
+  useEffect(() => saveFeedbackDraft(feedbackDraft), [feedbackDraft]);
 
   useEffect(() => {
     loadAppData().then(setData).catch((reason: unknown) => {
@@ -564,8 +571,12 @@ export function App() {
   }, [data]);
 
   function navigate(nextPath: string) {
+    if (nextPath === "/feedback" && canonicalPath !== "/feedback") {
+      setFeedbackDraft(draft => ({ ...draft, relatedUrl: draft.relatedUrl || window.location.href }));
+    }
     window.history.pushState(null, "", routeHref(nextPath));
     setPath(nextPath);
+    window.scrollTo({ top: 0 });
   }
 
   function openSourceReviewQueue() {
@@ -685,10 +696,12 @@ export function App() {
   const uniqueSources = buildSourceIndex(data);
   const isInsightsPath = canonicalPath === "/insights";
   const isSourcesPath = canonicalPath === "/sources";
+  const isFeedbackPath = canonicalPath === "/feedback";
 
   function isNavActive(itemPath: string) {
     if (itemPath === "/insights") return isInsightsPath;
     if (itemPath === "/sources") return isSourcesPath;
+    if (itemPath === "/feedback") return isFeedbackPath;
     return canonicalPath === "/" || canonicalPath === "/equipment" || Boolean(equipmentPathMatch);
   }
 
@@ -752,7 +765,7 @@ export function App() {
     <main className="app-shell">
       <nav className="site-nav" aria-label="주요 메뉴">
         {navItems.map((item) => (
-          <button key={item.path} className={isNavActive(item.path) ? "active" : ""} type="button" onClick={() => navigate(item.path)}>
+          <button key={item.path} className={isNavActive(item.path) ? "active" : ""} aria-current={isNavActive(item.path) ? "page" : undefined} type="button" onClick={() => navigate(item.path)}>
             {item.label}
           </button>
         ))}
@@ -772,7 +785,9 @@ export function App() {
         </div>
       </header>
 
-      {isInsightsPath ? (
+      {isFeedbackPath ? (
+        <FeedbackPage draft={feedbackDraft} onChange={setFeedbackDraft} equipment={data.equipment} />
+      ) : isInsightsPath ? (
         <FieldInsightsPage
           technologies={data.technologies}
           cases={data.caseStudies}
@@ -905,6 +920,7 @@ function buildSourceIndex(data: AppData) {
   data.components.forEach((item) => item.sources.forEach(addSource));
   data.technologies.forEach((item) => item.sources.forEach(addSource));
   data.developmentLens.forEach((item) => item.sources.forEach(addSource));
+  octoberReview.events.forEach((item) => addSource(item.source));
   data.engineeringReferences.forEach((reference) => {
     uniqueSources.set(reference.url, {
       title: reference.titleKo,
@@ -1040,7 +1056,7 @@ function CatalogPage({
         onSourceReview={onSourceReview}
       />
       <section className="dashboard-grid catalog-grid">
-        <aside className="equipment-rail" aria-label="장비 목록">
+        <aside className="equipment-rail" aria-label="장비 목록" tabIndex={0}>
           <div className="rail-header">
             <div>
               <p className="eyebrow">Equipment index</p>
@@ -1057,6 +1073,8 @@ function CatalogPage({
               placeholder="예: 독일 8×8, 스트라이커, T90M"
             />
           </label>
+          <details className="catalog-options">
+          <summary>상세 검색·프리셋 {activeFilterCount ? `(${activeFilterCount}개 조건)` : ""}</summary>
           <div className="catalog-preset-grid" aria-label="업무 검색 프리셋">
             {catalogPresets.map((preset) => (
               <button key={preset.id} type="button" onClick={() => onApplyPreset(preset)}>
@@ -1136,6 +1154,7 @@ function CatalogPage({
               </select>
             </label>
           </div>
+          </details>
           <div className="active-filter-bar">
             <div className="active-filter-summary">
               <span>{activeFilterCount ? `${activeFilterCount}개 조건 적용` : "필터 없음"}</span>
@@ -1342,7 +1361,7 @@ function CatalogQuickFacts({
   const isShortlisted = shortlistIds.includes(equipment.id);
   const variantCountByEquipment = getVariantCountByEquipment(allVariants);
   return (
-    <aside className="trend-panel catalog-summary-panel">
+    <aside className="trend-panel catalog-summary-panel" aria-label="선택 장비 요약" tabIndex={0}>
       <div className="panel-title">
         <div>
           <p className="eyebrow">Selected equipment</p>

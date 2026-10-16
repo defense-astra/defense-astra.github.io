@@ -1,8 +1,8 @@
 # 세계 장비 검색 · GitHub 관리
 
-- 최신 공개본: https://defense-astra.github.io/versions/v5/
+- 최신 공개본: https://defense-astra.github.io/versions/v6/
 - 버전 목록: https://defense-astra.github.io/versions/
-- 이전 버전: [v3](https://defense-astra.github.io/versions/v3/) · [v2](https://defense-astra.github.io/versions/v2/)
+- 이전 버전: [v5](https://defense-astra.github.io/versions/v5/) · [v4](https://defense-astra.github.io/versions/v4/)
 - 소스 기준은 main, 공개 산출물은 gh-pages. 버전별 변경은 CHANGELOG.md와 Git 이력을 확인한다.
 - releases.json에서 최근 3개 버전을 관리한다. version-archive의 이전 빌드는 SHA-256 검증 후 재사용한다.
 - 재현: npm ci 후 node scripts/build-public-release.mjs. dist-public을 gh-pages에 게시한다.

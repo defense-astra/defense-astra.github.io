@@ -76,6 +76,7 @@ async function main() {
   desktop.sourceQueueEmptyStates = await page.locator(".source-index-page .empty-state").count();
   await page.goto(`${baseUrl}/`, { waitUntil: "networkidle" });
   await page.waitForSelector(".equipment-row", { timeout: 15000 });
+  await page.locator(".catalog-options > summary").click();
   await page.locator(".catalog-preset-grid button").first().click();
   desktop.presetNeedsReviewRows = await page.locator(".equipment-row").count();
   desktop.presetFilterTags = await page.locator(".active-filter-tags button").count();
@@ -90,6 +91,7 @@ async function main() {
   desktop.roleUrlHasParam = page.url().includes("role=");
   await page.reload({ waitUntil: "networkidle" });
   desktop.reloadedRoleFilteredRows = await page.locator(".equipment-row").count();
+  await page.locator(".catalog-options > summary").click();
   await page.getByRole("button", { name: "초기화" }).click();
   await page.locator(".filter-grid select").nth(4).selectOption({ label: "Low" });
   desktop.lowConfidenceRows = await page.locator(".equipment-row").count();
@@ -113,7 +115,7 @@ async function main() {
   desktop.csvSuggestedFilename = download.suggestedFilename();
 
   const routeChecks = [];
-  for (const route of ["/", "/equipment", "/equipment/m2a2-bradley", "/insights", "/sources", "/development", "/compare", "/technologies", "/cases"]) {
+  for (const route of ["/", "/equipment", "/equipment/m2a2-bradley", "/insights", "/sources", "/feedback", "/development", "/compare", "/technologies", "/cases"]) {
     await page.goto(`${baseUrl}${route}`, { waitUntil: "networkidle" });
     const rootLength = await page.locator("#root").evaluate((node) => node.innerHTML.length);
     const hasHeading = await page.locator("h1, h2").first().isVisible();
@@ -157,7 +159,7 @@ async function main() {
   console.log(JSON.stringify({ desktop, mobile: mobileResult, sourceIndex, routeChecks, errors }, null, 2));
 
   if (!desktop.title.includes("장비 검색")) throw new Error("Expected search catalog title");
-  if (desktop.navButtons !== 3) throw new Error("Expected three primary navigation buttons");
+  if (desktop.navButtons !== 4) throw new Error("Expected four primary navigation buttons");
   if (desktop.hiddenWholeEquipmentNav !== 0) throw new Error("Expected duplicate whole equipment navigation to be hidden");
   if (desktop.equipmentRows < 14) throw new Error("Expected expanded equipment rows");
   if (desktop.markers < 6) throw new Error("Expected battlefield markers");

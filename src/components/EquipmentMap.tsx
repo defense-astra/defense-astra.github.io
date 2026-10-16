@@ -61,6 +61,21 @@ function FlyToIncident({ incident }: { incident: BattlefieldCase | null }) {
   return null;
 }
 
+function ResizeMap() {
+  const map = useMap();
+  useEffect(() => {
+    let frame = 0;
+    const resize = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => map.invalidateSize({ pan: false }));
+    };
+    const observer = new ResizeObserver(resize);
+    observer.observe(map.getContainer());
+    return () => { observer.disconnect(); cancelAnimationFrame(frame); };
+  }, [map]);
+  return null;
+}
+
 export function EquipmentMap({ incidents, selectedEquipmentId, selectedIncident, onIncidentSelect, onEquipmentSelect }: Props) {
   const sortedIncidents = useMemo(
     () =>
@@ -105,6 +120,7 @@ export function EquipmentMap({ incidents, selectedEquipmentId, selectedIncident,
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
         <FlyToIncident incident={selectedIncident} />
+        <ResizeMap />
         {referenceLabels.map((label) => (
           <Marker
             key={label.id}

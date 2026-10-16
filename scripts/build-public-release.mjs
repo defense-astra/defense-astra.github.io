@@ -26,6 +26,8 @@ for (const version of release.versions) {
       if (createHash("sha256").update(readFileSync(join(archive,path))).digest("hex") !== expected) throw new Error(`Snapshot changed: ${version.id}/${path}`);
     }
     cpSync(archive,dir,{recursive:true});
+    // Published snapshots already contain their routes and version banner.
+    if (checks.publicBase === versionBase) continue;
     for (const path of files(dir).filter(p=>/\.(html|js|css)$/.test(p))) {
       let text = readFileSync(path,"utf8");
       // Archive bundles use a private-site base. Only adapt their known base prefix.
@@ -38,7 +40,7 @@ for (const version of release.versions) {
   html = html.replace("<body>",`<body><script>if(location.pathname.endsWith('/')&&location.pathname!==${JSON.stringify(versionBase)}){history.replaceState(null,'',location.pathname.slice(0,-1)+location.search+location.hash)}</script><nav style="padding:10px 20px;background:#10283d;color:white;font:14px system-ui"><strong>${version.id}</strong> · <a style="color:white" href="${root}versions/">버전 목록</a></nav>`);
   writeFileSync(join(dir,"index.html"),html);
   const equipment = JSON.parse(readFileSync(join(dir,"data/equipment.json"),"utf8"));
-  for (const route of ["insights","sources","equipment","compare","development","technologies","cases",...equipment.map(e=>`equipment/${e.id}`)]) {
+  for (const route of ["insights","sources","equipment","compare","development","technologies","cases",...(version.id === release.current ? ["feedback"] : []),...equipment.map(e=>`equipment/${e.id}`)]) {
     mkdirSync(join(dir,route),{recursive:true});writeFileSync(join(dir,route,"index.html"),html);
   }
 }
