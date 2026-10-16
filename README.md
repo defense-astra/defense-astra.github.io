@@ -1,8 +1,8 @@
 # 세계 장비 검색 · GitHub 관리
 
-- 최신 공개본: https://qkfhvnfrl-ux.github.io/defense-trends-web/versions/v4/
-- 버전 목록: https://qkfhvnfrl-ux.github.io/defense-trends-web/versions/
-- 이전 버전: [v3](https://qkfhvnfrl-ux.github.io/defense-trends-web/versions/v3/) · [v2](https://qkfhvnfrl-ux.github.io/defense-trends-web/versions/v2/)
+- 최신 공개본: https://defense-astra.github.io/versions/v5/
+- 버전 목록: https://defense-astra.github.io/versions/
+- 이전 버전: [v3](https://defense-astra.github.io/versions/v3/) · [v2](https://defense-astra.github.io/versions/v2/)
 - 소스 기준은 main, 공개 산출물은 gh-pages. 버전별 변경은 CHANGELOG.md와 Git 이력을 확인한다.
 - releases.json에서 최근 3개 버전을 관리한다. version-archive의 이전 빌드는 SHA-256 검증 후 재사용한다.
 - 재현: npm ci 후 node scripts/build-public-release.mjs. dist-public을 gh-pages에 게시한다.
@@ -90,7 +90,7 @@ JSON의 `modelPath`와 `components.json`의 `modelPath`는 이 경로 규칙을 
 
 이 저장소는 `main` 브랜치에 소스 코드를 올리고, `gh-pages` 브랜치에 빌드 결과물만 올려 GitHub Pages로 공유합니다.
 
-- 저장소: `https://github.com/qkfhvnfrl-ux/defense-trends-web`
-- 공개 페이지: `https://qkfhvnfrl-ux.github.io/defense-trends-web/`
+- 저장소: `https://github.com/defense-astra/defense-astra.github.io`
+- 공개 페이지: `https://defense-astra.github.io/`
 
-다시 배포할 때는 `GITHUB_ACTIONS=true`, `GITHUB_REPOSITORY=qkfhvnfrl-ux/defense-trends-web` 환경으로 빌드한 뒤 `dist` 폴더를 `gh-pages` 브랜치에 push하면 됩니다.
+다시 배포할 때는 `GITHUB_ACTIONS=true`, `GITHUB_REPOSITORY=defense-astra/defense-astra.github.io` 환경으로 빌드한 뒤 `dist` 폴더를 `gh-pages` 브랜치에 push하면 됩니다.

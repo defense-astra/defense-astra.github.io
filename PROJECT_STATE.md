@@ -1,3 +1,13 @@
+
+# 2026-10-16 Defense Astra 주소 이전
+
+- 상태: completed. 사용자 승인에 따라 defense-astra 조직을 생성하고 기존 저장소의 main/gh-pages 및 변경 이력을 가져왔다.
+- 목표: https://defense-astra.github.io/ (최신 v5, v4/v3 보관). 기존 개인 저장소는 유지한다.
+- 계획: 공개 파일의 /defense-trends-web/ 접두사를 /로 변경하고, 재빌드 기본 경로 및 README 링크를 새 조직에 맞춘다. 데이터·기능 구조는 유지한다.
+- 공개 브랜치: f351069431471822b9207dc491b2817c2dab3744. Pages: gh-pages 루트, HTTPS.
+- 검증: node scripts/build-public-release.mjs 성공(v5/v4/v3), npm test 28개 통과, npm run lint 통과. 실제 Chrome에서 루트→v5 이동, 독일 8x8→Boxer 1건, Boxer 상세, 버전 목록 및 새 GitHub 링크 확인.
+- 한계: 주소 이전 범위의 검증이며, 3D 전체 기능·외부 이미지/지도 서비스의 전수 재검증은 수행하지 않았다.
+
 # v5 공개 검증 완료
 
 - 공개 URL: https://qkfhvnfrl-ux.github.io/defense-trends-web/versions/v5/

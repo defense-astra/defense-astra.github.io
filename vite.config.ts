@@ -4,7 +4,7 @@ import { existsSync, readFileSync } from "node:fs";
 
 const repositoryName = process.env.GITHUB_REPOSITORY?.split("/")[1];
 const version = existsSync(".openai/hosting.json") ? JSON.parse(readFileSync("releases.json", "utf8")).current as string : null;
-const base = process.env.SITE_VERSION_BASE ?? (version ? `/versions/${version}/` : null) ?? (process.env.GITHUB_ACTIONS === "true" && repositoryName ? `/${repositoryName}/` : "/");
+const base = process.env.SITE_VERSION_BASE ?? (version ? `/versions/${version}/` : null) ?? (process.env.GITHUB_ACTIONS === "true" && repositoryName ? (repositoryName.endsWith(".github.io") ? "/" : `/${repositoryName}/`) : "/");
 
 export default defineConfig({
   base,
