@@ -1,0 +1,152 @@
+[
+  {
+    "file": "assets/astra-home.jpg",
+    "use": "첫 화면",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "7cc59c9c96ef11e9c26845024a8303f0d119ee16b3d30a7439ab7e04f55775e9",
+    "bytes": 144899
+  },
+  {
+    "file": "assets/astra-map.jpg",
+    "use": "Boxer 검색",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "42b9fec3c9f13dfb185135f0943c07ba39935831c6fd565c0515bc38880ec4a0",
+    "bytes": 124104
+  },
+  {
+    "file": "assets/astra-map-detail.jpg",
+    "use": "사례 지도",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://www.openstreetmap.org/copyright",
+    "credit": "© OpenStreetMap contributors, ODbL. 지도 타일은 웹앱 화면의 일부로 캡처.",
+    "sha256": "1df522626c594df9d06155fdbde7104472b4dedcd8d27d952baab5786238db71",
+    "bytes": 162463
+  },
+  {
+    "file": "assets/astra-3d-status.jpg",
+    "use": "WebGL 표시 실패",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "e39ed43660ab7c1e0be9ea3ca22983260754f8524f28c6964fe976bc47473896",
+    "bytes": 73047
+  },
+  {
+    "file": "assets/astra-sources.jpg",
+    "use": "원문 출처",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "61bd906820598550f64060ecc521a400e783137d4a8dc891ed8bc419d99345dc",
+    "bytes": 91611
+  },
+  {
+    "file": "assets/astra-updates.jpg",
+    "use": "최근 이슈",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "f8f66f82a3f55b48d742e0aeae9064efeefdc4084223f4646a7dc5a746d8b29c",
+    "bytes": 115078
+  },
+  {
+    "file": "assets/astra-feedback.jpg",
+    "use": "의견 예시",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "ecb5363d49d6f341795df57432857e2b7d01c99a79b2c3eee4386c3f83eec2a6",
+    "bytes": 79610
+  },
+  {
+    "file": "assets/flywire-all-neurons.png",
+    "use": "뇌 정체 맞히기",
+    "type": "FlyWire 실제 구조 렌더링",
+    "clip": null,
+    "source": "https://flyconnecto.me/media/",
+    "credit": "Data: FlyWire.ai. Rendering: Philipp Schlegel (University of Cambridge / MRC LMB). CC BY 4.0. 원본 이미지, 비율 유지 축소 표시.",
+    "sha256": "e753a04e328ca2e879dc0a819a329735617cb1e5b0c850ac7295184f83b34715",
+    "bytes": 1039051
+  },
+  {
+    "file": "assets/fly-driving.mp4",
+    "use": "가상 운전",
+    "type": "원작자 기록 재생",
+    "clip": "0–10.00초 전체; 화면상 t=5–15초",
+    "source": "https://github.com/suanmiao/fly-self-driving",
+    "credit": "suanmiao / Pure Reason Inc. (2026) — MIT. demo.gif를 내용·속도 유지해 H.264 MP4로 변환. 장면 자산의 Kenney CC0 크레딧은 원문 참조.",
+    "sha256": "8badb19de8988d18aedd56b8eeeea557ad9a02342b1c968f90424cd3acd1a151",
+    "bytes": 626327
+  },
+  {
+    "file": "assets/flyvis-network.mp4",
+    "use": "시각계 모델",
+    "type": "연구팀 구조 설명 애니메이션",
+    "clip": "0–2.00초 반복",
+    "source": "https://github.com/TuragaLab/flyvis",
+    "credit": "TuragaLab / FlyVis contributors — MIT. tweet_4_network.webm을 MP4로 변환, 호환용 아래 1픽셀 패딩. 라이선스 전문 licenses/flyvis-LICENSE.txt.",
+    "sha256": "37b85c197bbde1810c59ed8cb67a8e9ab181f2d61bdd3ead956493bb1038a8e1",
+    "bytes": 198145
+  },
+  {
+    "file": "assets/neuro-odor.jpg",
+    "use": "냄새 접근",
+    "type": "연구팀 시뮬레이션 이미지",
+    "clip": null,
+    "source": "https://actu.epfl.ch/news/simulating-how-fruit-flies-see-smell-and-navigat-3/",
+    "credit": "Ramdya laboratory, EPFL — CC BY-SA 4.0. 원본 이미지 변경 없음. 파일 assets/neuro-odor.jpg.",
+    "sha256": "41c538283492f38a4b0424f1ccae2439a558027ce0ad56ac39ab6921f1b1bb9a",
+    "bytes": 115241
+  },
+  {
+    "file": "assets/photocraft-demo.jpg",
+    "use": "이미지 편집기",
+    "type": "제작자 공개 실행 화면",
+    "clip": null,
+    "source": "https://github.com/storytold/photocraft",
+    "credit": "제작자 공개 screenshot photocraft-demo.jpg. PhotoCraft contributors — MIT 선택 적용, NOTICE·ATTRIBUTION 포함. 화면 속 Hokusai 그림은 public domain.",
+    "sha256": "03fad7792789cf0fe20f8b44d9890696a34bb1e79a8e85cfacb1eb4b93617fd2",
+    "bytes": 1078162
+  },
+  {
+    "file": "assets/cadcraft-ui-apartment.png",
+    "use": "CAD",
+    "type": "제작자 공개 실행 화면",
+    "clip": null,
+    "source": "https://github.com/storytold/cadcraft",
+    "credit": "제작자 공개 ui-apartment.png. CADCraft contributors — MIT 선택 적용. 자체 apartment.dxf. NOTICE·ATTRIBUTION 포함.",
+    "sha256": "f69c3cccb7e7ff5210163e732d06f7af511f0026f1227c16e9b01da902d3e4d9",
+    "bytes": 409291
+  },
+  {
+    "file": "assets/gridcraft-hero-sales.png",
+    "use": "스프레드시트",
+    "type": "제작자 공개 실행 화면",
+    "clip": null,
+    "source": "https://github.com/storytold/gridcraft",
+    "credit": "제작자 공개 hero-sales.png. GridCraft contributors — MIT 선택 적용. 자체 예제 workbook. NOTICE·ATTRIBUTION 포함.",
+    "sha256": "52056707a075707a47266742fbc5db08ecf190bca8c7f315398fcf8dff7275d9",
+    "bytes": 392178
+  },
+  {
+    "file": "assets/app-qr.svg",
+    "use": "웹앱 QR",
+    "type": "표준 QR 인코딩",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "393df1c90820948bcdf64ba0ccb722633091ad7da0501ac6191c5137d740a074",
+    "bytes": 8276
+  }
+]
