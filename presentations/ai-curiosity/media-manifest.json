@@ -95,7 +95,7 @@
     "type": "연구팀 구조 설명 애니메이션",
     "clip": "0–2.00초 반복",
     "source": "https://github.com/TuragaLab/flyvis",
-    "credit": "TuragaLab / FlyVis contributors — MIT. tweet_4_network.webm을 MP4로 변환, 호환용 아래 1픽셀 패딩. 라이선스 전문 licenses/flyvis-LICENSE.txt.",
+    "credit": "TuragaLab / FlyVis contributors — MIT. 원영상 도식의 c/o Tory Herman 크레딧 유지. tweet_4_network.webm을 MP4로 변환, 호환용 아래 1픽셀 패딩. 라이선스 전문 licenses/flyvis-LICENSE.txt.",
     "sha256": "37b85c197bbde1810c59ed8cb67a8e9ab181f2d61bdd3ead956493bb1038a8e1",
     "bytes": 198145
   },

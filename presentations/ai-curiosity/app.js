@@ -3,6 +3,11 @@ const $=s=>document.querySelector(s),stage=$('#stage'),slides=window.SLIDES,draw
 const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let at=0,scene=null,seqTimer=null,step=0,tourAt=0,presenter=null,started=Date.now(),playing=false;
 const qs=new URLSearchParams(location.search);if(qs.has('capture'))document.body.classList.add('capture');
+// Warm bundled images before the presenter reaches them. This also avoids
+// repeating a visible load when returning from the live demo.
+const preloadImages=new Set(slides.flatMap(s=>[s.image,s.poster]).filter(Boolean));
+['astra-map.jpg','astra-map-detail.jpg','astra-3d-status.jpg','astra-sources.jpg','astra-updates.jpg','flyvis-network-poster.jpg','app-qr.svg'].forEach(x=>preloadImages.add(x));
+const warmed=[...preloadImages].map(src=>{const im=new Image();im.src='assets/'+src;return im;});
 const chapter=i=>i<8?'01 / 직접 만든 도구':i<21?'02 / 요즘 빠진 질문':'03 / 다음에 만들고 싶은 것';
 const eyebrow=i=>`<p class="eyebrow">${chapter(i)}</p>`;
 const heading=s=>`<h1>${esc(s.title)}</h1>`;
