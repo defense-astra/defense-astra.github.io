@@ -574,3 +574,13 @@
   - `npm run typecheck` 통과
   - `npm run lint` 통과
   - 권한 상승 후 `npm run quality` 통과
+
+## 2026-10-16 · 발표 배포
+
+- 목표: GPT 인증 없는 32장·30분 HTML, 실제 캡처·허용 미디어·개념 애니메이션, 대본·출처·오프라인 묶음.
+- 변경: `presentations/ai-curiosity/**`, 공개 빌드의 해당 폴더 복사, 프로젝트 기록.
+- 영향: 발표 경로만 추가하며 기존 장비 기능은 변경하지 않음.
+- 위험: 회사망, WebGL, file URL 정책, 외부 iframe 및 미디어 재생.
+- 검증: 로컬 링크·자산·시간 합계·JS 구문, Pages 공개 응답, 실제 브라우저 조작·전체 장표 캡처.
+- 승인 근거: 사용자의 최종 지시에서 GitHub 업로드·공개 정적 배포까지 명시적으로 요청.
+- 상태 전이: new_task → planned → executing → verifying.
