@@ -1,14 +1,19 @@
-# 2026-10-16 V6 승인 범위
+# 2026-10-16 V6 검증 및 공개 완료
 
-- 상태: verifying (new_task → planned → 사용자 전체 승인 → executing → verifying).
-- 목표: 10월 공식 이슈 4건, 개선 의견 작성/클립보드 복사 탭, PC 지도 과대 높이 수정.
-- 수정 대상: App.tsx, styles.css, EquipmentMap.tsx, LatestUpdates.tsx, EquipmentTimeline.tsx, 신규 FeedbackPage/feedback 모듈·10월 자료, releases.json, 버전 빌드/보관 스크립트, 검증 및 운영 문서.
-- 영향 범위: 상단 탐색·새 의견 경로, 최신 자료/연표, 검색 화면 3열 높이. 기존 장비 제원·3D 데이터 구조는 유지.
-- 위험: 클립보드 권한 거부, 초안 유실, 새 경로 새로고침, 지도 크기 변경, 과거 버전 자료 혼합.
-- 로컬 검증: 공개 빌드·타입 검사·33개 테스트·린트 통과. V5 36개 파일 체크섬 일치, v6/v5/v4 보관 및 의견 경로 확인. 데이터 검증은 tsx CLI의 IPC 권한 오류 후 node --import tsx scripts/validate-data.mjs로 동일 스크립트 실행 성공.
-- 검증 계획: 공개 버전 빌드 → 테스트 → 린트 → 배포 화면의 복사/검색/지도/최신자료/기존 링크 확인. 브라우저 권한 거부는 단위 테스트로 실패 처리 확인.
-- 보관: V5는 기존 공개 산출물의 체크섬을 기록해 동결. 최근 링크는 v6/v5/v4, 더 이전 기록은 Git에 유지.
-
+- 상태: completed. 승인 범위: 10월 이슈, 개선 의견 복사, PC 지도 여백.
+- 빌드: node scripts/build-public-release.mjs 성공. TypeScript/Vite 및 V6/V5/V4 패키징 통과. 의견 경로 HTML과 /versions/v6/assets/ 경로 확인.
+- 테스트: Vitest 7개 파일·33개 테스트 통과. 복사 성공/권한 실패/공백 입력/초안 보존과 10월 데이터 참조 검사 포함. 마지막 링크 수정 후 재실행 통과.
+- 린트: ESLint 통과. 마지막 링크 수정 후 재실행 통과.
+- 데이터: npm run validate:data는 tsx CLI의 IPC 소켓 EPERM으로 실패. node --import tsx scripts/validate-data.mjs로 같은 스크립트를 실행하여 15 장비/30 파생형/23 부품/7 기술/7 사례/6 관점/8 참고자료 검증 성공.
+- 원본 보존: V5 36개 파일의 SHA-256이 매니페스트와 일치. 공개 V5 트리 3e8176be45a46a0cce8060f8420bb92501cc5e6c, V4 트리 8682f8bf3a164119502c09c95fe2d38bdf90a42b를 그대로 재사용.
+- 공개 커밋: 최초 V6 79208001ea1eb6cf07b4767327e64c3287f0bbeb → 링크 수정 fea1f0c74f1b4c874b514ae604aca40b34014d9f. 실제 사이트의 index-DqT_LdSa.js 확인.
+- 실제 Chrome 1363×936: 지도 높이 634.47px, 3열 영역 636.47px. 기존 V5 지도 약 4120px에 비해 과대 높이 해소. 가로 넘침 없음, OSM 타일/지역 라벨/12개 사례 마커 표시.
+- 검색: 전체 15종, '독일 8x8' 검색으로 Boxer 1건. 자료 현황은 공개 출처 55건.
+- 최신 이슈: 10월 4건·9월 4건·전체 기간 10건 확인. 연표에 10월 발표 연결. 기존 9월 검토일 유지.
+- 의견 복사: 한글과 줄바꿈이 포함된 테스트 의견을 실제 클립보드에서 읽어 미리보기와 완전 일치 확인. 선택 장비·버전·한국 날짜 포함. 메뉴 이동과 새로고침 후 초안 복원 확인.
+- 발견/수정: 관련 링크가 /feedback으로 기록되는 오류를 history 변경 전 캡처로 수정. 최종 배포에서 /insights → /feedback 이동 시 /insights 주소 유지 및 복사 일치 확인. 테스트 초안은 이후 비움.
+- 경로: https://defense-astra.github.io/ → /versions/v6/ 전환, /versions/v6/feedback 직접 열기, /versions/의 V6/V5/V4 표시와 V5 링크 연결 확인.
+- 검증 한계: 실제 휴대폰, 전체 3D/GLB 내보내기 재검증 및 로컬 브라우저 E2E 스크립트 실행은 하지 않음. 기존 3D 청크 500kB 초과 경고 잔존. 외부 지도/이미지는 해당 제공자의 상태에 의존.
 
 # 2026-10-16 Defense Astra 주소 이전
 

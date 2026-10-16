@@ -572,7 +572,8 @@ export function App() {
 
   function navigate(nextPath: string) {
     if (nextPath === "/feedback" && canonicalPath !== "/feedback") {
-      setFeedbackDraft(draft => ({ ...draft, relatedUrl: draft.relatedUrl || window.location.href }));
+      const relatedUrl = window.location.href;
+      setFeedbackDraft(draft => ({ ...draft, relatedUrl: draft.relatedUrl || relatedUrl }));
     }
     window.history.pushState(null, "", routeHref(nextPath));
     setPath(nextPath);
