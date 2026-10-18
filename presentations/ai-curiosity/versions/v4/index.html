@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><title>만들어보고 싶은 것들</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="v2-polish.css"><link rel="stylesheet" href="rea-workshop.css"><link rel="stylesheet" href="can-report.css"><link rel="stylesheet" href="game-fusion.css"></head>
+<body>
+<main id="viewport" aria-label="발표 장표"><section id="stage" tabindex="-1" aria-live="polite"></section></main>
+<nav id="toolbar" aria-label="발표 조작"><button id="prev" aria-label="이전 장표" title="이전 단계 / 이전 장표 · Page Up, ←, ↑">←</button><span id="counter">1 / 37</span><button id="next" aria-label="다음 장표" title="다음 단계 / 다음 장표 · Page Down, →, ↓, Space">→</button><span id="nav-status" role="status" title="다음 / 이전: 단계 이동 · Shift+방향키: 장표 건너뛰기 · Home/End: 처음/끝">포인터: 다음 / 이전</span><span class="spacer"></span><a class="version-link" href="../">버전 기록</a><button id="overview">장표 목록 <kbd>O</kbd></button><button id="notes">발표자 노트 <kbd>N</kbd></button><button id="sources">자료 출처 <kbd>S</kbd></button><button id="fullscreen">전체 화면 <kbd>F</kbd></button></nav>
+<div id="progress" aria-hidden="true"></div>
+<dialog id="drawer"><header><h2 id="drawer-title"></h2><button data-close aria-label="닫기">닫기 ×</button></header><div id="drawer-body"></div></dialog>
+<dialog id="live-modal"><header><span>실제 웹앱 화면 · 인터넷 연결 필요</span><a id="live-external" target="_blank" rel="noopener">새 탭에서 열기 ↗</a><button data-close>발표로 돌아가기 ×</button></header><iframe id="live-frame" title="Defense Astra 실시간 시연" allow="fullscreen"></iframe><p class="live-hint">화면이 열리지 않으면 발표로 돌아가 저장한 화면으로 설명하시면 됩니다.</p></dialog>
+<noscript>발표 화면을 열려면 JavaScript를 허용해 주세요. 실행이 어려우면 함께 제공한 PDF를 열어주세요.</noscript>
+<script src="slides.js"></script><script src="sources.js"></script><script src="vehicle-renderer.js"></script><script src="brain-renderer.js"></script><script src="damping.js"></script><script src="rea-workshop.js"></script><script src="can-report.js"></script><script src="game-fusion.js"></script><script src="app.js"></script>
+</body></html>

@@ -1,0 +1,81 @@
+{
+  "title": "Minecraft × GTA V — official public teaser excerpt",
+  "creator": "Rehan Sheikh and universal-modder contributors",
+  "source_repository": "https://github.com/rehan-remade/universal-modder",
+  "source_commit": "6a8865ae171b406f50892c7f46fc5f45655269eb",
+  "source_url": "https://raw.githubusercontent.com/rehan-remade/universal-modder/6a8865ae171b406f50892c7f46fc5f45655269eb/docs/media/mods-teaser.gif",
+  "source_sha256": "5ef69b0378fa729140deaeaf585bbc4c8ebf5d742cc80ca3646b4b1f60ffcf8e",
+  "retrieved_utc": "2026-10-18",
+  "selection": "First 5.1 seconds only; excludes later Halo and Call of Duty content-port examples",
+  "transformations": [
+    "GIF to H.264 MP4",
+    "Original 560×315 padded to 560×316",
+    "No audio",
+    "Poster JPEG extracted at 0.6 seconds",
+    "30 fps container for exact 5.1-second excerpt",
+    "V2 delivery MP4 repacked as H.264 CRF 25; same 5.1-second excerpt, 560×316, 30 fps, no audio"
+  ],
+  "license_scope": "Repository software and associated documentation: MIT. Commercial-game imagery remains with its respective rights holders; not claimed to be MIT or CC.",
+  "license_url": "https://github.com/rehan-remade/universal-modder/blob/6a8865ae171b406f50892c7f46fc5f45655269eb/LICENSE",
+  "credit_ko": "Rehan Sheikh / universal-modder · 공개 시연 발췌 · GTA V / Minecraft 각 권리자 귀속",
+  "claim_limits": [
+    "Not confirmed to be the user remembered map/TNT clip",
+    "REA use not established",
+    "Actual game session not reproduced in this environment",
+    "Separate canvas is an original conceptual reconstruction, not real game footage"
+  ],
+  "files": [
+    {
+      "file": "game-fusion-proof.mp4",
+      "bytes": 629366,
+      "sha256": "c531926a73dbb2808b47a9ae1b795ea0a57fecc1d080e00baaf29f08e6a341ce"
+    },
+    {
+      "file": "game-fusion-proof.jpg",
+      "bytes": 69771,
+      "sha256": "a5988d6a474fabb53c86a323520b0eaabed0a25d99b52c97fd43730b12ed4a9d"
+    }
+  ],
+  "transcoding_history": [
+    {
+      "stage": "initial excerpt conversion",
+      "files": [
+        {
+          "file": "game-fusion-proof.mp4",
+          "bytes": 1887898,
+          "sha256": "aec95648102178d7e0cd442d607b3f0d84a810218158eea78e587d5a71da764d"
+        },
+        {
+          "file": "game-fusion-proof.jpg",
+          "bytes": 69771,
+          "sha256": "a5988d6a474fabb53c86a323520b0eaabed0a25d99b52c97fd43730b12ed4a9d"
+        }
+      ]
+    },
+    {
+      "stage": "V2 delivery repack",
+      "date": "2026-10-18",
+      "codec": "H.264",
+      "crf": 25,
+      "reason": "동일한 5.1초 발췌 구간의 배포 용량 축소",
+      "duration_seconds": 5.1,
+      "frame_count": 153
+    }
+  ],
+  "current_media_probe": {
+    "programs": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 560,
+        "height": 316,
+        "r_frame_rate": "30/1",
+        "nb_frames": "153"
+      }
+    ],
+    "format": {
+      "duration": "5.100000",
+      "size": "629366"
+    }
+  }
+}
