@@ -1,5 +1,5 @@
 # 발표 V4 · 8×8 차량/초파리 뇌 시각화 고도화
-상태: new_task → planned → executing → verifying
+상태: new_task → planned → executing → verifying → completed
 승인: 사용자가 해당 장표의 차량·뇌 형상과 전체 완성도 개선을 명시적으로 요청함. 기존 공개 발표의 수정·검수·배포 흐름을 이어간다.
 목표: 17번 댐퍼 장표를 실제 해외 8×8 외형과 초파리 연결지도 형태를 참고한 정교한 입체 시각화로 개선한다.
 범위: 새 versions/v4/의 damping.js 및 렌더링 보조 코드, 17번 장표 배치/출처/대본, 공통 버전 안내와 기록. 기존 DampingScene API, 키보드/포인터/버튼/정지/재생 유지. V1/V2/V3 보존.
