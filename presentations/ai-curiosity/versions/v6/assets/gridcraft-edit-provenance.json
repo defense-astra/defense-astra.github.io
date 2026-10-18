@@ -1,0 +1,14 @@
+{
+  "project": "storytold/gridcraft",
+  "version": "0.8.0",
+  "source": "https://github.com/storytold/gridcraft/releases/tag/v0.8.0",
+  "kind": "Actual engine output sequence, not continuous GUI screen recording",
+  "operations": [
+    "B4:B6에120,80,50입력",
+    "B7=SUM(B4:B6)와 막대차트 생성,합계250",
+    "B4만150으로변경,같은수식 결과280 및 차트 갱신"
+  ],
+  "duration_seconds": 15,
+  "credit": "공식 공개 편집·계산 엔진에 예제 데이터를 입력해 직접 출력. 단계별 결과를15초 영상으로 구성. GUI 연속 녹화 아님.",
+  "limits": "작은 예제와SUM·차트·XLSX재열기만 확인. Excel 전기능·매크로 호환성 검증 아님."
+}
