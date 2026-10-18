@@ -1,0 +1,302 @@
+[
+  {
+    "file": "assets/astra-home.jpg",
+    "use": "첫 화면",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "7cc59c9c96ef11e9c26845024a8303f0d119ee16b3d30a7439ab7e04f55775e9",
+    "bytes": 144899
+  },
+  {
+    "file": "assets/astra-map.jpg",
+    "use": "Boxer 검색",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "42b9fec3c9f13dfb185135f0943c07ba39935831c6fd565c0515bc38880ec4a0",
+    "bytes": 124104
+  },
+  {
+    "file": "assets/astra-map-detail.jpg",
+    "use": "사례 지도",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://www.openstreetmap.org/copyright",
+    "credit": "© OpenStreetMap contributors, ODbL. 지도 타일은 웹앱 화면의 일부로 캡처.",
+    "sha256": "1df522626c594df9d06155fdbde7104472b4dedcd8d27d952baab5786238db71",
+    "bytes": 162463
+  },
+  {
+    "file": "assets/astra-3d-status.jpg",
+    "use": "WebGL 표시 실패",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "e39ed43660ab7c1e0be9ea3ca22983260754f8524f28c6964fe976bc47473896",
+    "bytes": 73047
+  },
+  {
+    "file": "assets/astra-sources.jpg",
+    "use": "원문 출처",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "61bd906820598550f64060ecc521a400e783137d4a8dc891ed8bc419d99345dc",
+    "bytes": 91611
+  },
+  {
+    "file": "assets/astra-updates.jpg",
+    "use": "최근 이슈",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "f8f66f82a3f55b48d742e0aeae9064efeefdc4084223f4646a7dc5a746d8b29c",
+    "bytes": 115078
+  },
+  {
+    "file": "assets/astra-feedback.jpg",
+    "use": "의견 예시",
+    "type": "직접 캡처",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "ecb5363d49d6f341795df57432857e2b7d01c99a79b2c3eee4386c3f83eec2a6",
+    "bytes": 79610
+  },
+  {
+    "file": "assets/flywire-all-neurons.png",
+    "use": "뇌 정체 맞히기",
+    "type": "FlyWire 실제 구조 렌더링",
+    "clip": null,
+    "source": "https://flyconnecto.me/media/",
+    "credit": "Data: FlyWire.ai. Rendering: Philipp Schlegel (University of Cambridge / MRC LMB). CC BY 4.0. 원본 이미지, 비율 유지 축소 표시.",
+    "sha256": "e753a04e328ca2e879dc0a819a329735617cb1e5b0c850ac7295184f83b34715",
+    "bytes": 1039051
+  },
+  {
+    "file": "assets/fly-driving.mp4",
+    "use": "가상 운전",
+    "type": "원작자 기록 재생",
+    "clip": "0–10.00초 전체; 화면상 t=5–15초",
+    "source": "https://github.com/suanmiao/fly-self-driving",
+    "credit": "suanmiao / Pure Reason Inc. (2026) — MIT. demo.gif를 내용·속도 유지해 H.264 MP4로 변환. 장면 자산의 Kenney CC0 크레딧은 원문 참조.",
+    "sha256": "8badb19de8988d18aedd56b8eeeea557ad9a02342b1c968f90424cd3acd1a151",
+    "bytes": 626327
+  },
+  {
+    "file": "assets/flyvis-network.mp4",
+    "use": "시각계 모델",
+    "type": "연구팀 구조 설명 애니메이션",
+    "clip": "0–2.00초 반복",
+    "source": "https://github.com/TuragaLab/flyvis",
+    "credit": "TuragaLab / FlyVis contributors — MIT. 원영상 도식의 c/o Tory Herman 크레딧 유지. tweet_4_network.webm을 MP4로 변환, 호환용 아래 1픽셀 패딩. 라이선스 전문 licenses/flyvis-LICENSE.txt.",
+    "sha256": "37b85c197bbde1810c59ed8cb67a8e9ab181f2d61bdd3ead956493bb1038a8e1",
+    "bytes": 198145
+  },
+  {
+    "file": "assets/neuro-odor.jpg",
+    "use": "냄새 접근",
+    "type": "연구팀 시뮬레이션 이미지",
+    "clip": null,
+    "source": "https://actu.epfl.ch/news/simulating-how-fruit-flies-see-smell-and-navigat-3/",
+    "credit": "Ramdya laboratory, EPFL — CC BY-SA 4.0. 원본 이미지 변경 없음. 파일 assets/neuro-odor.jpg.",
+    "sha256": "41c538283492f38a4b0424f1ccae2439a558027ce0ad56ac39ab6921f1b1bb9a",
+    "bytes": 115241
+  },
+  {
+    "file": "assets/photocraft-demo.jpg",
+    "use": "이미지 편집기",
+    "type": "제작자 공개 실행 화면",
+    "clip": null,
+    "source": "https://github.com/storytold/photocraft",
+    "credit": "제작자 공개 screenshot photocraft-demo.jpg. PhotoCraft contributors — MIT 선택 적용, NOTICE·ATTRIBUTION 포함. 화면 속 Hokusai 그림은 public domain.",
+    "sha256": "03fad7792789cf0fe20f8b44d9890696a34bb1e79a8e85cfacb1eb4b93617fd2",
+    "bytes": 1078162
+  },
+  {
+    "file": "assets/cadcraft-ui-apartment.png",
+    "use": "CAD",
+    "type": "제작자 공개 실행 화면",
+    "clip": null,
+    "source": "https://github.com/storytold/cadcraft",
+    "credit": "제작자 공개 ui-apartment.png. CADCraft contributors — MIT 선택 적용. 자체 apartment.dxf. NOTICE·ATTRIBUTION 포함.",
+    "sha256": "f69c3cccb7e7ff5210163e732d06f7af511f0026f1227c16e9b01da902d3e4d9",
+    "bytes": 409291
+  },
+  {
+    "file": "assets/gridcraft-hero-sales.png",
+    "use": "스프레드시트",
+    "type": "제작자 공개 실행 화면",
+    "clip": null,
+    "source": "https://github.com/storytold/gridcraft",
+    "credit": "제작자 공개 hero-sales.png. GridCraft contributors — MIT 선택 적용. 자체 예제 workbook. NOTICE·ATTRIBUTION 포함.",
+    "sha256": "52056707a075707a47266742fbc5db08ecf190bca8c7f315398fcf8dff7275d9",
+    "bytes": 392178
+  },
+  {
+    "file": "assets/app-qr.svg",
+    "use": "웹앱 QR",
+    "type": "표준 QR 인코딩",
+    "clip": null,
+    "source": "https://defense-astra.github.io/versions/v6/",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음.",
+    "sha256": "393df1c90820948bcdf64ba0ccb722633091ad7da0501ac6191c5137d740a074",
+    "bytes": 8276
+  },
+  {
+    "file": "assets/rea-machine.webp",
+    "use": "REA 여섯 장면의 분석 기계 삽화",
+    "type": "이번 발표용 AI 생성 삽화",
+    "clip": null,
+    "source": "imagegen — V2 발표를 위해 새로 생성",
+    "source_kind": "generated_image",
+    "credit": "사용자 제공 영상은 비유 구성의 참고 자료입니다. 이 삽화는 imagegen으로 새로 생성했으며 원본 영상의 화면이나 그래픽을 추출한 파일이 아닙니다.",
+    "transformations": [
+      "생성된 PNG를 배포용 WebP로 변환"
+    ],
+    "generated_for": "ai-curiosity V2",
+    "created_date": "2026-10-18",
+    "sha256": "03668f98b462b9938ac792e1455d611e1deba95f94f2ac91298108be9f70bfb4",
+    "bytes": 374522
+  },
+  {
+    "file": "assets/rea-researcher.webp",
+    "use": "REA 여섯 장면의 AI 연구자 삽화",
+    "type": "이번 발표용 AI 생성 삽화",
+    "clip": null,
+    "source": "imagegen — V2 발표를 위해 새로 생성",
+    "source_kind": "generated_image",
+    "credit": "사용자 제공 영상은 비유 구성의 참고 자료입니다. 이 삽화는 imagegen으로 새로 생성했으며 원본 영상의 화면이나 그래픽을 추출한 파일이 아닙니다.",
+    "transformations": [
+      "생성된 PNG를 배포용 WebP로 변환"
+    ],
+    "generated_for": "ai-curiosity V2",
+    "created_date": "2026-10-18",
+    "sha256": "d8c40621bed13dce5f06216c4aad63eee5715b8b7739c3de0d43c5b3c87a86f1",
+    "bytes": 271452
+  },
+  {
+    "file": "assets/game-fusion-proof.mp4",
+    "use": "Minecraft × GTA V 제작자 공개 시연",
+    "type": "제작자 공개 GIF의 짧은 발췌·재인코딩",
+    "clip": "원본 첫 0–5.1초",
+    "source": "https://raw.githubusercontent.com/rehan-remade/universal-modder/6a8865ae171b406f50892c7f46fc5f45655269eb/docs/media/mods-teaser.gif",
+    "source_repository": "https://github.com/rehan-remade/universal-modder",
+    "source_commit": "6a8865ae171b406f50892c7f46fc5f45655269eb",
+    "source_sha256": "5ef69b0378fa729140deaeaf585bbc4c8ebf5d742cc80ca3646b4b1f60ffcf8e",
+    "credit": "Rehan Sheikh / universal-modder · 공개 시연 발췌 · GTA V / Minecraft 각 권리자 귀속",
+    "license_scope": "Repository software and associated documentation: MIT. Commercial-game imagery remains with its respective rights holders; not claimed to be MIT or CC.",
+    "provenance": "assets/game-fusion-proof.provenance.json",
+    "transformation_note": "영상은 동일한 5.1초 구간을 H.264 CRF 25로 다시 압축했습니다. 실제 게임 세션을 이 환경에서 재현한 결과는 아닙니다.",
+    "duration_seconds": 5.1,
+    "width": 560,
+    "height": 316,
+    "frame_rate": "30/1",
+    "frames": 153,
+    "has_audio": false,
+    "sha256": "c531926a73dbb2808b47a9ae1b795ea0a57fecc1d080e00baaf29f08e6a341ce",
+    "bytes": 629366
+  },
+  {
+    "file": "assets/game-fusion-proof.jpg",
+    "use": "게임 시연 재생 전 표지",
+    "type": "제작자 공개 GIF 발췌 영상의 프레임",
+    "clip": "발췌 구간 내 0.6초 프레임",
+    "source": "https://raw.githubusercontent.com/rehan-remade/universal-modder/6a8865ae171b406f50892c7f46fc5f45655269eb/docs/media/mods-teaser.gif",
+    "source_repository": "https://github.com/rehan-remade/universal-modder",
+    "source_commit": "6a8865ae171b406f50892c7f46fc5f45655269eb",
+    "source_sha256": "5ef69b0378fa729140deaeaf585bbc4c8ebf5d742cc80ca3646b4b1f60ffcf8e",
+    "credit": "Rehan Sheikh / universal-modder · 공개 시연 발췌 · GTA V / Minecraft 각 권리자 귀속",
+    "license_scope": "Repository software and associated documentation: MIT. Commercial-game imagery remains with its respective rights holders; not claimed to be MIT or CC.",
+    "provenance": "assets/game-fusion-proof.provenance.json",
+    "transformation_note": "발췌 영상에서 추출한 JPEG. 별도 생성 이미지나 직접 실행 캡처가 아닙니다.",
+    "sha256": "a5988d6a474fabb53c86a323520b0eaabed0a25d99b52c97fd43730b12ed4a9d",
+    "bytes": 69771
+  },
+  {
+    "file": "assets/DeckKR.woff",
+    "use": "발표 화면의 한국어 글꼴",
+    "type": "Noto Sans KR 기반 배포용 부분집합 글꼴",
+    "clip": null,
+    "source": "Noto Sans KR font source",
+    "credit": "Noto Sans KR 기반. V3 발표 문구에 필요한 글자를 포함한 부분집합. SIL Open Font License 1.1.",
+    "license_file": "licenses/Noto-OFL.txt",
+    "transformations": [
+      "발표 문구에 필요한 글자 부분집합",
+      "WOFF 배포 형식"
+    ],
+    "sha256": "0ab59bb0979eb5f4797b318835b10ae9207060678f43ea9801c8c2a9c68a2dfc",
+    "bytes": 145504
+  },
+  {
+    "file": "assets/fly-driving-poster.jpg",
+    "use": "초파리 주행 영상의 재생 전 표지",
+    "type": "포함된 영상에서 추출한 표지 프레임",
+    "clip": null,
+    "source": "https://github.com/suanmiao/fly-self-driving",
+    "credit": "suanmiao / Pure Reason Inc. (2026) — MIT. demo.gif를 내용·속도 유지해 H.264 MP4로 변환. 장면 자산의 Kenney CC0 크레딧은 원문 참조.",
+    "derived_from": "assets/fly-driving.mp4",
+    "sha256": "07e833079d5f93f2d636375166a62af3a93ab80bc23a0e8195d532d07cb8cba2",
+    "bytes": 26027
+  },
+  {
+    "file": "assets/flyvis-network-poster.jpg",
+    "use": "FlyVis 영상의 재생 전 표지",
+    "type": "포함된 영상에서 추출한 표지 프레임",
+    "clip": null,
+    "source": "https://github.com/TuragaLab/flyvis",
+    "credit": "TuragaLab / FlyVis contributors — MIT. 원영상 도식의 c/o Tory Herman 크레딧 유지. tweet_4_network.webm을 MP4로 변환, 호환용 아래 1픽셀 패딩. 라이선스 전문 licenses/flyvis-LICENSE.txt.",
+    "derived_from": "assets/flyvis-network.mp4",
+    "sha256": "67648950f45182abbb22efbba445de6d3076cd23e8cf687d55c901f485aed0bf",
+    "bytes": 80145
+  },
+  {
+    "file": "assets/damping-poster.png",
+    "use": "댐퍼 설명 애니메이션의 예비 정지 화면",
+    "type": "직접 작성한 설명용 애니메이션의 렌더링",
+    "clip": null,
+    "source": "발표용 DampingScene",
+    "credit": "가상 노면과 합성 연결망을 그린 설명 화면. 실제 신경 활동이나 실차 성능 자료가 아닙니다.",
+    "active_v2_use": false,
+    "sha256": "fa6cb9ccd2e5e3d839ea5a26c66f7a4a5ee7e9e405b8f1ab18134a25600e53f7",
+    "bytes": 275318
+  },
+  {
+    "file": "assets/fly-beatsaber-proof.mp4",
+    "source": "https://x.com/_lyraaaa_/status/2097527368919470162",
+    "credit": "Lyra (@_lyraaaa_) 공개 실험 영상 발췌. 원 영상 및 게임 화면·상표의 권리는 각 권리자에게 있음. 발표용 짧은 무음 발췌이며 공개 라이선스나 직접 재현 결과를 주장하지 않음.",
+    "sha256": "b38058e1e7859e6b5c82ef8856ee77d10ab0f092cf97ccdb93b0c95074d075da",
+    "bytes": 602528,
+    "version_added": "v3"
+  },
+  {
+    "file": "assets/fly-beatsaber-poster.jpg",
+    "source": "https://x.com/_lyraaaa_/status/2097527368919470162",
+    "credit": "Lyra (@_lyraaaa_) 공개 실험 영상 발췌. 원 영상 및 게임 화면·상표의 권리는 각 권리자에게 있음. 발표용 짧은 무음 발췌이며 공개 라이선스나 직접 재현 결과를 주장하지 않음.",
+    "sha256": "2cf85821a2ef57d0c0ceebfbd589e8db61bd01f9dea09292ab871f808377803f",
+    "bytes": 48091,
+    "version_added": "v3"
+  },
+  {
+    "file": "assets/waymo-world-model.mp4",
+    "source": "https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation/",
+    "credit": "Waymo 공식 공개 시뮬레이션. 원본 화면과 권리는 Waymo에 있으며 한국어 조건 표시·발췌 편집만 추가. 실제 주행 촬영 영상이 아님.",
+    "sha256": "7006f36763354ec52411eaa4b94e51678fe2110524744b6a52449e30fa03cd0d",
+    "bytes": 549618,
+    "version_added": "v3"
+  },
+  {
+    "file": "assets/waymo-world-model.jpg",
+    "source": "https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation/",
+    "credit": "Waymo 공식 공개 시뮬레이션. 원본 화면과 권리는 Waymo에 있으며 한국어 조건 표시·발췌 편집만 추가. 실제 주행 촬영 영상이 아님.",
+    "sha256": "0d230f5712ae8ffdc48f35ce70a11904610d85d8026ef15ae354dba4faedd83c",
+    "bytes": 146320,
+    "version_added": "v3"
+  }
+]
