@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark light"><title>만들어 보니, 궁금해졌습니다</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main id="viewport" aria-label="발표 장표"><section id="stage" tabindex="-1" aria-live="polite"></section></main>
+<nav id="toolbar" aria-label="발표 조작"><button id="prev" aria-label="이전 장표">←</button><span id="counter">1 / 32</span><button id="next" aria-label="다음 장표">→</button><span class="spacer"></span><button id="overview">목록 <kbd>O</kbd></button><button id="notes">노트 <kbd>N</kbd></button><button id="sources">출처 <kbd>S</kbd></button><button id="fullscreen">전체화면 <kbd>F</kbd></button></nav>
+<div id="progress" aria-hidden="true"></div>
+<dialog id="drawer"><header><h2 id="drawer-title"></h2><button data-close aria-label="닫기">닫기 ×</button></header><div id="drawer-body"></div></dialog>
+<dialog id="live-modal"><header><span>실시간 웹앱 · 인터넷 연결 필요</span><a id="live-external" target="_blank" rel="noopener">새 탭에서 열기 ↗</a><button data-close>장표 복귀 ×</button></header><iframe id="live-frame" title="Defense Astra 실시간 시연" allow="fullscreen"></iframe><p class="live-hint">화면이 뜨지 않으면 ‘장표 복귀’로 돌아가 실제 캡처를 사용하세요.</p></dialog>
+<noscript>JavaScript를 허용해야 발표가 실행됩니다. 동봉한 PDF를 대신 열어 주세요.</noscript>
+<script src="slides.js"></script><script src="sources.js"></script><script src="damping.js"></script><script src="app.js"></script>
+</body></html>

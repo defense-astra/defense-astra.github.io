@@ -1,0 +1,4 @@
+import{readFileSync,cpSync,mkdirSync,existsSync}from'node:fs';import{resolve,join}from'node:path';
+const root=resolve('presentations/ai-curiosity'),v=JSON.parse(readFileSync(join(root,'versions.json'))).current,src=join(root,'versions',v),slides=JSON.parse(readFileSync(join(src,'slides.json'))),sources=JSON.parse(readFileSync(join(src,'sources.json')));
+for(const s of slides){for(const key of ['image','poster','video'])if(s[key]&&!existsSync(join(src,'assets',s[key])))throw Error(`Missing ${s[key]}`);for(const id of s.source||[])if(!sources[id])throw Error(`Missing source ${id}`);if(!s.note||!s.cue)throw Error('Missing speaker content');}
+const out=resolve('dist-presentation');mkdirSync(out,{recursive:true});cpSync(root,out,{recursive:true});console.log(JSON.stringify({version:v,slides:slides.length,seconds:slides.reduce((n,s)=>n+s.seconds,0),output:out,assets:'all referenced assets present'}));

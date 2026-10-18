@@ -1280,3 +1280,15 @@ completed
 ### 발표 브라우저 검수 결과 · 2026-10-16
 
 공개 Pages에서 32장 렌더링, 두 영상 재생, 댐핑 정지/재생, REA 6단계, CAN 단계, 발표자 동기화, 시연 복귀, 모바일 크기 뷰포트 확인. 이미지 사전 로딩과 REA 버튼 간격 보완. 네이티브 전체화면·file://는 검수 브라우저 제약을 명시하고 발표 모드·파일 의존성을 분리 검증. 회사 PC·실물 휴대폰과 실차/연구 재현 실험은 미확인. 상태: verifying → completed (배포된 HTML 기능 범위). 배포 파일의 `verification.txt`에 세부 범위를 유지한다.
+
+## 2026-10-18 · 발표 V2 검증
+- node scripts/build-presentation.mjs 통과:40장/1800초/자산·출처·대본존재.
+- 5개JS node --check 통과. REA103상태검사, CAN JS/Python독립계산, 게임3단계API 및 캔버스렌더 검증.
+- 실제공개검수경로40장 전체렌더·캡처·가독성 검토, REA6장면수동/자동, CAN4단계보고서, 게임5.1초끝까지재생(error없음), 게임원리3단계재생/정지.
+- 모바일크기390×844/844×390배치와세로노트 조작, 별도발표자창의 현재/다음 장표 및16→17원격이동, 전체화면대체모드 확인.
+- V1원본50파일 SHA256동일. node scripts/set-presentation-version.mjs v1 후v2통과.
+- https://defense-astra.github.io/presentations/ai-curiosity/versions/v1/ 및v2/·버전목록200. 공통주소V2redirect 브라우저 확인.
+- gh-pages commit:3653de1b4c16497440d825d6300d3fba92658617. 기존루트·장비앱·다른버전 보존.
+- PDF40쪽렌더검수·ZIP무결성 통과.
+- 제한: 발표PC/실물모바일/file://미검증. 클라우드WebGL3D실패. 외부연구/REA/게임실험재실행아님.
+- 로컬미리보기bwrap/proc환경실패 후 허용된공개검수경로사용. 앱소스미변경으로 전체앱회귀빌드대신 정적발표빌드수행.

@@ -1,0 +1,17 @@
+{
+  "current": "v2",
+  "versions": [
+    {
+      "id": "v1",
+      "date": "2026-10-16",
+      "slides": 32,
+      "description": "원본 발표 · 그대로 보존"
+    },
+    {
+      "id": "v2",
+      "date": "2026-10-18",
+      "slides": 40,
+      "description": "한국어 문구·REA 6장면·CAN 보고서·게임 결합"
+    }
+  ]
+}
