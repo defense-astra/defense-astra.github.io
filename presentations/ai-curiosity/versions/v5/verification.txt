@@ -1,0 +1,26 @@
+V5 presentation verification - 2026-10-18
+Scope: slide17 off-road motion / local neural glow; new slide28 REA introduction.
+Prior versions V1-V4 are preserved. Total38 slides,1800 seconds.
+
+V4 correction:
+- Positive wheel angle previously opposed forward travel.
+- Ground texture drift did not share terrain displacement.
+V5 uses one forward distance for ground translation and wheel angle.
+The terrain and particles are authored explanatory animation, not vehicle dynamics.
+The neural image and activity are illustrative, not measured anatomy or activity.
+REA definition is cross-checked against the official README/homepage and MCP/native investigation documentation.
+
+Checks completed before release and browser results are recorded below.
+
+Static checks:
+- 38 slides / 1800 seconds / all media and source references present.
+- ExternalJS10 + inlineJS1 syntax:PASS.
+- slides/sources JSON and JS parity:PASS.
+- Speaker HTML/TXT titles,cues,notes:228 matching fields.
+- Navigation regression:150 PASS; real new slide27/28/29 navigation:20 PASS.
+- Korean font coverage, including version list:0 missing;148072 bytes.
+- Vehicle direction, rolling-distance relation, shared terrain contact:PASS over0-28s.
+- Negative-angle cache wrap:900 frames PASS.
+- Sequential wheel index images confirm forward rotation.
+- Continuous vehicle preview:8 seconds,30fps,240frames.
+- DampingScene seek/start/pause/reset/destroy and identical-time replay:PASS.

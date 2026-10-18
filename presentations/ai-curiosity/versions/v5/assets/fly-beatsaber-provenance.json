@@ -1,0 +1,51 @@
+{
+  "title": "Beat Saber fly — Lyra original clip excerpt",
+  "creator": "Lyra (@_lyraaaa_)",
+  "source_url": "https://x.com/_lyraaaa_/status/2097527368919470162",
+  "source_video_url": "https://x.com/_lyraaaa_/status/2097527368919470162/video/1",
+  "created_at_from_official_metadata": "2026-09-09T03:27:49.000Z",
+  "retrieved_date": "2026-10-18",
+  "original_media_url": "https://video.twimg.com/amplify_video/2097526768739737600/vid/avc1/1536x992/oT5hWoikkIK8Erj1.mp4",
+  "official_media_metadata": "https://cdn.syndication.twimg.com/tweet-result?id=2097527368919470162&lang=en&token=1",
+  "original_duration_seconds": 31.488,
+  "excerpt": {
+    "start_seconds": 2,
+    "end_seconds": 14,
+    "duration_seconds": 12,
+    "audio": "removed",
+    "changes": "12-second excerpt; scaled to 1114×720; 30 fps; no image synthesis, no alteration of displayed outcomes"
+  },
+  "author_clarifications": [
+    {
+      "url": "https://x.com/_lyraaaa_/status/2097528063605322054",
+      "summary_ko": "초기 설명에서 리플레이에 과적합된 운동 동작이며 시각 반응 학습은 진행 중이라고 밝힘."
+    },
+    {
+      "url": "https://x.com/_lyraaaa_/status/2097726318662328415",
+      "summary_ko": "한 트랙에 과적합된 상태. 리플레이 데이터 일부를 입력으로 받지만 단순 사전 재생은 아니며 움직임은 커넥톰에서 생성된다는 제작자 설명. 교사 강제 입력을 줄이는 도중의 초기 학습 렌더링."
+    }
+  ],
+  "verification": {
+    "pass1": "Original X post HTML and official X oEmbed identify Lyra and the original media post.",
+    "pass2": "Official X public media metadata, creator follow-up posts, and visual inspection of extracted frames match the clip and qualify the claims.",
+    "code": "No public implementation for this exact Beat Saber demo was found on the creator site or public GitHub repository list. This work did not independently reproduce the model.",
+    "scope": "Creator-reported connectome-driven movement with replay-assisted training; not a validated autonomous player from screen pixels alone; not evidence of a living fly or consciousness.",
+    "ui_observed": "NEURAL MOTOR REHEARSAL; 165,122 neurons; 25.56M connections; 135 foreleg motor neurons. Counts are labels in the author video, not independently measured here."
+  },
+  "rights": "No explicit open redistribution license for this X video was identified. This is a short attributed excerpt for explanation/commentary; creator and any game/music rights remain with their owners. Original audio is excluded. The creator website attribution permission is not treated as a blanket license for this X video.",
+  "caption_ko": "Lyra 공개 영상 발췌 · 리플레이 입력을 활용한 초기 학습 실험",
+  "recommended_title_ko": "비트세이버 동작을 학습시키기도 합니다",
+  "speaker_note_ko": "초파리의 회로 모델을 비트세이버 동작에 연결한 실험입니다. 다만 처음 보는 곡을 화면만 보고 플레이하는 단계는 아닙니다. 제작자는 한 곡의 리플레이 정보를 입력에 섞어 운동 동작을 학습한 초기 결과라고 설명했습니다. 재미있는 점은 공개된 신경망 구조를 가져다가 이런 입력과 움직임까지 연결해보고 있다는 겁니다.",
+  "files": [
+    {
+      "name": "fly-beatsaber-proof.mp4",
+      "bytes": 602528,
+      "sha256": "b38058e1e7859e6b5c82ef8856ee77d10ab0f092cf97ccdb93b0c95074d075da"
+    },
+    {
+      "name": "fly-beatsaber-poster.jpg",
+      "bytes": 48091,
+      "sha256": "2cf85821a2ef57d0c0ceebfbd589e8db61bd01f9dea09292ab871f808377803f"
+    }
+  ]
+}
