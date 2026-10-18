@@ -24,3 +24,19 @@ Static checks:
 - Sequential wheel index images confirm forward rotation.
 - Continuous vehicle preview:8 seconds,30fps,240frames.
 - DampingScene seek/start/pause/reset/destroy and identical-time replay:PASS.
+
+Additional renderer checks:
+- Independent motion test:219 samples; ground/wheel speed relation, contact and axle delay:PASS.
+- Brain:600 frames,zero new surfaces during playback; identical-time replay:PASS.
+- Brain:local warm fiber response changes with input;RGB white clipping:0 at sampled times.
+- Node Canvas timing is not a mobile performance claim.
+
+Public Chrome UI check:
+- Preview Pages run39112012201:success;commit2f3895f999141417f0a36899db7e84e75996a291.
+- Slide28:definition and full flow readable;no clipping or overlap.
+- Slide29 to28 to27:PageUp navigation PASS.
+- Slide17:initial preview3.00s;PageDown starts at3.08s and step2/2.
+- Pause remains4.07s across calls;reset returns0.00s;restart PASS.
+- Canvas shows terrain contact, wheel changes, vehicle pose and local neural fiber glow.
+- No presentation-origin error observed;existing extension metadata errors excluded.
+- Screenshots:v5-rea-slide28.jpg,v5-offroad-slide17.jpg.
