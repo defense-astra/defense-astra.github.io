@@ -1300,3 +1300,14 @@ completed
 - V2 63개 파일을 기존 V2 배포 소스와 SHA-256으로 대조해 모두 동일함을 확인했다.
 - fontTools 문자표와 V3 텍스트를 대조: 사용 한글 음절 누락 0자. media-manifest의 DeckKR.woff 기록을 현재 해시·145504바이트로 수정했다.
 - V3 verification.txt와 checklist.txt의 V2 표기·이전 장표 번호를 정정했다.
+
+## 2026-10-18 · 발표 V3 공개 배포·브라우저 검증 완료
+- 상태: verifying → completed (공개 배포 및 명시한 확인 범위).
+- main: d3c94d42d8fb047e1176c9593e27e8297103c19c. gh-pages: 76df215da95d7420043065e7e715f1f3247f840d. GitHub Pages 실행 39098645774 성공.
+- https://defense-astra.github.io/presentations/ai-curiosity/ → versions/v3/ 이동 및 총 37장 표시. 버전 목록 V3/V2/V1 확인.
+- 실제 브라우저 PageDown 1→2, PageUp 2→1 확인.
+- Beat Saber 14장: 다음 조작으로 재생 시작, duration 12, currentTime 0.195, readyState 4, media error 없음.
+- REA 29장: 다음 1→2, 이전 2→1, 화면 다음 버튼 1→2 확인.
+- Waymo 35장: duration 12, currentTime 11.17까지 진행, readyState 4, media error 없음. 영상 화면 캡처 확인.
+- 범위: 전체 장표·REA 24단계·모바일·발표자 동기화·전체화면의 전수 재검증은 아님. 실물 포인터·발표 PC·회사망·file://는 미확인.
+- V2 공개 원격 Git tree SHA 1753852773f034713b25c20ddca21e354419f21a 불변 확인. 실제 브라우저에서 V2 첫 화면과 총 40장 표시 확인.
