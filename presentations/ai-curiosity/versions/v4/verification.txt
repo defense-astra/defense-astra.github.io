@@ -9,7 +9,7 @@
 - 실제 차량 CAD·동역학·신경 연결·측정 활동의 재현은 아님. 동작은 설명용.
 
 - JS9개 구문검사·조작 회귀150개 통과. slides/sources JSON↔JS 동일,37장·1800초·출처 누락0.
-- V4 전체텍스트 기준 글꼴147764바이트 재생성, 한글 누락0.
+- V4 전체텍스트 기준 글꼴148160바이트 재생성, 한글 누락0.
 - 17번장표 발표자 대본과 cue 동기화.
 
 
@@ -23,3 +23,6 @@
 - V1 tree7d5cbf703fc295060ad1ff3f76dbea69e12dc5c8, V2 tree1753852773f034713b25c20ddca21e354419f21a, V3 treec0a39e65038656fbdfe1d77459201efbcff81cdb 불변 확인.
 - 범위: 17번장표와 인접이동 중심 검수. 전체37장·모바일·실물포인터·회사망·실제발표PC는 이번 전수검증에 포함하지 않음.
 
+
+Default release: 74820020b64635869dbe3fb5ec3c0b9c0da4b720
+Default redirect and V4/V3/V2/V1 version list: PASS.
