@@ -1,0 +1,37 @@
+.rea-overview-layout{padding-top:4px}
+.rea-overview-layout>.eyebrow{margin-bottom:15px}
+.rea-overview-layout>h1{font-size:52px;line-height:1.25;letter-spacing:-1.7px;white-space:normal;margin:0 0 22px;max-width:1456px}
+.rea-overview{width:1456px;height:600px;color:#142b30;position:relative}
+.ro-definition{height:106px;display:flex;align-items:flex-start;justify-content:space-between;border-top:2px solid #213d40;padding-top:20px;gap:50px}
+.ro-name{display:flex;flex-direction:column;gap:9px}
+.ro-name strong{font-size:28px;line-height:1.25;font-weight:600;letter-spacing:-.25px}
+.ro-name span{font-size:20px;line-height:1.4;color:#62736e}
+.ro-definition>p{font-size:28px;line-height:1.42;letter-spacing:-.7px;margin:-3px 0 0;width:490px}
+.ro-definition>p b{font-weight:650;background:linear-gradient(transparent 57%,#d8f570 57%)}
+.ro-map{width:1456px;height:440px;position:relative}
+.ro-connections{position:absolute;inset:0;width:1456px;height:440px;overflow:visible;pointer-events:none}
+.ro-forward{color:#537269}.ro-feedback{color:#7c958b}
+.ro-card{position:absolute;top:135px;height:180px;border:1.5px solid #bac8be;border-radius:12px;background:#fafbf6;padding:20px 23px}
+.ro-question{left:0;width:300px}.ro-agent{left:370px;width:300px}.ro-bridge{left:730px;width:220px;background:#17393c;border-color:#17393c;color:#f6f6ee}.ro-tool{left:1000px;width:356px}
+.ro-role{font-size:18px;line-height:1.3;letter-spacing:.15px;color:#5b7168;margin:0 0 13px;font-weight:550}
+.ro-role span,.ro-return-label span,.ro-review-label span{font-size:15px;letter-spacing:1.5px;color:#60796d;margin-right:8px;font-weight:650}
+.ro-card h2{font-size:27px;line-height:1.35;letter-spacing:-.8px;font-weight:600;margin:0}
+.ro-detail{font-size:18px;line-height:1.35;letter-spacing:-.15px;color:#6d7f74;margin:11px 0 0}
+.ro-bridge .ro-role,.ro-bridge .ro-role span{color:#bad4c8}
+.ro-bridge h2{font-size:50px;line-height:1.15;letter-spacing:-2px;color:#d8f570;font-weight:650}
+.ro-bridge .ro-detail{color:#d0e3d6;font-size:19px;margin-top:9px}
+.ro-tool h2{font-size:28px}.ro-tool .ro-detail{font-size:17px;white-space:nowrap}
+.ro-program{position:absolute;left:1000px;top:1px;width:356px;height:86px;display:flex;align-items:center;gap:16px;border:1px solid #c8d2c8;border-radius:9px;padding:15px 18px;background:#edf1e7}
+.ro-program strong{display:block;font-size:21px;line-height:1.3;font-weight:600;letter-spacing:-.3px}
+.ro-program div>span{display:block;font-size:16px;line-height:1.4;color:#6e7e72;margin-top:3px}
+.ro-program small{position:absolute;left:190px;top:94px;font-size:15px;color:#6d8176;white-space:nowrap}
+.ro-file{display:flex;width:32px;height:39px;border:2px solid #7b9587;flex-shrink:0;flex-direction:column;gap:5px;justify-content:center;padding:6px;border-radius:3px;background:#fafcf8}
+.ro-file i{display:block;height:2px;width:15px;background:#8ca393}.ro-file i:last-child{width:10px}
+.ro-return-label,.ro-evidence-label,.ro-review-label{position:absolute;margin:0;background:#f3f1e9;padding:2px 12px;color:#557367}
+.ro-return-label{left:932px;top:347px;font-size:21px;line-height:1.5}
+.ro-return-label span{font-size:15px}
+.ro-evidence-label{left:570px;top:382px;font-size:17px;line-height:1.5}
+.ro-review-label{left:192px;top:374px;text-align:center;font-size:18px;line-height:1.45;min-width:210px}
+.ro-review-label b{font-weight:600;color:#224a3f}
+.ro-takeaway{margin:4px 0 0;border-top:1px solid #bac8be;padding-top:17px;font-size:23px;line-height:1.4;letter-spacing:-.45px;color:#6a7c71}
+.ro-takeaway strong{color:#244c42;font-weight:600}
