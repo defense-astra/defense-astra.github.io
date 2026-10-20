@@ -1414,3 +1414,10 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - 소스 edc34c5e3d9b2dbffaa724c5d94114eb7e5c4dc2, 공개 8c95af49743d95c10c93b7124e38565403ebef8e. Pages 실행39500967832 success.
 - 실제 공개 주소 https://defense-astra.github.io/presentations/ai-curiosity/versions/v9/#12 에서 제목,3행,검증 각주,12/47 확인.
 - 화면 증거: presentations/ai-curiosity/qa/v9-slide12-20261021.jpg. 기존46장·나선 렌더러·세계장비 웹앱 보존.
+
+
+## V9 Lean 설명 추가 완료 · 2026-10-21
+- 상태: executing → verifying → completed. 12번 Lean 제목 아래 “Lean(린): 증명의 논리 단계를 컴퓨터로 검사하는 도구” 추가, 발표 대본 동기화.
+- Lean 공식 소개와 공식 교재의 정의를 대조하고 독립 문구 검토 완료. JS 구문·47장 자료 미러·한글 글꼴·발표 빌드 통과. Chrome 로컬 배치 및 공개 문구 확인.
+- 공개 commit66dc571bd2cdcc3a915629398c7ef56fa471590e, Pages 실행39503525272 success. https://defense-astra.github.io/presentations/ai-curiosity/versions/v9/#12
+- 화면 증거: presentations/ai-curiosity/qa/v9-slide12-20261021.jpg. 변경된 문구와 대본 이외의 장표/기능은 보존.
