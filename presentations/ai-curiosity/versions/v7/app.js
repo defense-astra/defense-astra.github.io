@@ -30,7 +30,7 @@ function prepareTransition(){
  ghost.querySelectorAll('video').forEach(v=>{v.pause();v.removeAttribute('src');v.removeAttribute('autoplay');v.controls=false;});
  ghost.querySelectorAll('canvas').forEach((c,i)=>{try{c.getContext('2d').drawImage(stage.querySelectorAll('canvas')[i],0,0);}catch{}});
  $('#viewport').append(ghost);transitionGhost=ghost;
- const fade=ghost.animate([{opacity:1,translate:'0 0'},{opacity:0,translate:`${-direction*20}px 0`}],{duration:320,easing:'cubic-bezier(.22,.61,.36,1)',fill:'forwards'});
+ const fade=ghost.animate([{opacity:1,translate:'0 0'},{opacity:0,translate:`${-direction*20}px 0`}],{duration:440,easing:'cubic-bezier(.22,.61,.36,1)',fill:'forwards'});
  fade.onfinish=()=>{ghost.remove();if(transitionGhost===ghost)transitionGhost=null;};return direction;
 }
 function render(){
@@ -44,6 +44,7 @@ function render(){
  else if(s.kind==='brain-image')html=`<div class="brain-image-only"><img src="assets/${s.image}" alt="초파리 뇌 신경 연결 지도 · FlyWire 공개 연구 이미지"></div>`;
  else if(s.kind==='brain-title')html=`<div class="brain-title-only">${heading(s)}</div>`;
  else if(s.kind==='research')html=`<div class="research-layout">${heading(s)}<p class="research-edition">FlyWire · 2024 Nature</p><div class="research-findings">${s.findings.map((x,i)=>`<article><span>${String(i+1).padStart(2,'0')}</span><div><h2>${esc(x.title)}</h2><p>${esc(x.body)}</p></div></article>`).join('')}</div><div class="research-public"><div><span>공개 지도</span><h2>${esc(s.publicData.name)}</h2><p>${esc(s.publicData.detail)}</p></div><a href="${esc(s.publicData.url)}" target="_blank" rel="noopener">codex.flywire.ai ↗</a></div><p class="research-scope">${esc(s.scope)}</p></div>`;
+ else if(s.kind==='company-response')html=`<div class="company-response-layout">${eyebrow(at)}${heading(s)}<div class="company-product"><strong>${esc(s.product)}</strong><span>${esc(s.released)}</span></div><div class="company-response-grid"><div class="company-approach"><section><span class="company-label">달라진 위협</span><p>${esc(s.threat)}</p></section><section><span class="company-label">기업의 대응</span><p>${esc(s.response)}</p></section></div><section class="company-experiment"><p class="company-label">${esc(s.metricTitle)}</p><div class="company-metrics"><div><span>보호 전</span><strong>${esc(s.metricBefore)}</strong><small>${esc(s.timeBefore)}</small></div><b aria-hidden="true">→</b><div><span>보호 후</span><strong>${esc(s.metricAfter)}</strong><small>${esc(s.timeAfter)}</small></div></div><p class="company-experiment-caption">같은 앱 · 같은 프롬프트 · 같은 초기 분석 도구</p></section></div><p class="company-scope">${esc(s.scope)}</p></div>`;
  else if(s.kind==='quiz')html=`<div class="quiz">${eyebrow(at)}<img class="brain" src="assets/${s.image}" alt="${at===9?'정체를 맞혀볼 공개 연구 이미지':'FlyWire 초파리 뇌 연결 구조 렌더링'}">${heading(s)}</div>`;
  else if(s.kind==='video')html=`<div class="video-layout">${heading(s)}<div class="video-wrap"><video playsinline controls preload="metadata" poster="assets/${s.poster}" src="assets/${s.video}"></video><button class="video-play" data-play>${s.playLabel||'영상 보기 ▶'}</button></div></div>`;
  else if(s.kind==='model')html=`<div class="model-layout"><div>${eyebrow(at)}${heading(s)}<div class="model-steps">신경 연결 지도 <b>+</b> 계산 모델 <b>+</b> 가상 환경</div><p class="sub">FlyVis · 초파리 시각계를 바탕으로 움직임을 처리하는 모델</p></div><div class="video-wrap"><video controls playsinline loop preload="metadata" src="assets/flyvis-network.mp4" poster="assets/flyvis-network-poster.jpg"></video><button class="video-play" data-play>모델 구조 영상 보기 ▶</button></div></div>`;
@@ -63,7 +64,7 @@ function render(){
  else if(s.kind==='questions')html=`<div class="questions">${eyebrow(at)}${heading(s)}<div class="question-list">${s.questions.map((q,i)=>`<p><span>0${i+1}</span>${q}</p>`).join('')}</div></div>`;
  stage.innerHTML=html+(['brain-image','brain-title'].includes(s.kind)?'':foot(s,at));
  renderedAt=at;$('#page-input').value=String(at+1);$('#page-input').setAttribute('aria-valuemax',slides.length);$('#page-input').setAttribute('aria-valuenow',at+1);$('#page-input').placeholder=`1–${slides.length}`;$('#page-input').setAttribute('title',`1부터 ${slides.length}까지 페이지 번호 입력`);
- if(!reducedMotion.matches&&!document.body.classList.contains('capture'))stage.animate([{opacity:0,translate:`${direction*24}px 0`},{opacity:1,translate:'0 0'}],{duration:440,easing:'cubic-bezier(.22,.61,.36,1)'});
+ if(!reducedMotion.matches&&!document.body.classList.contains('capture'))stage.animate([{opacity:0,translate:`${direction*24}px 0`},{opacity:1,translate:'0 0'}],{duration:600,easing:'cubic-bezier(.22,.61,.36,1)'});
  $('#counter').textContent=`${at+1} / ${slides.length}`;$('#progress').style.width=`${(at+1)/slides.length*100}%`;
  stage.setAttribute('aria-label',`${at+1}번 장표: ${s.title.replace(/\n/g,' ')}`);document.title=`${at+1}. ${s.title.replace(/\n/g,' ')} — 만들어보고 싶은 것들`;
  const entryIsEnd=entryEdge==='end';

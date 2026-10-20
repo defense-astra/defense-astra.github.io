@@ -1357,3 +1357,13 @@ completed
 - 공개 주소: https://defense-astra.github.io/presentations/ai-curiosity/versions/v7/
 - 실제 Chrome에서 공통 발표 주소→V7 자동 이동, V7·39장 표시 및 번호 입력 컨트롤 확인.
 - 새 연구 장표 12장, 댐퍼 장표 18장. 기존 V6 및 세계장비 웹앱 버전 경로 보존.
+
+
+## V7 추가 조정 검증 · 2026-10-20
+- 상태: executing → verifying. 41장, 32장 질문·33장 Thales 사례 추가. 전환 등장 600ms/퇴장440ms.
+- 영역별 공통 밝기: 1초 유지·0.35초 인접 영역 전환, 무작위 독립 반짝임 제거.
+- Thales 공식 출시·실험·제품 설명 교차 확인. 161KB/의도적 취약점10개, 자체 실험8→0개이며 취약점 제거 아님을 명시.
+- slides/sources JS·JSON 미러, 고유 ID·미디어·출처·대본 검사, node --check 및 build-presentation 통과. 글꼴 한글 누락0.
+- Chrome 실제 화면: 32/33장 배치, 번호 입력 Enter, 연속 다음·이전 및 잔상 요소0 확인. 18장 재생·정지 및 국소 발광 확인.
+- 렌더러 네이티브 Canvas: 시간별3프레임, seek/reset 결정성·start/pause/destroy 확인. 실측 신경 활동/실차 제어 검증 아님.
+- V6 및 세계장비 웹앱 변경 없음. 발표 PC·실물 포인터는 현장 확인 대상. 공개 반영 진행.

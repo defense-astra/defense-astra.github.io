@@ -3,7 +3,7 @@
  * Silhouette reference: FlyWire / Dorkenwald et al., Nature 2024.
  * This is NOT measured neuron geometry, connectivity, or neural activity.
  * Canvas2D only; a fixed, slightly oblique 3D fibre view is raster-cached once.
- * Local cached fibre masks, fine point clusters and explanatory signal flecks animate.
+ * Local cached fibre masks and point clusters share one regional activity envelope.
  * All glow textures are built once; playback performs no blur or new view rendering.
  */
 (function (global) {
@@ -149,8 +149,7 @@
         c.fillStyle='rgba(205,224,216,'+(.16+.32*depth).toFixed(3)+')';
         c.beginPath();c.arc(q[0],q[1],radius,0,TAU);c.fill();
         if(i%9===0) {
-          const region=Math.abs(p[0])>118?(p[0]<0?0:1):p[1]>60?4:p[0]<0?2:3;
-          sparkles.push({x:q[0],y:q[1],region,phase:rnd(),rate:r(.65,1.25),radius:r(.8,1.65)});
+          sparkles.push({x:q[0],y:q[1],detail:r(.82,1),radius:r(.8,1.65)});
         }
       }
       return canvas;
@@ -165,11 +164,11 @@
       // These are illustrative regions of our original drawing, not registered
       // neuropil boundaries or biological signal measurements.
       const regions=[
-        {p:[-165,7,25],rx:76,ry:92,phase:.75,spread:.72,input:true},
-        {p:[166,31,25],rx:72,ry:88,phase:1.25,spread:.72,input:true},
-        {p:[-43,-9,38],rx:84,ry:75,phase:2.4,spread:.87,input:false},
-        {p:[49,17,31],rx:80,ry:76,phase:3.05,spread:.83,input:false},
-        {p:[0,81,14],rx:57,ry:73,phase:4.5,spread:.83,input:false}
+        {p:[-165,7,25],rx:88,ry:92,input:true},
+        {p:[166,31,25],rx:84,ry:88,input:true},
+        {p:[-43,-9,38],rx:88,ry:75,input:false},
+        {p:[49,17,31],rx:84,ry:76,input:false},
+        {p:[0,81,14],rx:62,ry:70,input:false}
       ];
       glowRegions=[];
       for(const region of regions) {
@@ -209,8 +208,11 @@
         // One-time cached halo; no shadow/filter operation occurs in draw().
         g.shadowBlur=10;g.shadowColor=region.input?'rgba(99,177,157,.48)':'rgba(199,133,104,.48)';
         g.drawImage(mask,0,0);g.shadowBlur=0;
-        glowRegions.push({...region,texture:glow,x,y});
+        glowRegions.push({...region,texture:glow,x,y,cx:p[0],cy:p[1]});
       }
+      // Every point uses the same regional envelope. Spatial weights are fixed,
+      // so the highlight reads as one coherent location rather than random dots.
+      for(const point of sparkles)point.gains=glowRegions.map(region=>spatialGain(point.x,point.y,region));
       glowSprite=surface(48,48);
       if(glowSprite) {
         const g=glowSprite.getContext('2d'),radial=g.createRadialGradient(24,24,0,24,24,24);
@@ -221,42 +223,62 @@
         g.fillStyle=radial;g.fillRect(0,0,48,48);
       }
     }
+    function spatialGain(x,y,region) {
+      const d=Math.pow((x-region.cx)/region.rx,2)+Math.pow((y-region.cy)/region.ry,2);
+      if(d>=1)return 0;
+      // A broad, steady centre with a soft boundary, restricted to one local area.
+      const edge=clamp((1-d)/.64);return edge*edge*(3-2*edge);
+    }
+    function activityEnvelope(time) {
+      // An explanatory route through neighbouring regions. Each region remains
+      // clearly lit for 1 second, followed by a 0.35-second hand-over. This timing
+      // is presentation choreography, not a biological conduction measurement.
+      const order=[0,2,3,1,3,4,2],duration=1.35,hold=1;
+      const cycle=order.length*duration,position=((time%cycle)+cycle)%cycle;
+      const step=Math.floor(position/duration),local=position-step*duration;
+      const blend=clamp((local-hold)/(duration-hold));
+      const smooth=blend*blend*(3-2*blend),weights=glowRegions.map(()=>0);
+      weights[order[step]]=1-smooth;
+      weights[order[(step+1)%order.length]]+=smooth;
+      return weights;
+    }
+    function localActivity(x,y,weights) {
+      let value=0;
+      for(let i=0;i<glowRegions.length;i++)if(weights[i]>0)value+=weights[i]*spatialGain(x,y,glowRegions[i]);
+      return value;
+    }
     function drawGlow(ctx,time,activity,preview) {
-      if(!glowRegions)return;
-      const period=7.2,phase=((time%period)+period)%period;
-      for(const region of glowRegions) {
-        let delta=Math.abs(phase-region.phase);delta=Math.min(delta,period-delta);
-        const envelope=Math.exp(-.68*Math.pow(delta/region.spread,2));
+      if(!glowRegions)return [];
+      const weights=activityEnvelope(time);
+      for(let i=0;i<glowRegions.length;i++) {
+        const region=glowRegions[i],envelope=weights[i];if(envelope<=0)continue;
         const drive=region.input?preview:activity;
-        // A small screen halo provides light; warm source-over fibres preserve
-        // detail and colour rather than adding into saturated white patches.
+        // The complete local fibre bundle shares the same stable intensity.
         ctx.globalCompositeOperation='screen';
-        ctx.globalAlpha=envelope*(.08+.20*drive);
+        ctx.globalAlpha=envelope*(.14+.20*drive);
         ctx.drawImage(region.texture,region.x,region.y);
         ctx.globalCompositeOperation='source-over';
-        ctx.globalAlpha=envelope*(.25+.62*drive);
+        ctx.globalAlpha=envelope*(.50+.42*drive);
         ctx.drawImage(region.texture,region.x,region.y);
       }
-      // Independent, softly gated local flashes. Their progression follows the
-      // explanatory input → central processing → output route; no biological
-      // time constants or measured activity values are implied.
-      const starts=[.75,1.25,2.4,3.05,4.5];
       for(const point of sparkles) {
-        let distance=Math.abs(phase-starts[point.region]);distance=Math.min(distance,period-distance);
-        const envelope=Math.exp(-.8*Math.pow(distance/1.0,2));
-        const drive=point.region<2?preview:activity;
-        const twinkle=Math.pow(Math.max(0,Math.sin((time*point.rate+point.phase)*TAU)),6);
-        const intensity=envelope*(.28+.72*drive)*twinkle;
-        if(intensity<.025)continue;
-        ctx.globalAlpha=Math.min(.95,.18+intensity*.96);
-        ctx.fillStyle=point.region<2?'#b8ead7':'#f6d5ac';
-        ctx.beginPath();ctx.arc(point.x,point.y,point.radius+intensity*.65,0,TAU);ctx.fill();
-        if(intensity>.52 && glowSprite) {
-          ctx.globalAlpha=intensity*.23;
-          ctx.drawImage(glowSprite,point.x-12,point.y-12,24,24);
+        let intensity=0,input=0;
+        for(let i=0;i<weights.length;i++) {
+          const weight=weights[i]*point.gains[i];
+          intensity+=weight;if(glowRegions[i].input)input+=weight;
+        }
+        intensity*=point.detail*(.64+.36*activity);
+        if(intensity<.015)continue;
+        ctx.globalAlpha=Math.min(.92,intensity*.92);
+        ctx.fillStyle=input>intensity*.5?'#b8ead7':'#f6d5ac';
+        ctx.beginPath();ctx.arc(point.x,point.y,point.radius+.35,0,TAU);ctx.fill();
+        if(intensity>.65 && glowSprite) {
+          ctx.globalAlpha=intensity*.16;
+          ctx.drawImage(glowSprite,point.x-10,point.y-10,20,20);
         }
       }
       ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
+      return weights;
     }
     function draw(ctx,box,state={}) {
       const time=Number.isFinite(state.time)?state.time:0;
@@ -272,23 +294,30 @@
       const activity=clamp(Number.isFinite(state.activity)?state.activity:.45);
       const preview=clamp(Number.isFinite(state.preview)?state.preview:activity);
       ctx.translate(ox,oy);ctx.scale(size,size);ctx.lineCap='round';
-      drawGlow(ctx,time,activity,preview);
+      const regionalWeights=drawGlow(ctx,time,activity,preview);
+      // A few moving details stay inside the currently illuminated bundle.
+      // Nothing flashes independently elsewhere in the brain.
       for(let i=0;i<pulses.length;i++) {
-        if(i%3===2 && activity<.5)continue;
+        if(i%3!==0)continue;
         const f=pulses[i],progress=(f.phase+time*f.speed)%1;
-        const tail=.075+.035*activity, n=f.pts.length-1;
+        const tail=.075+.035*activity,n=f.pts.length-1;
         const start=Math.max(0,Math.floor((progress-tail)*n)),end=Math.min(n,Math.floor(progress*n));
         if(end<=start)continue;
-        ctx.beginPath();for(let k=start;k<=end;k++){const p=project(f.pts[k],yaw);if(k===start)ctx.moveTo(p[0],p[1]);else ctx.lineTo(p[0],p[1]);}
-        ctx.strokeStyle=i%3===0?'rgba(169,222,202,'+(.40+activity*.46)+')':'rgba(225,181,136,'+(.38+activity*.46)+')';ctx.lineWidth=1.55;ctx.stroke();
-        const p=project(f.pts[end],yaw);
-        if(glowSprite && i%3===0) {
-          ctx.globalCompositeOperation='lighter';ctx.globalAlpha=.25+.40*activity;
-          ctx.drawImage(glowSprite,p[0]-11,p[1]-11,22,22);
-          ctx.globalAlpha=1;ctx.globalCompositeOperation='source-over';
+        for(let k=start+1;k<=end;k++) {
+          const a=project(f.pts[k-1],yaw),b=project(f.pts[k],yaw);
+          const strength=localActivity((a[0]+b[0])/2,(a[1]+b[1])/2,regionalWeights);
+          if(strength<.04)continue;
+          ctx.globalAlpha=strength*.32;
+          ctx.beginPath();ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);
+          ctx.strokeStyle='#e7d6b5';ctx.lineWidth=1.3;ctx.stroke();
         }
-        ctx.fillStyle='rgba(247,228,198,'+(.50+activity*.45)+')';ctx.beginPath();ctx.arc(p[0],p[1],1.6,0,TAU);ctx.fill();
+        const p=project(f.pts[end],yaw),strength=localActivity(p[0],p[1],regionalWeights);
+        if(strength>.08) {
+          ctx.globalAlpha=strength*.48;ctx.fillStyle='#f7e4c6';
+          ctx.beginPath();ctx.arc(p[0],p[1],1.3,0,TAU);ctx.fill();
+        }
       }
+      ctx.globalAlpha=1;
       ctx.restore();
     }
     return {draw,destroy(){baseLayer=null;glowRegions=null;glowSprite=null;sparkles.length=0;}};

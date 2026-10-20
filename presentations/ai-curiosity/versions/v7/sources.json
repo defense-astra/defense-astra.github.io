@@ -291,5 +291,23 @@
     ],
     "detail": "Nature 634, 210–219 (2024). 신경 연결과 신경전달물질 예측 정보에 기반한 계산 모델로 먹이 섭취 개시 및 더듬이 청소 회로의 반응을 예측하고 실험 결과와 비교. 일부 감각·운동 회로에 대한 결과이며, 모든 행동·지능·차량 제어 성능을 입증한 연구가 아님.",
     "credit": "Shiu et al., Nature (2024). DOI: 10.1038/s41586-024-07763-9. 논문 내용을 한국어로 요약. 확인일 2026-10-20."
+  },
+  "thales-envelope-plus": {
+    "title": "Thales — Sentinel Envelope Plus 출시 발표",
+    "url": "https://cpl.thalesgroup.com/about-us/newsroom/sentinel-envelope-plus-ai-reverse-engineering-protection",
+    "links": [
+      "https://cpl.thalesgroup.com/software-monetization/sentinel-envelope-software-protection"
+    ],
+    "detail": "2026-10-01 공식 출시 발표. AI 보조 역공학, 자동 취약점 탐색에 대비해 컴파일된 프로그램을 보호하는 Sentinel Envelope Plus를 소개. 소스코드 변경 없이 적용하며 암호화·난독화·변조 방지·분석 방지와 선택 코드 변환·재컴파일을 결합한다고 설명. 발표와 공식 제품 설명을 교차 확인. REA라는 특정 프로젝트에 대한 직접 대응으로 발표했다는 근거는 없음.",
+    "credit": "Thales 공식 뉴스룸 및 Sentinel Envelope 제품 설명의 한국어 요약. 제조사 설명이며 독립 성능 검증이 아님. 확인일 2026-10-20."
+  },
+  "thales-ai-test": {
+    "title": "Thales — AI 취약점 탐지 보호 전후 자체 실험",
+    "url": "https://cpl.thalesgroup.com/blog/software-monetization/ai-vulnerability-detection-neutralized",
+    "links": [
+      "https://cpl.thalesgroup.com/about-us/newsroom/sentinel-envelope-plus-ai-reverse-engineering-protection"
+    ],
+    "detail": "제조사 통제 실험: 의도적 취약점 10개를 넣은 161KB 바이너리, Claude Opus 4.7, 같은 앱·프롬프트·초기 도구 조건. 비보호 실행은 3분 10초 동안 8개 탐지, 보호 실행은 6시간 43분 동안 0개 탐지. 보호 실행 중 요청한 추가 분석 도구도 제공했다고 보고. 취약점은 코드에 남으며 실험 종료 시 발견하지 못한 결과임. 상세 실험 글과 출시 발표의 8개/0개 결과를 대조.",
+    "credit": "Thales 자체 실험 보고의 한국어 요약. 학술 원논문이나 독립 재현 결과가 아니며, 단일 실험으로 모든 공격에 대한 방어를 보장하지 않음. 확인일 2026-10-20."
   }
 }
