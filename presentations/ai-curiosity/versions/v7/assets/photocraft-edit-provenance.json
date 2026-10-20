@@ -1,0 +1,14 @@
+{
+  "project": "storytold/photocraft",
+  "version": "0.10.0",
+  "source": "https://github.com/storytold/photocraft/releases/tag/v0.10.0",
+  "kind": "Actual engine output sequence, not continuous GUI screen recording",
+  "operations": [
+    "원본 그림 불러오기",
+    "Curves 및 Vibrance 조정 적용",
+    "편집 가능한 문자 레이어2개 추가"
+  ],
+  "duration_seconds": 15,
+  "credit": "공식 공개 편집·계산 엔진에 예제 데이터를 입력해 직접 출력. 단계별 결과를15초 영상으로 구성. GUI 연속 녹화 아님. 원본 그림: Katsushika Hokusai, The Great Wave, public domain.",
+  "limits": "확인한 편집 작업만 시연. 전체 Photoshop 호환성을 검증한 결과가 아님."
+}
