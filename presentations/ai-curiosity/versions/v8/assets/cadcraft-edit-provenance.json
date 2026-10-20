@@ -1,0 +1,14 @@
+{
+  "project": "storytold/cadcraft",
+  "version": "0.8.0",
+  "source": "https://github.com/storytold/cadcraft/releases/tag/v0.8.0",
+  "kind": "Actual engine output sequence, not continuous GUI screen recording",
+  "operations": [
+    "RECTANG 외곽120×60,모서리R8",
+    "OFFSET 안쪽5 및 CIRCLE5개",
+    "DIMLINEAR 치수120,60,84,24;DXF 저장과 재열기"
+  ],
+  "duration_seconds": 15,
+  "credit": "공식 공개 편집·계산 엔진에 예제 데이터를 입력해 직접 출력. 단계별 결과를15초 영상으로 구성. GUI 연속 녹화 아님.",
+  "limits": "실행한 기본2D 기능과 예제DXF만 확인. CATIA 3D 전체나 AutoCAD 전기능 대체가 아님."
+}
