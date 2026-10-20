@@ -19,10 +19,20 @@
 .ns-vortex-controls{display:flex;align-items:center;justify-content:center;gap:14px;padding:9px 0 0;color:#d2e3d9}.ns-vortex-controls button{font-size:19px;padding:8px 21px;border-color:#667f73;min-width:110px}.ns-vortex-controls input{width:260px;accent-color:#9ec9bb;margin-left:8px;cursor:pointer}
 .ns-vortex-copy{padding-top:27px}.ns-vortex-copy .ns-small-label{color:#94bbae;margin-bottom:24px}.ns-vortex-copy ol{list-style:none;padding:0;margin:0}.ns-vortex-copy li{display:flex;gap:19px;margin:0 0 24px}.ns-vortex-copy li>span{font-size:18px;color:#7caa99;padding-top:5px}.ns-vortex-copy h2{font-size:27px;margin:0 0 8px;font-weight:600;letter-spacing:-.7px;line-height:1.35}.ns-vortex-copy li p{font-size:22px;line-height:1.55;margin:0;color:#a6bdb1;word-break:keep-all}
 .ns-limit{border-top:1px solid #577064;padding-top:23px;display:flex;flex-direction:column;gap:11px;margin-top:27px}.ns-limit>span{font:italic 27px Georgia,'DejaVu Serif',serif;color:#a9cdbb}.ns-limit strong{font-size:39px;letter-spacing:-1.1px;font-weight:600;color:#dcebe0}.ns-limit small{font-size:19px;color:#9cb3a7;line-height:1.5}.ns-clarification{font-size:22px;line-height:1.6;color:#aebfb3;margin:25px 0 0}.ns-clarification strong{color:#e4c7b7;font-weight:600}
-.ns-meaning h1{font-size:65px;line-height:1.3;letter-spacing:-2.7px;margin:0 0 43px}.ns-meaning-grid{display:grid;grid-template-columns:720px 1fr;gap:64px}
-.ns-engineering h2{font-size:42px;line-height:1.4;letter-spacing:-1.5px;font-weight:600;margin:0 0 28px}.ns-workflow>div{display:grid;grid-template-columns:125px 1fr;gap:20px;border-top:1px solid #becbbf;padding:17px 0;align-items:baseline}.ns-workflow span{font-size:24px;color:#367875;font-weight:600}.ns-workflow p{font-size:25px;line-height:1.5;color:#4d6155;margin:0;word-break:keep-all}.ns-example{font-size:22px;line-height:1.6;color:#50725f;margin:23px 0 0;letter-spacing:-.4px}
-.ns-review{border-left:1px solid #b3c5b7;padding-left:43px}.ns-review-item{display:flex;gap:24px;padding:20px 0 23px;border-top:1px solid #bdcabe}.ns-review-item time{font-size:21px;color:#6a8474;padding-top:4px;font-variant-numeric:tabular-nums}.ns-review-item h3{font-size:27px;letter-spacing:-.8px;margin:0 0 9px;font-weight:600;line-height:1.4}.ns-review-item p{font-size:21px;line-height:1.55;color:#627466;margin:0;word-break:keep-all}.ns-review-conclusion{font-size:28px;line-height:1.55;color:#2d6757;font-weight:600;letter-spacing:-.7px;margin:26px 0 0}.ns-bottom-scope{font-size:21px;line-height:1.6;color:#637368;margin-top:31px;border-top:1px solid #b5c5b8;padding-top:21px}
+/* Slide 12: three paired obstacles and the corresponding AI approach. */
+.ns-method h1{font-size:62px;line-height:1.3;letter-spacing:-2.6px;margin:0 0 17px}
+.ns-method-lead{font-size:27px;line-height:1.5;letter-spacing:-.6px;color:#516c5d;margin:0 0 30px}
+.ns-method-head,.ns-method-row{display:grid;grid-template-columns:1fr 1.04fr;gap:58px}
+.ns-method-head{font-size:21px;font-weight:600;color:#6c7b70;letter-spacing:.4px;padding:0 0 13px}
+.ns-method-head>span:last-child{color:#367875;padding-left:32px}
+.ns-method-row{border-top:1px solid #b8c8ba;min-height:136px;align-items:center}
+.ns-method-row>div{padding:20px 0}
+.ns-method-row>div:last-child{border-left:1px solid #b8c8ba;padding-left:32px;position:relative}
+.ns-method-row h2{font-size:27px;line-height:1.45;letter-spacing:-.8px;font-weight:600;margin:0 0 7px;word-break:keep-all}
+.ns-method-row p{font-size:21px;line-height:1.55;letter-spacing:-.4px;color:#64786b;margin:0;word-break:keep-all}
+.ns-method-row>div:last-child h2{color:#245e50}
+.ns-method-step{display:block;font-size:15px;letter-spacing:.8px;color:#698c79;margin:0 0 6px;font-weight:600}
+.ns-method-status{font-size:20px;line-height:1.5;color:#667b6b;margin:15px 0 0;border-top:1px solid #b8c8ba;padding-top:15px}
 /* Four recent examples stay in a flat list, preserving the original topic slide. */
 .topics-layout{padding-top:28px}.topics-layout h1{margin-bottom:39px}.topics-list article{padding:18px 0}.topics-list h2{font-size:35px;margin-bottom:6px}.topics-list p{font-size:23px}
 
-.ns-meaning h1{margin-bottom:32px}.ns-bottom-scope{margin-top:20px;padding-top:15px}
