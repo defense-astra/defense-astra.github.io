@@ -1,3 +1,18 @@
+# 프로젝트 바로가기 — V6 두 종류 구분
+
+현재는 **서로 다른 두 프로젝트가 이 저장소 한 곳에 함께 보관**되어 있습니다. 버전 번호가 같아도 서로 다른 프로젝트입니다.
+
+| 프로젝트 | 공개 실행 링크 | GitHub 소스 위치 |
+| --- | --- | --- |
+| 세계 장비 검색 웹앱 **V6** (Defense Astra) | [장비 검색 웹앱 V6 실행](https://defense-astra.github.io/versions/v6/) | [웹앱 소스: src/](https://github.com/defense-astra/defense-astra.github.io/tree/main/src) |
+| R&D·AI **발표자료 V6** (38장, AI Curiosity) | [발표자료 V6 실행](https://defense-astra.github.io/presentations/ai-curiosity/versions/v6/) | [발표자료 V6 원본](https://github.com/defense-astra/defense-astra.github.io/tree/main/presentations/ai-curiosity/versions/v6) |
+
+- 저장소의 `main` 브랜치: 개발 원본. `gh-pages` 브랜치: 공개 페이지 파일.
+- 발표자료의 원본은 `presentations/ai-curiosity/` 아래에 있으며 **장비 검색 웹앱의 `versions/v6/`와 다릅니다**.
+- 현재 위 두 프로젝트는 각각 독립된 Repository가 아닙니다. 향후 분리하더라도 기존 GitHub Pages 주소의 호환성을 유지하도록 안내 링크를 남깁니다.
+
+---
+
 # 세계 장비 검색 · GitHub 관리
 
 - 최신 공개본: https://defense-astra.github.io/versions/v6/
