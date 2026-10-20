@@ -1,5 +1,5 @@
 {
-  "current": "v7",
+  "current": "v8",
   "versions": [
     {
       "id": "v1",
@@ -42,6 +42,12 @@
       "date": "2026-10-20",
       "slides": 41,
       "description": "전환 완화·페이지 바로 이동·초파리 연구·영역별 신경 반응·REA 질문과 탈레스 대응 사례"
+    },
+    {
+      "id": "v8",
+      "date": "2026-10-20",
+      "slides": 44,
+      "description": "한쪽에 모인 연속 파장·SolidCraft 3D 모델링·도면과 사진 기반 개념 모델 사례"
     }
   ]
 }

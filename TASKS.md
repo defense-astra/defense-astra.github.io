@@ -687,3 +687,12 @@ executing → verifying → completed. 장표40개·애니메이션·대본·미
 - 공개 commit: c9142683b8585bb479a41c6b6b3c29d8aaadaee5
 - GitHub Pages 실행39360962249 성공. Chrome 공개 주소에서41장과33장 실제 내용·번호 이동 확인.
 - 공개 주소: https://defense-astra.github.io/presentations/ai-curiosity/versions/v7/
+
+
+## 발표 V8 제작 · 2026-10-20
+- 상태: planned → executing. 사용자 현재 V8 제작·계속 진행 지시를 구현 및 기존 GitHub 공개 경로 반영 승인으로 적용.
+- 원본: V7 41장, source main 153713e, 공개 gh-pages c914268. V8 미저장 상태에서 재개.
+- 목표: 한쪽의 연결된 국소 영역에 연속 파장을 표현하고 SolidCraft 기본 모델링·도면 해석·사진 기반 개념 목업 장표 추가.
+- 수정 범위: versions/v8, 발표 버전 목록/진입점, 작업 기록. V7 및 장비 웹앱 보존.
+- 리스크: 새 장표 번호/출처 동기화, 국소 발광의 분산/점멸 재발, 사진에서 정밀 CAD 복원으로 과장되는 표현.
+- 검증: 공식 저장소와 문서 2차 대조, 구문/데이터/자산 빌드, 브라우저 장표·이동·연속 파장 확인, GitHub Pages 공개 상태.

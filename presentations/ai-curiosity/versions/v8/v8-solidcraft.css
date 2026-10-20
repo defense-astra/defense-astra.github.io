@@ -1,0 +1,19 @@
+@font-face{font-family:Deck;src:url('assets/DeckKRExtra.woff') format('woff');font-style:normal;font-weight:100 900;font-display:swap;unicode-range:U+B36E,U+B4ED,U+B81B,U+B8E8,U+B9AD,U+B9E1,U+BA40,U+BC00,U+BD09,U+BE48,U+BE5B,U+C228,U+C258,U+C62E,U+C871,U+CF00,U+D640}
+/* V8 additions follow the existing 1600 × 900 deck composition. */
+.sc-flow-layout,.sc-applications-layout{padding:5px 4px 0}
+.sc-flow-layout h1{font-size:67px;line-height:1.25;letter-spacing:-2.6px}
+.sc-flow{display:grid;grid-template-columns:1fr 1fr 1fr;gap:40px;margin:48px 0 35px}
+.sc-flow section{border-top:2px solid #367875;padding-top:22px}
+.sc-num{font-size:22px;color:#53796b;font-variant-numeric:tabular-nums}
+.sc-flow h2{font-size:33px;margin:19px 0 15px;letter-spacing:-.8px;font-weight:650}
+.sc-flow p{font-size:27px;line-height:1.6;white-space:pre-line;margin:0;color:#4e6258;word-break:keep-all}
+.sc-takeaway{font-size:31px;line-height:1.5;font-weight:600;color:#245d54;border-top:1px solid #b5c5bb;padding-top:24px;margin:0 0 22px;letter-spacing:-.7px}
+.sc-scope{font-size:21px;line-height:1.6;color:#66766c;word-break:keep-all;margin:18px 0}
+.sc-reference-link{display:inline-block;font-size:23px;line-height:1.6;text-underline-offset:6px;color:#367875;margin-top:4px}
+.sc-applications-layout h1{font-size:57px;letter-spacing:-2px;white-space:normal;line-height:1.3}
+.sc-lead{font-size:28px;color:#4e6258;line-height:1.5;margin:24px 0 34px;letter-spacing:-.5px}
+.sc-case-list section{display:grid;grid-template-columns:52px 390px 1fr;gap:20px;align-items:baseline;border-top:1px solid #b7c4bc;padding:22px 0}
+.sc-case-list h2{font-size:28px;margin:0;font-weight:650;letter-spacing:-.7px}
+.sc-case-list p{font-size:27px;line-height:1.45;margin:0;color:#52685b;word-break:keep-all;letter-spacing:-.6px}
+.sc-example{font-size:23px;line-height:1.6;margin:20px 0 0;color:#367875;word-break:keep-all}
+.sc-applications-layout .sc-scope{margin-top:20px;font-size:21px}
