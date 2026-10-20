@@ -475,3 +475,10 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - node --check app.js 및 slides.js, node scripts/build-presentation.mjs 통과: V9 47장, 2325초, 참조 자산 모두 존재. JSON/JS·대본 미러 일치, 한글 글리프 누락0.
 - origin/main 비교: NS03만 자료 변경, 나머지46장·나선 렌더러 보존.
 - Chrome 로컬 화면: 12번 전체3행과 각주/쪽수 가독성, 11→12 이전·다음 이동 확인. 정적 문구 교체로 기존 애니메이션 전수 재시험은 수행하지 않음.
+
+
+## V9 12번 공개 완료 · 2026-10-21
+- 상태: verifying → completed. 기존 난점과 AI의 접근을 탐색·구성·증명 3행 비교로 반영. 대본·자료·글꼴 동기화 완료.
+- 소스 edc34c5e3d9b2dbffaa724c5d94114eb7e5c4dc2, 공개 8c95af49743d95c10c93b7124e38565403ebef8e. Pages 실행39500967832 success.
+- 실제 공개 주소 https://defense-astra.github.io/presentations/ai-curiosity/versions/v9/#12 에서 제목,3행,검증 각주,12/47 확인.
+- 화면 증거: presentations/ai-curiosity/qa/v9-slide12-20261021.jpg. 기존46장·나선 렌더러·세계장비 웹앱 보존.
