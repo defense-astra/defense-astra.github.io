@@ -1,5 +1,5 @@
 {
-  "current": "v8",
+  "current": "v9",
   "versions": [
     {
       "id": "v1",
@@ -48,6 +48,12 @@
       "date": "2026-10-20",
       "slides": 44,
       "description": "한쪽에 모인 연속 파장·SolidCraft 3D 모델링·도면과 사진 기반 개념 모델 사례"
+    },
+    {
+      "id": "v9",
+      "date": "2026-10-20",
+      "slides": 47,
+      "description": "나비에–스토크스 AI 증명 제안·나선형 유동 애니메이션·공학 적용과 검증 상태"
     }
   ]
 }

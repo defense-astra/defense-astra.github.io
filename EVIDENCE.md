@@ -1376,3 +1376,16 @@ completed
 - 공개 commit: c9142683b8585bb479a41c6b6b3c29d8aaadaee5
 - GitHub Pages 실행39360962249 성공. Chrome 공개 주소에서41장과33장 실제 내용·번호 이동 확인.
 - 공개 주소: https://defense-astra.github.io/presentations/ai-curiosity/versions/v7/
+
+
+## 발표 V9 검증 · 2026-10-20
+V9 검증 · 2026-10-20
+상태: executing → verifying
+47장, 기존44장(사례 목록 S09 갱신 외) 보존, NS01~NS03 추가.
+검증: 모든 JS node --check, slides/sources JS·JSON 동일, 고유ID47개, 미디어·출처·대본 참조 검사, 한글글리프 누락0, 기존 미디어 바이트 보존 통과.
+node scripts/build-presentation.mjs 통과: V9,47장,2325초(발표 시간 상한 아님).
+Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자동재생·정지·초기화 확인. 390x844와844x390 iframe 화면 확인(실물 휴대폰 시험 아님).
+독립 코드 검토로 반복12초 후 진행 막대 고정 문제를 발견해 누적시간%12로 수정.
+원논문·공식 발표와 Clay 성명·독립 비판논문을 대조. 검증 논의 상태 명시.
+한계: 과학 계산 엔진/CFD 해석이 아닌 개념 애니메이션. 기존 모든 영상·실물 포인터·발표 PC 전수 시험은 수행하지 않음.
+- 기존 GitHub 발표 주소의 V9 공개 반영 진행.

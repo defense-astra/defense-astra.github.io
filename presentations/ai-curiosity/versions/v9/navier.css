@@ -1,0 +1,28 @@
+/* V9: scientific mechanism in the established editorial palette. */
+.ns-intro,.ns-meaning,.ns-vortex-layout{padding:5px 4px 0}
+.ns-intro .eyebrow,.ns-meaning .eyebrow,.ns-vortex-layout .eyebrow{letter-spacing:2px;font-size:19px;margin-bottom:32px}
+.ns-intro-grid{display:grid;grid-template-columns:720px 1fr;gap:58px;padding-top:36px}
+.ns-intro h1{font-size:78px;line-height:1.28;letter-spacing:-3.7px}
+.ns-date{font-size:24px;color:#367875;letter-spacing:.2px;margin:30px 0 42px}.ns-date span{font-size:22px;color:#63756b;margin-left:20px}
+.ns-lead{font-size:29px;line-height:1.7;letter-spacing:-.5px;word-break:keep-all;margin:0 0 30px;color:#40574c}
+.ns-condition{font-size:23px;line-height:1.7;color:#52685b;padding-top:24px;border-top:1px solid #aebfb3;max-width:630px}
+.ns-small-label{font-size:20px;line-height:1.5;color:#58796a;margin:0 0 22px;letter-spacing:.7px}
+.ns-equation-side{border-left:1px solid #b4c4b7;padding:0 0 0 48px}
+.ns-equation-side h2{font-size:35px;line-height:1.55;letter-spacing:-1.2px;margin:0 0 33px;font-weight:600}
+.ns-equation{font-family:Georgia,'DejaVu Serif',serif;font-size:30px;white-space:nowrap;color:#367875;padding:19px 0;border-top:1px solid #c7d1c7;border-bottom:1px solid #c7d1c7}
+.ns-equation-caption{font-size:18px;color:#6e7b71;margin:13px 0 0}
+.ns-infinity{margin-top:43px;display:flex;flex-direction:column;gap:8px}.ns-infinity>span{font-size:22px;color:#607569}.ns-infinity strong{font-size:38px;line-height:1.4;font-weight:600;letter-spacing:-1px}.ns-infinity b{font-size:74px;color:#367875;font-family:Georgia,'DejaVu Serif',serif;font-weight:400;vertical-align:-5px;margin-left:10px}
+.ns-status{font-size:21px;line-height:1.65;color:#67776c;margin:21px 0 0}
+.ns-vortex-layout .eyebrow{color:#94bbae;margin-bottom:24px}.ns-vortex-layout h1{font-size:60px;line-height:1.25;letter-spacing:-2.5px;margin:0 0 14px}
+.ns-vortex-grid{display:grid;grid-template-columns:900px 1fr;gap:37px}.ns-vortex-figure{position:relative;width:900px;height:640px}.ns-vortex-figure canvas{display:block;width:900px;height:590px}
+.ns-axis-label{position:absolute;left:50%;transform:translateX(-50%);color:#a6cbbd;font-size:19px;line-height:1.4;pointer-events:none}.ns-axis-top{top:8px}.ns-axis-bottom{top:550px;color:#d7a88e}.ns-inflow-label{position:absolute;left:12px;top:281px;color:#a6bcb2;font-size:19px;padding:5px 8px;background:#182123b0;pointer-events:none}
+.ns-vortex-controls{display:flex;align-items:center;justify-content:center;gap:14px;padding:9px 0 0;color:#d2e3d9}.ns-vortex-controls button{font-size:19px;padding:8px 21px;border-color:#667f73;min-width:110px}.ns-vortex-controls input{width:260px;accent-color:#9ec9bb;margin-left:8px;cursor:pointer}
+.ns-vortex-copy{padding-top:27px}.ns-vortex-copy .ns-small-label{color:#94bbae;margin-bottom:24px}.ns-vortex-copy ol{list-style:none;padding:0;margin:0}.ns-vortex-copy li{display:flex;gap:19px;margin:0 0 24px}.ns-vortex-copy li>span{font-size:18px;color:#7caa99;padding-top:5px}.ns-vortex-copy h2{font-size:27px;margin:0 0 8px;font-weight:600;letter-spacing:-.7px;line-height:1.35}.ns-vortex-copy li p{font-size:22px;line-height:1.55;margin:0;color:#a6bdb1;word-break:keep-all}
+.ns-limit{border-top:1px solid #577064;padding-top:23px;display:flex;flex-direction:column;gap:11px;margin-top:27px}.ns-limit>span{font:italic 27px Georgia,'DejaVu Serif',serif;color:#a9cdbb}.ns-limit strong{font-size:39px;letter-spacing:-1.1px;font-weight:600;color:#dcebe0}.ns-limit small{font-size:19px;color:#9cb3a7;line-height:1.5}.ns-clarification{font-size:22px;line-height:1.6;color:#aebfb3;margin:25px 0 0}.ns-clarification strong{color:#e4c7b7;font-weight:600}
+.ns-meaning h1{font-size:65px;line-height:1.3;letter-spacing:-2.7px;margin:0 0 43px}.ns-meaning-grid{display:grid;grid-template-columns:720px 1fr;gap:64px}
+.ns-engineering h2{font-size:42px;line-height:1.4;letter-spacing:-1.5px;font-weight:600;margin:0 0 28px}.ns-workflow>div{display:grid;grid-template-columns:125px 1fr;gap:20px;border-top:1px solid #becbbf;padding:17px 0;align-items:baseline}.ns-workflow span{font-size:24px;color:#367875;font-weight:600}.ns-workflow p{font-size:25px;line-height:1.5;color:#4d6155;margin:0;word-break:keep-all}.ns-example{font-size:22px;line-height:1.6;color:#50725f;margin:23px 0 0;letter-spacing:-.4px}
+.ns-review{border-left:1px solid #b3c5b7;padding-left:43px}.ns-review-item{display:flex;gap:24px;padding:20px 0 23px;border-top:1px solid #bdcabe}.ns-review-item time{font-size:21px;color:#6a8474;padding-top:4px;font-variant-numeric:tabular-nums}.ns-review-item h3{font-size:27px;letter-spacing:-.8px;margin:0 0 9px;font-weight:600;line-height:1.4}.ns-review-item p{font-size:21px;line-height:1.55;color:#627466;margin:0;word-break:keep-all}.ns-review-conclusion{font-size:28px;line-height:1.55;color:#2d6757;font-weight:600;letter-spacing:-.7px;margin:26px 0 0}.ns-bottom-scope{font-size:21px;line-height:1.6;color:#637368;margin-top:31px;border-top:1px solid #b5c5b8;padding-top:21px}
+/* Four recent examples stay in a flat list, preserving the original topic slide. */
+.topics-layout{padding-top:28px}.topics-layout h1{margin-bottom:39px}.topics-list article{padding:18px 0}.topics-list h2{font-size:35px;margin-bottom:6px}.topics-list p{font-size:23px}
+
+.ns-meaning h1{margin-bottom:32px}.ns-bottom-scope{margin-top:20px;padding-top:15px}

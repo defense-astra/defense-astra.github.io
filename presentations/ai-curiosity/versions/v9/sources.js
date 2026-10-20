@@ -1,0 +1,369 @@
+window.SOURCES = {
+  "astra": {
+    "title": "Defense Astra v6 — 직접 만든 장비 검색 웹앱",
+    "url": "https://defense-astra.github.io/versions/v6/",
+    "detail": "2026-10-16 공개 배포 화면 직접 조작·캡처. Boxer 검색, 지도, 출처 필터, 10월 이슈, 개선 의견 확인. 클라우드 브라우저에서 WebGL 3D 표시 실패. 3D가 작동한 영상으로 소개하지 않음. 화면 속 뉴스 전체의 최신성·정확성을 이번 발표 제작에서 재감사한 것은 아님.",
+    "credit": "사용자 소유 웹앱의 허용된 화면 캡처. 지도와 제3자 자료의 권리는 각 원출처에 있음."
+  },
+  "osm": {
+    "title": "OpenStreetMap / Leaflet",
+    "url": "https://www.openstreetmap.org/copyright",
+    "detail": "웹앱 지도 화면의 OpenStreetMap·Leaflet 표기를 유지. 지도 캡처는 특정 시점의 공개 사례이며 현재 배치 위치를 나타내지 않음.",
+    "credit": "© OpenStreetMap contributors, ODbL. 지도 타일은 웹앱 화면의 일부로 캡처."
+  },
+  "flywire": {
+    "title": "FlyWire — 실제 초파리 연결 구조 렌더링",
+    "url": "https://flyconnecto.me/media/",
+    "links": [
+      "https://flyconnecto.me/2024/10/02/flywire-is-live-%F0%9F%9A%80/",
+      "https://flywire.ai/guidelines"
+    ],
+    "detail": "연결 구조 이미지이며 살아 있는 뇌의 활동 신호가 아님. 갤러리와 동일 이미지 원문, 라이선스 링크를 대조. FlyWire 데이터 자체의 CC BY-NC 4.0 조건과 이 미디어의 CC BY 4.0 조건을 구분. 데이터셋은 포함하지 않음.",
+    "credit": "Data: FlyWire.ai. Rendering: Philipp Schlegel (University of Cambridge / MRC LMB). CC BY 4.0. 원본 이미지, 비율 유지 축소 표시.",
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "flyvis": {
+    "title": "FlyVis — 연결 구조로 제약한 시각계 모델",
+    "url": "https://github.com/TuragaLab/flyvis",
+    "links": [
+      "https://pubmed.ncbi.nlm.nih.gov/39261740/",
+      "https://turagalab.github.io/flyvis/"
+    ],
+    "detail": "Lappalainen et al., Nature (2024), DOI 10.1038/s41586-024-07939-3. 움직임 경로의 64 세포유형 연결 구조와 학습한 미지 매개변수. 전체 뇌 복제와 구분. 포함 영상은 연구팀 구조 애니메이션 2.00초로, 실제 생물 활동이나 이번 발표에서 실행한 추론 결과가 아님.",
+    "credit": "TuragaLab / FlyVis contributors — MIT. 원영상 도식의 c/o Tory Herman 크레딧 유지. tweet_4_network.webm을 MP4로 변환, 호환용 아래 1픽셀 패딩. 라이선스 전문 licenses/flyvis-LICENSE.txt.",
+    "license": "licenses/flyvis-LICENSE.txt"
+  },
+  "flydrive": {
+    "title": "fly-self-driving — 가상 주행 프로젝트",
+    "url": "https://github.com/suanmiao/fly-self-driving",
+    "links": [
+      "https://github.com/suanmiao/fly-self-driving/blob/main/docs/method.md",
+      "https://github.com/suanmiao/fly-self-driving/blob/main/LICENSE"
+    ],
+    "detail": "MaleCNS 고정 연결 구조의 recurrent rate 모델. 학습한 gain·leak, 제작자가 정한 입력/출력 연결, 모방학습·DAgger가 포함됨. FlyWire 이미지와 다른 데이터·모델. 원본 GIF 전체 0–10초, 화면의 t=5–15초는 시뮬레이터 시각. 제작자 기록을 재생하며 성능 재현시험은 하지 않음.",
+    "credit": "suanmiao / Pure Reason Inc. (2026) — MIT. demo.gif를 내용·속도 유지해 H.264 MP4로 변환. 장면 자산의 Kenney CC0 크레딧은 원문 참조.",
+    "license": "licenses/fly-driving-LICENSE.txt"
+  },
+  "neuromech": {
+    "title": "NeuroMechFly v2 — 감각·몸·환경 시뮬레이션",
+    "url": "https://actu.epfl.ch/news/simulating-how-fruit-flies-see-smell-and-navigat-3/",
+    "links": [
+      "https://neuromechfly.org/",
+      "https://www.nature.com/articles/s41592-024-02497-y"
+    ],
+    "detail": "연구팀의 냄새원·험지·장애물 시뮬레이션 이미지. 신체, 감각 입력, RL 및 hybrid controller 등의 연결을 연구. 앞의 운전 모델과 별개이며 Minecraft 영상이 아님. 코드 라이선스를 다른 영상 저장소에 자동 적용하지 않아 동영상은 재배포하지 않음.",
+    "credit": "Ramdya laboratory, EPFL — CC BY-SA 4.0. 원본 이미지 변경 없음. 파일 assets/neuro-odor.jpg.",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  "looming": {
+    "title": "초파리의 접근·팽창 패턴 감지 연구",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29120418/",
+    "links": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC7457385/",
+      "https://docs.opencv.org/3.4.4/dd/d53/tutorial_py_depthmap.html"
+    ],
+    "detail": "Klapoetke et al., Ultra-selective looming detection from radial motion opponency (2017). LPLC2의 방사형 팽창 패턴 선택성. 영상의 움직임 단서와 실제 거리·높이 추정은 다름. 거리 추정에는 보정, 깊이·실척도 등 추가 정보가 필요. 본문의 광류·팽창 도형은 새 설명 애니메이션.",
+    "credit": "논문 내용의 요약. 논문 그림은 재배포하지 않음."
+  },
+  "damping": {
+    "title": "댐핑 개념과 구현 범위",
+    "url": "https://www.zf.com/products/en/cars/stories/2025_05_08_smotion_q5.html",
+    "links": [
+      "https://aftermarket.zf.com/en/aftermarket-portal/knowledge-hub/inbrief-cdc-dampers/"
+    ],
+    "detail": "제조사의 댐핑 설명을 참고한 아이디어. 차량은 공개 외형을 참고한 직접 작성 모델이다. 주행 거리에서 지면 이동과 바퀴 회전을 함께 계산하고, 같은 노면 함수를 차륜 접지와 차체 자세에 사용한다. 흙·자갈·풀·먼지와 뇌 국소 발광은 개념 설명용 표현이다. 실제 신경 연결 데이터·FlyVis 가중치·차량 동역학·유압·실차 성능을 계산하지 않는다.",
+    "credit": "차량·신경 섬유·신호 흐름은 직접 작성한 발표 시각화. 실제 실험 결과가 아님."
+  },
+  "photocraft": {
+    "title": "PhotoCraft — 독립 이미지 편집기",
+    "url": "https://github.com/storytold/photocraft",
+    "links": [
+      "https://github.com/storytold/photocraft/blob/main/ROADMAP.md",
+      "https://github.com/storytold/photocraft/blob/main/ATTRIBUTION.md"
+    ],
+    "detail": "공개 사양·동작을 바탕으로 한 독립 구현 프로젝트. REA로 제작했다는 근거는 확인되지 않음. 이번 발표에서는 공식 0.10.0 배포의 실제 엔진으로 한정된 예제를 실행했다. 확인한 편집 작업만 시연. 전체 Photoshop 호환성을 검증한 결과가 아님.",
+    "credit": "제작자 공개 screenshot photocraft-demo.jpg. PhotoCraft contributors — MIT 선택 적용, NOTICE·ATTRIBUTION 포함. 화면 속 Hokusai 그림은 public domain.",
+    "license": "licenses/photocraft-LICENSE-MIT"
+  },
+  "cadcraft": {
+    "title": "CADCraft — CAD 작업 흐름 독립 구현",
+    "url": "https://github.com/storytold/cadcraft",
+    "links": [
+      "https://github.com/storytold/cadcraft/blob/main/ROADMAP.md",
+      "https://github.com/storytold/cadcraft/blob/main/ATTRIBUTION.md"
+    ],
+    "detail": "공개 사양·동작을 바탕으로 한 독립 구현 프로젝트. REA로 제작했다는 근거는 확인되지 않음. 이번 발표에서는 공식 0.8.0 배포의 실제 엔진으로 한정된 예제를 실행했다. 실행한 기본2D 기능과 예제DXF만 확인. CATIA 3D 전체나 AutoCAD 전기능 대체가 아님.",
+    "credit": "제작자 공개 ui-apartment.png. CADCraft contributors — MIT 선택 적용. 자체 apartment.dxf. NOTICE·ATTRIBUTION 포함.",
+    "license": "licenses/cadcraft-LICENSE-MIT"
+  },
+  "gridcraft": {
+    "title": "GridCraft — 스프레드시트 독립 구현",
+    "url": "https://github.com/storytold/gridcraft",
+    "links": [
+      "https://github.com/storytold/gridcraft/blob/main/ROADMAP.md",
+      "https://github.com/storytold/gridcraft/blob/main/ATTRIBUTION.md"
+    ],
+    "detail": "공개 사양·동작을 바탕으로 한 독립 구현 프로젝트. REA로 제작했다는 근거는 확인되지 않음. 이번 발표에서는 공식 0.8.0 배포의 실제 엔진으로 한정된 예제를 실행했다. 작은 예제와SUM·차트·XLSX재열기만 확인. Excel 전기능·매크로 호환성 검증 아님.",
+    "credit": "제작자 공개 hero-sales.png. GridCraft contributors — MIT 선택 적용. 자체 예제 workbook. NOTICE·ATTRIBUTION 포함.",
+    "license": "licenses/gridcraft-LICENSE-MIT"
+  },
+  "rea": {
+    "title": "REA — AI와 분석 도구를 잇는 MCP/CLI",
+    "url": "https://github.com/morluto/rea",
+    "links": [
+      "https://rea.tools/",
+      "https://github.com/morluto/rea/blob/main/DISCLAIMER.md"
+    ],
+    "detail": "AI 에이전트가 기존 도구를 호출하고 함수·참조·호출 등의 근거를 조사하는 통로. 새 AI 모델, 바이너리 내 챗봇, 소스 전체의 완벽 복원이 아님. 분석이 로컬이어도 모델에 전달되는 결과에는 별도 데이터 정책이 적용. REA 설치·실행은 이번 작업에 포함되지 않음.",
+    "credit": "공식 문서와 공개 사례를 요약. 한국어 원리 애니메이션은 신규 작성, 실제 분석 녹화 아님."
+  },
+  "rea-browser": {
+    "title": "REA browser observation",
+    "url": "https://github.com/morluto/rea/blob/main/docs/browser-observation.md",
+    "detail": "수동 CDP 관찰과 행동을 수행하는 별도 scenario 제공자를 구분. 연결 이전 이벤트와 누락된 기록 때문에 비교 범위가 제한됨.",
+    "credit": "공식 구조 문서 요약."
+  },
+  "dx": {
+    "title": "DX-Ball — 사운드 패닝 함수 분석 사례",
+    "url": "https://rea.tools/showcase/dx-ball/",
+    "links": [
+      "https://github.com/N0zoM1z0/dx-ball/blob/a55dca27ec0a07018c1b2c95ae2be027f7d8c3c4/docs/ORACLES.md",
+      "https://github.com/N0zoM1z0/dx-ball/blob/a55dca27ec0a07018c1b2c95ae2be027f7d8c3c4/docs/BUILD_MATCHING.md"
+    ],
+    "detail": "제작자 보고: 원본 x86 함수와 3,205 입력 사례 비교, 해당 함수 63 compiled bytes 일치. 게임 전체 재구현 성공으로 확대하지 않음. 이번 발표 제작에서 원본 바이너리나 비교 실험을 재실행하지 않음. 보조 사례: Aegis 3.4.3 TOTP 특정 계산, Notion Desktop 7.6.1 clipboard 호출 경로.",
+    "credit": "공식 showcase와 해당 고정 commit의 ORACLES·BUILD_MATCHING을 대조. 본문 패닝 도식은 새 설명 애니메이션."
+  },
+  "rea-contracts": {
+    "title": "REA 6.5.0 — 도구 계약과 분석 상태",
+    "url": "https://github.com/morluto/rea/blob/rea-agents-6.5.0/docs/mcp-contracts.md",
+    "detail": "2026-10-18 공식 문서와 소스 교차 확인. 범위 제한 조회, 같은 연결에서 분석 상태·근거 유지, 결과의 불확실성 처리. 126개 도구/고정 5분/보편적 성능 향상은 주장하지 않음.",
+    "credit": "morluto/rea. 원리 설명용 애니메이션은 이번 발표를 위해 새로 제작."
+  },
+  "rea-evidence-v2": {
+    "title": "REA — 근거 기록, 정적·동적 비교",
+    "url": "https://github.com/morluto/rea/blob/847472acf5cf4a28379e828dcd0fe55ac99d7c07/src/domain/evidence.ts",
+    "links": [
+      "https://github.com/morluto/rea/blob/main/docs/browser-observation.md",
+      "https://github.com/morluto/rea/blob/main/docs/process-capture.md"
+    ],
+    "detail": "Evidence의 대상·도구·관측·추론·한계 필드를 확인. ID는 근거 추적 수단이며 자연어 해석의 진위를 모두 보장하지 않음. 영수증 A와 7→14는 설명용 합성 예시. 실제 REA 분석 재실행은 수행하지 않음.",
+    "credit": "REA 공식 소스·문서 기반. 참고 비유: 김플립 – LLM 코딩, 사용자 제공 캡처·요약. 원본 영상 그래픽은 재배포하지 않음."
+  },
+  "rea-video-reference": {
+    "title": "REA 비유 구성 참고 영상",
+    "url": "https://youtu.be/0fug-ugCDaU",
+    "detail": "사용자가 제공한 영상 캡처와 요약을 참고. 전체 영상 직접 시청·검증은 수행하지 못했으며 기능 설명은 REA 공식 문서·코드로 검토. 삽화는 새로 생성하고 도식·동작은 직접 제작.",
+    "credit": "김플립 – LLM 코딩. 영상 캡처는 참고용이며 이 발표에는 포함하지 않음."
+  },
+  "game-fusion": {
+    "title": "Universal Modder — Minecraft × GTA V",
+    "url": "https://github.com/rehan-remade/universal-modder/tree/6a8865ae171b406f50892c7f46fc5f45655269eb",
+    "detail": "제작자 README, field notes와 FrameExporter.java·MCPassthrough.fx·script.cpp를 교차 확인. 두 게임 동시 실행, 카메라·충돌 동기화, 색·깊이 합성, 폭발 이벤트 전달. 제작자 공개 teaser 첫 5초 발췌, 원본 560×315를 비율 유지 확대. 자체 재실행 아님. REA 사용 사례라고 주장하지 않음.",
+    "credit": "Rehan / universal-modder. 저장소 코드·문서 MIT. Minecraft 및 GTA V 게임 화면·상표 권리는 각 권리자에게 있으며 MIT가 게임 자산을 포괄하지 않음. 원리 도식은 발표용 재구성.",
+    "license": "https://github.com/rehan-remade/universal-modder/blob/6a8865ae171b406f50892c7f46fc5f45655269eb/LICENSE"
+  },
+  "waymo-world-model": {
+    "title": "Waymo World Model — 날씨를 바꾸는 주행 시뮬레이션",
+    "url": "https://waymo.com/blog/2026/02/the-waymo-world-model-a-new-frontier-for-autonomous-driving-simulation/",
+    "links": [
+      "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/project-genie-expands/"
+    ],
+    "detail": "2026-02-06 공식 발표. 언어로 날씨·시간대 등을 바꾸며 카메라와 라이다 데이터를 생성하는 주행 월드모델. Waymo 본문과 미디어 매핑, Google 2026-05-19 공식 설명을 대조. 맑음·안개·비 각 3.2초 원본에 0.8초 정지 화면을 붙인 총 12초 발췌. 우리 발표에서 모델을 실행한 것이 아니며, 차량 동역학·댐퍼 성능을 검증한 시뮬레이션으로 소개하지 않음.",
+    "credit": "Waymo 공식 공개 시뮬레이션. 원본 화면과 권리는 Waymo에 있으며 한국어 조건 표시·발췌 편집만 추가. 실제 주행 촬영 영상이 아님."
+  },
+  "fly-beatsaber": {
+    "title": "Lyra — 초파리 회로 모델과 Beat Saber 연결 실험",
+    "url": "https://x.com/_lyraaaa_/status/2097527368919470162",
+    "links": [
+      "https://x.com/_lyraaaa_/status/2097528063605322054",
+      "https://x.com/_lyraaaa_/status/2097726318662328415"
+    ],
+    "detail": "원 제작자 Lyra의 공개 영상과 본인이 남긴 학습 조건 설명을 대조. 제작자는 특정 곡에 과적합된 초기 학습 영상이며 리플레이 정보가 입력에 포함된다고 설명. 처음 보는 곡을 화면만 보고 자율 플레이했다는 검증이 아님. 해당 영상의 공개 코드와 상용 Beat Saber 실행 파일 제어 여부는 확인하지 못함. 독립적인 실험 재현은 수행하지 않음.",
+    "credit": "Lyra (@_lyraaaa_) 공개 실험 영상 발췌. 원 영상 및 게임 화면·상표의 권리는 각 권리자에게 있음. 발표용 짧은 무음 발췌이며 공개 라이선스나 직접 재현 결과를 주장하지 않음.",
+    "verification_record": "assets/fly-beatsaber-provenance.json"
+  },
+  "vehicle-visual": {
+    "title": "8×8 차량 외형 참고 — Patria AMV XP · BOXER",
+    "url": "https://www.patriagroup.com/products-and-services/protected-mobility/wheeled-mobility/patria-amv-xp-number-1-in-the-battlefield",
+    "links": [
+      "https://www.patriagroup.com/download/patria-amv-xp-brochure-2",
+      "https://www.artec-boxer.com/"
+    ],
+    "detail": "제조사의 공개 사진·카탈로그에 보이는 차체 비율, 경사 전면, 4축 바퀴, 패널·해치 형상을 시각 참고했다. 발표 모델은 직접 작성한 일반화된 8×8 외형이며 특정 차종의 실측 CAD나 내부 구조 복원이 아니다. 현가 움직임은 설명용 운동학 애니메이션이다.",
+    "credit": "공개 사진은 형상 참고용. 발표의 차량 기하와 재질은 직접 작성."
+  },
+  "connectome-visual": {
+    "title": "초파리 뇌 형태 참고 — FlyWire 연결지도",
+    "url": "https://flywire.ai/",
+    "links": [
+      "https://flyconnecto.me/media/"
+    ],
+    "detail": "좌우 시엽·중앙부·신경 섬유의 시각적 구성은 FlyWire 공개 렌더링을 참고했다. 17번 장표의 미세 곡선과 발광은 발표용으로 생성한 형상이며 실제 뉴런 경로·신경 활동·FlyVis 추론 결과가 아니다.",
+    "credit": "형상 참고: FlyWire, Philipp Schlegel / University of Cambridge · 발표용 곡선과 애니메이션은 직접 작성."
+  },
+  "rea-overview": {
+    "title": "REA — Reverse Engineer Anything: 공식 정의와 동작 흐름",
+    "url": "https://github.com/morluto/rea",
+    "links": [
+      "https://rea.tools/",
+      "https://github.com/morluto/rea/blob/main/docs/native-investigation.md"
+    ],
+    "detail": "공식 README와 홈페이지가 풀네임을 Reverse Engineer Anything으로 표기한다. REA는 기존 AI 에이전트가 프로그램 분석 도구를 사용하고 근거를 받도록 연결하는 도구다. 도식은 네이티브 프로그램을 분석 도구에서 열고, 필요한 함수와 연결 관계를 조회하는 과정을 단순화했다. 도구 종류는 대상에 따라 달라진다.",
+    "credit": "morluto/rea 공식 README·rea.tools·Native binary investigation 문서. 2026-10-18 두 차례 교차 확인. 도식과 한국어 문구는 발표용 재구성."
+  },
+  "rea-overview-evidence": {
+    "title": "REA MCP contracts — 결과·근거·한계",
+    "url": "https://github.com/morluto/rea/blob/main/docs/mcp-contracts.md",
+    "links": [
+      "https://github.com/morluto/rea/blob/main/docs/native-investigation.md"
+    ],
+    "detail": "MCP 계약 문서가 분석 결과와 근거 기록, 확인 범위·한계의 반환을 설명한다. 네이티브 분석 문서에서 프로그램 열기, 함수·명령·참조 관계 조회를 확인했다. 근거가 있다는 것만으로 모든 동작의 해석이나 전체 프로그램 복원이 보장되지는 않는다.",
+    "credit": "morluto/rea 공식 도구 계약 및 네이티브 분석 문서. 2026-10-18 확인. 실제 REA 분석을 새로 실행한 장표는 아니다."
+  },
+  "rea-calculator": {
+    "title": "REA 공식 사례 — Windows 계산기 % 버튼",
+    "url": "https://rea.tools/",
+    "detail": "REA 4.1.0으로 Windows Calculator 11.2508.4.0 x64의 설치된 라이브러리에서 퍼센트 처리 분기를 분석한 공개 사례. 200,+,10,%,= 결과220 및 200,×,10,%,= 결과20을 설명하고 작은 계산기에서 규칙을 재구현한다. 본 발표는 이 공개 결과를 풀어 쓴 비교이며 원본 앱 직접 녹화·REA 분석 재실행이 아니다.",
+    "credit": "morluto/rea 공식 사례. 공개된 동작과 Microsoft 원본 코드를 교차 확인."
+  },
+  "calculator-percent-source": {
+    "title": "Microsoft Calculator — 퍼센트 원본 구현",
+    "url": "https://github.com/microsoft/calculator/blob/d125246a4e19842ce1332e6c7839cf0e110027d8/src/CalcManager/CEngine/scifunc.cpp",
+    "links": [
+      "https://github.com/microsoft/calculator/blob/d125246a4e19842ce1332e6c7839cf0e110027d8/src/CalculatorUnitTests/CalculatorManagerTest.cpp"
+    ],
+    "detail": "고정 commit의 IDC_PERCENT 분기: 곱셈/나눗셈이면 현재값/100, 나머지 해당 연산에서는 현재값×이전값/100. 계산기 사례의 두 결과와 중간값을 대조했다. 모든 모드와 입력의 완전한 호환성 시험은 아니다.",
+    "credit": "Microsoft Calculator, MIT. 설명용 표와 한국어 문구는 신규 작성."
+  },
+  "photocraft-execution": {
+    "title": "PhotoCraft — 실제 편집·계산 실행 결과",
+    "url": "https://github.com/storytold/photocraft/releases/tag/v0.10.0",
+    "links": [
+      "https://github.com/storytold/photocraft/blob/main/docs/control-protocol.md"
+    ],
+    "detail": "PhotoCraft 공식 배포 0.10.0 실행. 원본 그림 불러오기. Curves 및 Vibrance 조정 적용. 편집 가능한 문자 레이어2개 추가. 확인한 편집 작업만 시연. 전체 Photoshop 호환성을 검증한 결과가 아님.",
+    "credit": "공식 공개 편집·계산 엔진에 예제 데이터를 입력해 직접 출력. 단계별 결과를15초 영상으로 구성. GUI 연속 녹화 아님. 원본 그림: Katsushika Hokusai, The Great Wave, public domain.",
+    "license": "licenses/photocraft-LICENSE-MIT"
+  },
+  "cadcraft-execution": {
+    "title": "CADCraft — 실제 편집·계산 실행 결과",
+    "url": "https://github.com/storytold/cadcraft/releases/tag/v0.8.0",
+    "links": [
+      "https://github.com/storytold/cadcraft/blob/main/docs/control-protocol.md"
+    ],
+    "detail": "CADCraft 공식 배포 0.8.0 실행. RECTANG 외곽120×60,모서리R8. OFFSET 안쪽5 및 CIRCLE5개. DIMLINEAR 치수120,60,84,24;DXF 저장과 재열기. 실행한 기본2D 기능과 예제DXF만 확인. CATIA 3D 전체나 AutoCAD 전기능 대체가 아님.",
+    "credit": "공식 공개 편집·계산 엔진에 예제 데이터를 입력해 직접 출력. 단계별 결과를15초 영상으로 구성. GUI 연속 녹화 아님.",
+    "license": "licenses/cadcraft-LICENSE-MIT"
+  },
+  "gridcraft-execution": {
+    "title": "GridCraft — 실제 편집·계산 실행 결과",
+    "url": "https://github.com/storytold/gridcraft/releases/tag/v0.8.0",
+    "links": [
+      "https://github.com/storytold/gridcraft/blob/main/docs/control-protocol.md"
+    ],
+    "detail": "GridCraft 공식 배포 0.8.0 실행. B4:B6에120,80,50입력. B7=SUM(B4:B6)와 막대차트 생성,합계250. B4만150으로변경,같은수식 결과280 및 차트 갱신. 작은 예제와SUM·차트·XLSX재열기만 확인. Excel 전기능·매크로 호환성 검증 아님.",
+    "credit": "공식 공개 편집·계산 엔진에 예제 데이터를 입력해 직접 출력. 단계별 결과를15초 영상으로 구성. GUI 연속 녹화 아님.",
+    "license": "licenses/gridcraft-LICENSE-MIT"
+  },
+  "flywire-paper": {
+    "title": "Dorkenwald et al. — Neuronal wiring diagram of an adult brain",
+    "url": "https://www.nature.com/articles/s41586-024-07558-y",
+    "links": [
+      "https://blog.flywire.ai/2025/01/13/how-to-use-flywire/"
+    ],
+    "detail": "Nature 634, 124–138 (2024), 2024-10-02. 성체 암컷 Drosophila melanogaster 뇌의 검수된 뉴런 139,255개와 이들 사이의 시냅스 54.5 million을 재구성한 FAFB v783 자료. 원논문 수치와 연구팀 공식 설명을 대조. 모든 실제 시냅스가 빠짐없이 복원되었다거나 뇌 전체 기능을 재현했다는 뜻이 아님.",
+    "credit": "Dorkenwald et al., Nature (2024). DOI: 10.1038/s41586-024-07558-y. 논문 내용을 한국어로 요약. 확인일 2026-10-20."
+  },
+  "flywire-codex": {
+    "title": "FlyWire Codex — 공개 신경 연결 지도 탐색",
+    "url": "https://codex.flywire.ai/",
+    "links": [
+      "https://blog.flywire.ai/2025/01/13/how-to-use-flywire/"
+    ],
+    "detail": "FAFB v783에서 뉴런의 3D 형상, 연결 대상과 경로를 검색·탐색할 수 있음. 현재 플랫폼에는 후속 데이터셋도 있으므로 발표 수치를 플랫폼 전체 규모로 해석하지 않음. 탐색에는 Google 로그인이 필요할 수 있음. 데이터 파일을 이 발표에 포함하지 않음.",
+    "credit": "FlyWire / Codex 공식 서비스 및 연구팀 이용 안내. 확인일 2026-10-20."
+  },
+  "flywire-model": {
+    "title": "Shiu et al. — A Drosophila computational brain model reveals sensorimotor processing",
+    "url": "https://doi.org/10.1038/s41586-024-07763-9",
+    "links": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11446845/"
+    ],
+    "detail": "Nature 634, 210–219 (2024). 신경 연결과 신경전달물질 예측 정보에 기반한 계산 모델로 먹이 섭취 개시 및 더듬이 청소 회로의 반응을 예측하고 실험 결과와 비교. 일부 감각·운동 회로에 대한 결과이며, 모든 행동·지능·차량 제어 성능을 입증한 연구가 아님.",
+    "credit": "Shiu et al., Nature (2024). DOI: 10.1038/s41586-024-07763-9. 논문 내용을 한국어로 요약. 확인일 2026-10-20."
+  },
+  "thales-envelope-plus": {
+    "title": "Thales — Sentinel Envelope Plus 출시 발표",
+    "url": "https://cpl.thalesgroup.com/about-us/newsroom/sentinel-envelope-plus-ai-reverse-engineering-protection",
+    "links": [
+      "https://cpl.thalesgroup.com/software-monetization/sentinel-envelope-software-protection"
+    ],
+    "detail": "2026-10-01 공식 출시 발표. AI 보조 역공학, 자동 취약점 탐색에 대비해 컴파일된 프로그램을 보호하는 Sentinel Envelope Plus를 소개. 소스코드 변경 없이 적용하며 암호화·난독화·변조 방지·분석 방지와 선택 코드 변환·재컴파일을 결합한다고 설명. 발표와 공식 제품 설명을 교차 확인. REA라는 특정 프로젝트에 대한 직접 대응으로 발표했다는 근거는 없음.",
+    "credit": "Thales 공식 뉴스룸 및 Sentinel Envelope 제품 설명의 한국어 요약. 제조사 설명이며 독립 성능 검증이 아님. 확인일 2026-10-20."
+  },
+  "thales-ai-test": {
+    "title": "Thales — AI 취약점 탐지 보호 전후 자체 실험",
+    "url": "https://cpl.thalesgroup.com/blog/software-monetization/ai-vulnerability-detection-neutralized",
+    "links": [
+      "https://cpl.thalesgroup.com/about-us/newsroom/sentinel-envelope-plus-ai-reverse-engineering-protection"
+    ],
+    "detail": "제조사 통제 실험: 의도적 취약점 10개를 넣은 161KB 바이너리, Claude Opus 4.7, 같은 앱·프롬프트·초기 도구 조건. 비보호 실행은 3분 10초 동안 8개 탐지, 보호 실행은 6시간 43분 동안 0개 탐지. 보호 실행 중 요청한 추가 분석 도구도 제공했다고 보고. 취약점은 코드에 남으며 실험 종료 시 발견하지 못한 결과임. 상세 실험 글과 출시 발표의 8개/0개 결과를 대조.",
+    "credit": "Thales 자체 실험 보고의 한국어 요약. 학술 원논문이나 독립 재현 결과가 아니며, 단일 실험으로 모든 공격에 대한 방어를 보장하지 않음. 확인일 2026-10-20."
+  },
+  "solidcraft": {
+    "title": "SolidCraft — 파라메트릭 3D CAD",
+    "url": "https://github.com/tangency-labs/solidcraft",
+    "links": [
+      "https://docs.solidcraft.io/"
+    ],
+    "detail": "공식 저장소와 공식 문서를 대조. 스케치·구속·돌출·홀·필렛, 파라미터 변경과 모델 재계산, CAD 파일 입출력 및 MCP 실행 기능 확인. 초기 개발 단계의 단순 부품 활용을 설명하며 모든 기능·형상·CATIA 호환을 보장하지 않음. 사진 한 장의 정밀 형상 자동 복원은 확인된 보장 기능이 아님.",
+    "credit": "SolidCraft contributors. 공식 기능 설명의 한국어 요약. 확인일 2026-10-20.",
+    "license": "licenses/SolidCraft-LICENSE-MIT.txt"
+  },
+  "solidcraft-mcp": {
+    "title": "SolidCraft MCP — AI 에이전트의 CAD 명령 실행",
+    "url": "https://github.com/tangency-labs/solidcraft/blob/main/docs/mcp.md",
+    "detail": "내장 MCP 서버를 통해 AI 에이전트가 CAD 명령을 실행하며, 앱에 연결하거나 headless 세션을 사용할 수 있음. 도면·사진 해석은 사용하는 멀티모달 AI와 입력 품질에 의존하는 활용 구성으로 설명. 이 발표에서 이미지 입력부터 모델 출력까지 독립 재현하지 않았음.",
+    "credit": "SolidCraft 공식 MCP 문서. 확인일 2026-10-20."
+  },
+  "solidcraft-demo": {
+    "title": "SolidCraft 공식 Raspberry Pi 케이스 모델링 영상",
+    "url": "https://github.com/tangency-labs/solidcraft/blob/main/README.md",
+    "links": [
+      "https://github.com/tangency-labs/solidcraft/raw/refs/heads/main/docs/screenshots/demo-0.8.mp4"
+    ],
+    "detail": "제작자 공개 영상 demo-0.8.mp4(40.97초)를 그대로 포함. 제작자가 9배속으로 편집한 케이스 모델링 과정이며, 스케치·돌출·필렛·쉘·개구부와 높이 수정 장면을 담음. 이 영상이 도면이나 사진을 읽는 AI 실행 녹화라는 주장은 하지 않음. 포스터는 영상 32초의 프레임.",
+    "credit": "SolidCraft contributors. MIT 선택 적용. 영상 원본 유지, 포스터 프레임 추출. 동봉 LICENSE-MIT와 NOTICE 참조.",
+    "license": "licenses/SolidCraft-LICENSE-MIT.txt"
+  },
+  "solidcraft-reference": {
+    "title": "사용자 제공 도면 모델링 참고 영상",
+    "url": "https://youtu.be/8h4xdpZnsJ8?si=MEaucQQq8aDKNE7u",
+    "detail": "도면에서 간단한 모델을 만드는 장면이라는 사용자 설명을 참고. 이번 환경에서 영상 본문·자막을 직접 확보하지 못했으므로 독립 확인으로 표시하지 않음. 원문으로 이동하는 링크만 제공하며 영상 파일은 복제하지 않음.",
+    "credit": "사용자 제공 YouTube 참고 링크. 영상 저작권은 원저작자에게 있음."
+  },
+  "navier-openai": {
+    "title": "OpenAI — On the Navier–Stokes Millennium Prize Problem",
+    "url": "https://openai.com/index/navier-stokes-solution/",
+    "detail": "2026-09-08 공식 발표. AI 시스템을 이용해 매끄러운 외력이 있는 3차원 비압축성 Navier–Stokes에서 유한시간 속도 발산을 구성했다고 주장. 처음 정지한 유체와 유한 에너지 조건. 발표 사실과 학계 최종 인정은 구분. 2026-10-20 확인.",
+    "credit": "OpenAI 공식 설명을 요약. 이미지를 복제하지 않고 유동 개념을 별도로 구현."
+  },
+  "navier-paper": {
+    "title": "OpenAI — Finite Time Blowup for Navier–Stokes",
+    "url": "https://cdn.openai.com/pdf/32d9f210-8b73-45e0-91bc-82a30aef8a9a/navier-stokes.pdf",
+    "detail": "정리 1.1 및 §2, 3–4쪽을 대조. 매끄러운 외력, 0 초기속도, 유한 에너지, 최대 속도 발산을 주장. 코어는 반경과 축길이가 모두 감소하되 반경이 더 빨리 줄어듦. 나선형 유입과 위·아래 축방향 유출. 화면은 설명용이며 수축 비율·시간·궤적이 논문의 정확한 해나 CFD 결과가 아님.",
+    "credit": "원논문의 주장과 메커니즘을 설명한 개념 시각화. 실제 유체의 무한 속도 관측을 뜻하지 않음."
+  },
+  "navier-clay": {
+    "title": "Clay Mathematics Institute — Navier-Stokes Announcement",
+    "url": "https://www.claymath.org/news/navier-stokes-announcement/",
+    "detail": "2026-09-11 공식 성명. 발표를 환영하면서 상 규정에 따른 평가 과정을 안내. 이 성명을 최종 심사 완료나 수상 확정으로 해석하지 않음. 2026-10-20 확인.",
+    "credit": "Clay Mathematics Institute 공식 성명."
+  },
+  "navier-review": {
+    "title": "Bastounis, Circelli & Hansen — Navier-Stokes lost in translation",
+    "url": "https://arxiv.org/abs/2610.08144",
+    "detail": "2026-10-06 공개 프리프린트. AI가 자연어 증명을 Lean으로 옮긴 결과가 원래 증명과 일치하는지 문제 제기. 기계적 형식 검증만으로 원문 증명을 보증할 수 없다는 논점. 이 비판 자체를 결과의 거짓이 확정됐다는 뜻으로 해석하지 않음.",
+    "credit": "독립 연구자들의 비판 논문. 발표 시점의 검증 논의를 반영."
+  }
+};
