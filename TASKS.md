@@ -650,3 +650,11 @@ executing → verifying → completed. 장표40개·애니메이션·대본·미
 - 모바일 390×844 / 844×390 iframe 조작부 표시, 세로 화면에서 12장 입력 이동 확인. 실물 휴대폰/발표 PC/실물 포인터는 미시험.
 - 신경 렌더러: native Canvas 시간별 변화, seek/reset 결정성, start/pause/destroy 검사 통과. 실제 신경 활동/실차 제어 검증이 아님.
 - V6 git diff 없음. 세계장비 웹앱 코드는 수정하지 않음.
+
+## 발표 V7 공개 완료 · 2026-10-20
+- 상태: verifying → completed (명시한 검증 범위). 사용자 요청 7개 구현 및 기존 GitHub 발표 주소의 V7 연결 완료.
+- 소스 commit: 38c4559fdda0bb33f6c3b44e4f796cdf2766f141
+- 공개 commit: 2e6e056f93d70d5e6524a39068b155a13f7020a9
+- 공개 주소: https://defense-astra.github.io/presentations/ai-curiosity/versions/v7/
+- 실제 Chrome에서 공통 발표 주소→V7 자동 이동, V7·39장 표시 및 번호 입력 컨트롤 확인.
+- 새 연구 장표 12장, 댐퍼 장표 18장. 기존 V6 및 세계장비 웹앱 버전 경로 보존.
