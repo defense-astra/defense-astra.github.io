@@ -678,3 +678,12 @@ executing → verifying → completed. 장표40개·애니메이션·대본·미
 - Chrome 실제 화면: 32/33장 배치, 번호 입력 Enter, 연속 다음·이전 및 잔상 요소0 확인. 18장 재생·정지 및 국소 발광 확인.
 - 렌더러 네이티브 Canvas: 시간별3프레임, seek/reset 결정성·start/pause/destroy 확인. 실측 신경 활동/실차 제어 검증 아님.
 - V6 및 세계장비 웹앱 변경 없음. 발표 PC·실물 포인터는 현장 확인 대상. 공개 반영 진행.
+
+
+## V7 추가 조정 공개 완료 · 2026-10-20
+- 상태: verifying → completed (명시한 검증 범위).
+- 41장 공개, 전환0.6초, 32장 REA 질문·33장 Thales 대응, 국소 영역별 뇌 활성 반영.
+- 소스 commit: 27ebec54eb7ab01a9de76d188541cf81b0447ac9
+- 공개 commit: c9142683b8585bb479a41c6b6b3c29d8aaadaee5
+- GitHub Pages 실행39360962249 성공. Chrome 공개 주소에서41장과33장 실제 내용·번호 이동 확인.
+- 공개 주소: https://defense-astra.github.io/presentations/ai-curiosity/versions/v7/
