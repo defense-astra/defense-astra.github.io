@@ -488,3 +488,11 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - 링크 검사: 일반 빌드 27개, 공개 빌드 33개, 배포 후보 33개 HTML에서 버전 탐색 문구와 사용자 GitHub 링크 부재 확인. 과거 버전·발표 장표 데이터·런타임 JS 미변경 확인.
 - 기존 번들 크기 경고만 발생. 브라우저 화면 배치·실물 발표 기기 재검증은 수행하지 않음.
 - 기존 gh-pages로 공개 반영 진행.
+
+
+## 공개 반영 완료 · 2026-10-22
+- 상태: verifying → completed.
+- 소스 수정 e6d09ea3ec7c5f4b8d4560792a243754225d8064, 공개 176e3698629299ae148b3e9f163b469117bb9948.
+- GitHub Pages 실행 39709830961 completed/success.
+- 공개 HTTP 검사: /versions/v6/, /versions/v6/equipment/boxer/, /versions/, /presentations/ai-curiosity/versions/v9/, /presentations/ai-curiosity/versions/ 모두 HTTP 200. 버전 목록·버전 기록 및 사용자 GitHub 저장소 링크 부재 확인.
+- 수정 커밋의 V6·V9 HTML 재조회도 통과. 기존 공개 URL 사용. 브라우저 화면 및 실물 기기 재검증은 수행하지 않음.
