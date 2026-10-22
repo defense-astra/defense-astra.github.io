@@ -1421,3 +1421,12 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - Lean 공식 소개와 공식 교재의 정의를 대조하고 독립 문구 검토 완료. JS 구문·47장 자료 미러·한글 글꼴·발표 빌드 통과. Chrome 로컬 배치 및 공개 문구 확인.
 - 공개 commit66dc571bd2cdcc3a915629398c7ef56fa471590e, Pages 실행39503525272 success. https://defense-astra.github.io/presentations/ai-curiosity/versions/v9/#12
 - 화면 증거: presentations/ai-curiosity/qa/v9-slide12-20261021.jpg. 변경된 문구와 대본 이외의 장표/기능은 보존.
+
+
+## 공개 화면 탐색 링크 정리 검증 · 2026-10-22
+- 상태: executing → verifying. 웹앱 V6의 24개 경로에서 버전 목록 제거, 발표 V9 도구모음의 버전 기록 제거.
+- 목록 주소는 현행 웹앱/발표로 리다이렉트. 사용자 저장소 링크 제거. 일반·공개 빌드 및 발표 버전 전환 생성기에 동일 정책 반영.
+- 검증: npm run build, node scripts/build-public-release.mjs, node scripts/build-presentation.mjs 통과. 47장/2325초 및 참조 자산 존재. 수정 JS node --check, git diff --check 통과.
+- 링크 검사: 일반 빌드 27개, 공개 빌드 33개, 배포 후보 33개 HTML에서 버전 탐색 문구와 사용자 GitHub 링크 부재 확인. 과거 버전·발표 장표 데이터·런타임 JS 미변경 확인.
+- 기존 번들 크기 경고만 발생. 브라우저 화면 배치·실물 발표 기기 재검증은 수행하지 않음.
+- 기존 gh-pages로 공개 반영 진행.
