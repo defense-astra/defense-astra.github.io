@@ -522,3 +522,27 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - GitHub Pages 실행 39709830961 completed/success.
 - 공개 HTTP 검사: /versions/v6/, /versions/v6/equipment/boxer/, /versions/, /presentations/ai-curiosity/versions/v9/, /presentations/ai-curiosity/versions/ 모두 HTTP 200. 버전 목록·버전 기록 및 사용자 GitHub 저장소 링크 부재 확인.
 - 수정 커밋의 V6·V9 HTML 재조회도 통과. 기존 공개 URL 사용. 브라우저 화면 및 실물 기기 재검증은 수행하지 않음.
+
+
+## 웹앱 V10 · 2026-10-26
+- 상태: new_task → planned → executing. 사용자의 변경사항 적용 지시와 기존 GitHub 공개 배포 선호를 이 범위의 구현·배포 승인으로 적용.
+- 현재: 웹앱 V6, 별도 발표자료 V9. React/Vite 기존 구조와 공개 gh-pages 방식 유지.
+- 목표: 공개 피탄·손상 사례의 근거/한계·복구 중심 분석, BOXER/STRYKER 구성표, 실제 캡처 기반 변경사항 탭, 차량 내부사진 추가 시연.
+- 파일: 신규 V10 컴포넌트·자료·스타일, App 경로 연결, releases.json/버전 패키징, 캡처와 공개 사진 자산.
+- 범위: 웹앱 신규 기능만. 기존 검색·지도·3D·의견 기능 및 발표자료 유지. V6 공개본 보존, /versions/v10/ 추가.
+- 리스크: 공개 사례의 표본 편향·원인 단정, 서로 다른 국가 사양 혼합, 이미지 라이선스/접근 불량, 경로 새로고침/모바일 회귀.
+- 검증: 자료 원문과 2차 대조, 빌드·기존 테스트·데이터 검증·차이 검사, 브라우저 신규기능/기존기능·화면 캡처, 배포 상태와 공개 페이지 확인.
+
+
+## 웹앱 V10 검증 · 2026-10-26
+- 상태: executing → verifying. 신규 피탄·손상/옵션표/내부사진/변경사항 화면 구현.
+- 자료: 피탄사례6 + 복구기록1, 위협유형4개 비교, 해석관점6개, 드론동향1. BOXER·STRYKER 각10계열형과11구성 항목. 4차종 내부사진7장.
+- 자료 점검: 제조사·군·정부 원문 1차 조사 후 독립 재검토. 상태·기본구성·예시옵션 구분, Stryker 과거운용 근거시점 명시. 사진 메타+실제 이미지 확인, 저작자·라이선스·재압축 표시.
+- 통과: npm run build, npm run test(7파일33개), node --import tsx scripts/validate-data.mjs, 수정 TS/TSX ESLint, 배포 스크립트 구문, git diff --check.
+- 기존 test의 v6 문자열을 releases.current 검증으로 바꿔 V10 메타데이터와 일치시킴.
+- 환경 제약: npm run validate:data의 tsx CLI IPC가 EPERM으로 실패해 동일 스크립트를 node --import tsx로 실행해 통과.
+- 전체 npm run lint는 기존 발표자료 JS의 browser globals 설정/기존 변수 경고 등 811건으로 실패. 해당 발표파일 미수정; 변경 파일 lint는 통과.
+- 브라우저: IED필터4건, 초기화7건, 분석4유형·6관점; BOXER 관심 선택/복사 대체 textarea, 차종전환 초기화, CSV 파일내용 확인; 내부사진 BOXER2/CV90 2/전체7, 확대닫기; 실제 캡처4장.
+- 모바일: 390px iframe 3화면 및 CV90 필터 확인, 옵션 body clientWidth/scrollWidth=375/375. 실물기기 시험은 아님.
+- 검증 한계: HTTP preview에서 Clipboard API 미지원으로 수동복사 fallback 확인; HTTPS 공개본에서 복사 재확인 예정. 기존 외부 OSM 타일은 자동화 브라우저에서403으로 표시됨, 지도코드는 미변경.
+- 기존 V6 37파일은 gh-pages176e369 원본과 바이트 일치. 발표 V9와 이전 배포파일 유지.

@@ -1,3 +1,4 @@
+import release from "../../releases.json";
 // @vitest-environment jsdom
 import { act } from "react";
 import { createRoot } from "react-dom/client";
@@ -37,7 +38,7 @@ describe("feedback writing and copying", () => {
     await act(async () => { host.querySelector("form")!.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true })); });
     expect(writeText).toHaveBeenCalledWith(preview.value);
     expect(preview.value).toContain(draft.detail);
-    expect(preview.value).toContain("웹앱 버전: v6");
+    expect(preview.value).toContain(`웹앱 버전: ${release.current}`);
     expect(host.querySelector<HTMLTextAreaElement>("#feedback-detail")!.value).toBe(draft.detail);
     expect(host.querySelector('[role="status"]')!.textContent).toContain("복사했습니다");
     expect(onChange).not.toHaveBeenCalled();

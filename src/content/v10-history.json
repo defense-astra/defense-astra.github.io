@@ -1,0 +1,388 @@
+{
+  "checkedAt": "2026-10-26",
+  "cases": [
+    {
+      "id": "gulf-1991-fratricide",
+      "title": "걸프전 아군 오인사격",
+      "platform": "Bradley · M113",
+      "year": "1991",
+      "dateLabel": "1991-02-17",
+      "dateNote": "사건일",
+      "location": "걸프전",
+      "recordType": "피탄 사건",
+      "threat": "아군 오인사격",
+      "threatFamily": "직접 화력",
+      "summary": "GAO는 아군 차량 2대가 아군 항공기에서 발사된 미사일에 의해 파괴된 사건을 조사했습니다.",
+      "vehicleOutcome": "Bradley 1대와 M113 1대 파괴",
+      "crewOutcome": "사건 전체에서 2명 사망·6명 부상",
+      "recoveryOutcome": "운용 복귀 기록은 이 사건 요약에서 확인되지 않음",
+      "uncertainty": "개별 차량별 인명피해 배분을 여기서는 제시하지 않음 이 사례만으로 해당 차종의 방호성능을 비교할 수 없음",
+      "confidence": "공식 조사",
+      "verification": "GAO 원문과 미국 의회 OTA의 사건표를 대조. 차량 상태 표현은 상세 조사인 GAO를 우선함.",
+      "sources": [
+        "gao-osi-93-4",
+        "ota-1993"
+      ]
+    },
+    {
+      "id": "stryker-first-deployment",
+      "title": "Stryker 초기 이라크 파병 중 IED 피해",
+      "platform": "Stryker",
+      "year": "2003",
+      "dateLabel": "2003–2004 초기 파병",
+      "dateNote": "원문에 정확한 사건일이 없어 파병 기간으로 표시",
+      "location": "이라크",
+      "recordType": "피탄 사건",
+      "threat": "급조폭발물(IED)",
+      "threatFamily": "지뢰·IED",
+      "summary": "미 육군의 첫 Stryker 파병 회고에는 IED에 의해 차량이 크게 손상됐지만 승무원은 생존한 사례가 기록돼 있습니다.",
+      "vehicleOutcome": "상당한 차량 손상",
+      "crewOutcome": "승무원 생존으로 기록; 부상 정도는 미기재",
+      "recoveryOutcome": "해당 차량의 회수·수리·복귀 결과 미기재",
+      "uncertainty": "정확한 사건일·차량 식별번호·폭발 조건 미공개 독립 조사 보고서와 개별 정비 이력은 확보하지 못함",
+      "confidence": "공식 기록",
+      "verification": "검색 결과와 미 육군 원문을 다시 대조. 단일 회고 기록이며 독립된 두 사건 자료로 확인된 것은 아님.",
+      "sources": [
+        "army-stryker-2024"
+      ]
+    },
+    {
+      "id": "humvee-2005",
+      "title": "Humvee 폭발 피해와 뒤늦게 확인된 부상",
+      "platform": "Humvee",
+      "year": "2005",
+      "dateLabel": "2005-03-19",
+      "dateNote": "사건일",
+      "location": "이라크",
+      "recordType": "피탄 사건",
+      "threat": "급조폭발물(IED)",
+      "threatFamily": "지뢰·IED",
+      "summary": "미 공군 기록에서 탑승자 4명은 모두 생존했지만 차량은 운행 불가 상태가 됐습니다. 운전자는 수술이 필요한 부상을 입었고, 다른 탑승자는 이후 외상성 뇌손상 진단을 받았습니다.",
+      "vehicleOutcome": "운행 불가; 현장에 차량을 남김",
+      "crewOutcome": "4명 생존. 중한 부상 및 이후 확인된 뇌손상 기록 존재",
+      "recoveryOutcome": "차량의 최종 회수·처분은 해당 기사에서 미확인",
+      "uncertainty": "전체 탑승자의 장기 건강 결과 미공개 정확한 차량 세부 형식 및 최종 정비 판정 미기재",
+      "confidence": "공식 기록",
+      "verification": "미 공군 사진 기록과 2013년 상세 후속 기사를 대조. 전원 무상이라는 해석은 배제함.",
+      "sources": [
+        "af-humvee-photo",
+        "af-grogan-2013"
+      ]
+    },
+    {
+      "id": "mrap-2010-repair",
+      "title": "MRAP 손상 후 현지 정비",
+      "platform": "MRAP(세부 형식 미기재)",
+      "year": "2010",
+      "dateLabel": "2010-04 보도",
+      "dateNote": "기사 2010-04-30, 정비사진 2010-04-05; 정확한 폭발일 미기재",
+      "location": "아프가니스탄 가즈니",
+      "recordType": "피탄·복구 사건",
+      "threat": "급조폭발물(IED)",
+      "threatFamily": "지뢰·IED",
+      "summary": "미 주방위군 기사에 따르면 IED 손상 차량은 부품을 확보해 현지 정비를 받았고 다시 주행했습니다. 당시 중상자는 보고되지 않았습니다.",
+      "vehicleOutcome": "운행 중단 후 현지 수리",
+      "crewOutcome": "중상자는 없었다고 당시 보도; 무부상을 뜻하지 않음",
+      "recoveryOutcome": "부품 확보 후 다시 주행. 기사 시점에 공조 수리는 남아 있었음",
+      "uncertainty": "차량 세부 형식·완전 임무 복귀일 미기재 사진 페이지의 국가 메타데이터는 기사 본문과 불일치; 위치는 가즈니로 명시한 기사 본문을 우선함",
+      "confidence": "공식 기록",
+      "verification": "기사 본문과 정비사진 캡션을 대조. 사진 페이지가 Iraq로 표기한 메타데이터 오류를 확인하고 본문 Afghanistan을 채택함.",
+      "sources": [
+        "ng-mrap-2010",
+        "ng-mrap-photo"
+      ]
+    },
+    {
+      "id": "bushmaster-debbie-2012",
+      "title": "Bushmaster ‘Debbie’ IED 피해",
+      "platform": "Bushmaster",
+      "year": "2012",
+      "dateLabel": "2012-07-10",
+      "dateNote": "사건일",
+      "location": "아프가니스탄",
+      "recordType": "피탄 사건",
+      "threat": "급조폭발물(IED)",
+      "threatFamily": "지뢰·IED",
+      "summary": "호주 전쟁기념관의 소장품 조사와 후속 발표는 탑승자 6명 모두 생존했지만 2명이 중상을 입었다고 기록합니다. 손상 차량은 기념관에 보존됐습니다.",
+      "vehicleOutcome": "중대한 손상; 이후 기념관 소장",
+      "crewOutcome": "6명 생존·2명 중상",
+      "recoveryOutcome": "2013년 기념관 취득. 전투 운용 복귀로 분류하지 않음",
+      "uncertainty": "이 한 건으로 Bushmaster 전체의 생존율이나 다른 차종 대비 우위를 산출할 수 없음",
+      "confidence": "공식 기록",
+      "verification": "AWM의 2020년 조사 글과 2024년 재회 보도자료를 대조. 동일 기관의 후속 확인이며 독립 실험은 아님.",
+      "sources": [
+        "awm-debbie-2020",
+        "awm-debbie-2024"
+      ]
+    },
+    {
+      "id": "bradley-ukraine-2023",
+      "title": "우크라이나 Bradley 피탄·수리 발표",
+      "platform": "Bradley",
+      "year": "2023",
+      "dateLabel": "2023-06-15 발표",
+      "dateNote": "정확한 피탄일은 원문에 미기재",
+      "location": "우크라이나",
+      "recordType": "당사국이 공개한 피탄 사례",
+      "threat": "로켓 포격(발표 내용)",
+      "threatFamily": "간접 화력",
+      "summary": "당시 우크라이나 국방차관은 Bradley의 피탄·화재 후 승무원이 대피했고 차량은 수리 중이라고 발표했습니다. 1명에게 경미한 뇌진탕이 있었다는 설명도 포함했습니다.",
+      "vehicleOutcome": "피탄·화재·수리 중이라고 발표",
+      "crewOutcome": "승무원 대피 및 1명 경미한 뇌진탕이라고 발표",
+      "recoveryOutcome": "발표 당시 수리 중. 실제 수리 완료·운용 복귀는 미확인",
+      "uncertainty": "독립 감정·상세 손상 조사·이후 복귀 기록 미확보 무기 종류와 피탄 경위는 당사국의 주장 수준으로 표시",
+      "confidence": "당사국 발표",
+      "verification": "국방차관 Telegram 원문과 당일 보도 내용을 대조. 사건 자체의 독립 검증이 아닌 전재 일치 확인으로 제한함.",
+      "sources": [
+        "maliar-bradley-2023",
+        "ukrinform-bradley-2023"
+      ]
+    },
+    {
+      "id": "stryker-bdr-record",
+      "title": "Stryker 전장 손상 복구 기록",
+      "platform": "Stryker",
+      "year": "2013",
+      "dateLabel": "2005–2013 누적 기록",
+      "dateNote": "개별 피탄 사건이 아닌 정비 지원 기록",
+      "location": "이라크·아프가니스탄 / 카타르 정비시설",
+      "recordType": "복구 기록",
+      "threat": "전장 손상(원인별 분류 미공개)",
+      "threatFamily": "복합·미상",
+      "summary": "미 육군은 카타르 시설에서 전장 손상 Stryker 422대를 수리해 반환했다고 2013년에 발표했습니다. 별도의 80대 RESET 작업을 합친 총 502대는 서로 다른 정비 범주입니다.",
+      "vehicleOutcome": "2008년 기사에는 최초 전손으로 여겼던 차량을 수리한 기록도 존재",
+      "crewOutcome": "이 누적 정비 통계로 승무원 결과를 판단할 수 없음",
+      "recoveryOutcome": "422대 수리·반환 기록과 80대 RESET 기록을 구분",
+      "uncertainty": "위협 종류별 발생 수·노출 규모·회수 실패 차량이 제공되지 않음 이 자료로 전체 손상차량의 복구율을 계산할 수 없음",
+      "confidence": "공식 기록",
+      "verification": "2008년 100번째 수리 기사와 2013년 누적 실적 기사 대조. 422와 502의 범주 차이를 보존함.",
+      "sources": [
+        "army-bdr-2008",
+        "army-bdr-2013"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "gao-osi-93-4",
+      "publisher": "U.S. GAO",
+      "title": "Operation Desert Storm: Apache Helicopter Fratricide Incident",
+      "url": "https://www.gao.gov/products/osi-93-4",
+      "publishedAt": "1993-06-30"
+    },
+    {
+      "id": "ota-1993",
+      "publisher": "U.S. Congress, Office of Technology Assessment",
+      "title": "Who Goes There: Friend or Foe?",
+      "url": "https://govinfo.library.unt.edu/ota/Ota_1/DATA/1993/9351.PDF",
+      "publishedAt": "1993"
+    },
+    {
+      "id": "army-stryker-2024",
+      "publisher": "U.S. Army",
+      "title": "The Road to Victory: The 20th Anniversary of the First Stryker Deployment",
+      "url": "https://www.army.mil/article/271770/the_road_to_victory_the_20th_anniversary_of_the_first_stryker_deployment",
+      "publishedAt": "2024-01-16"
+    },
+    {
+      "id": "af-humvee-photo",
+      "publisher": "U.S. Air Force / 920th Rescue Wing",
+      "title": "IED damage",
+      "url": "https://www.920rqw.afrc.af.mil/Photos/igphoto/2000928843/",
+      "publishedAt": "사진 사건 2005-03-19"
+    },
+    {
+      "id": "af-grogan-2013",
+      "publisher": "U.S. Air Force Reserve Command",
+      "title": "Through Airmen’s Eyes: Airman receives Purple Heart 8 years after injuries",
+      "url": "https://www.afrc.af.mil/News/Features/Display/Article/561721/through-airmens-eyes-airman-receives-purple-heart-8-years-after-injuries/",
+      "publishedAt": "2013-07-16"
+    },
+    {
+      "id": "ng-mrap-2010",
+      "publisher": "U.S. National Guard",
+      "title": "After IED hit, ‘only thing we couldn’t fix was the air conditioning’",
+      "url": "https://www.nationalguard.mil/News/Article-View/Article/577133/after-ied-hit-only-thing-we-couldnt-fix-was-the-air-conditioning/",
+      "publishedAt": "2010-04-30"
+    },
+    {
+      "id": "ng-mrap-photo",
+      "publisher": "U.S. National Guard",
+      "title": "Members of the 1/172nd Cavalry",
+      "url": "https://www.nationalguard.mil/Resources/Image-Gallery/News-Images/igphoto/2001001625/",
+      "publishedAt": "2010-04-05 사진"
+    },
+    {
+      "id": "awm-debbie-2020",
+      "publisher": "Australian War Memorial",
+      "title": "Debbie – A lot more than a truck",
+      "url": "https://www.awm.gov.au/articles/blog/debbie-bushmaster",
+      "publishedAt": "2020-07-09 / updated 2021-03-30"
+    },
+    {
+      "id": "awm-debbie-2024",
+      "publisher": "Australian War Memorial",
+      "title": "Bushmaster blast survivors reunite 12 years on",
+      "url": "https://www.awm.gov.au/media/press-releases/bushmaster-blast-survivors-reunite",
+      "publishedAt": "2024-11-15 / updated 2024-12-04"
+    },
+    {
+      "id": "maliar-bradley-2023",
+      "publisher": "Hanna Maliar, 당시 우크라이나 국방차관",
+      "title": "Bradley 피탄 관련 국방차관 공개 글",
+      "url": "https://t.me/annamaliar/849",
+      "publishedAt": "2023-06-15"
+    },
+    {
+      "id": "ukrinform-bradley-2023",
+      "publisher": "Ukrinform",
+      "title": "Маляр показала бронемашину Bradley та її екіпаж після влучання з Града",
+      "url": "https://www.ukrinform.ua/rubric-ato/3723328-malar-pokazala-bronemasinu-bradley-ta-ii-ekipaz-pisla-vlucanna-z-grada.html",
+      "publishedAt": "2023-06-15"
+    },
+    {
+      "id": "army-bdr-2008",
+      "publisher": "U.S. Army Sustainment Command",
+      "title": "100th Stryker repair completed at Qatar site",
+      "url": "https://www.army.mil/article/7012/100th_stryker_repair_completed_at_qatar_site",
+      "publishedAt": "2008-01-15"
+    },
+    {
+      "id": "army-bdr-2013",
+      "publisher": "U.S. Army PEO Ground Combat Systems",
+      "title": "Stryker forward-deployed Battlefield Damage Repair facility closes doors",
+      "url": "https://www.army.mil/article/107256/stryker_forward_deployed_battlefield_damage_repair_facility_closes_doors",
+      "publishedAt": "2013-07-12"
+    },
+    {
+      "id": "dstl-drones-2026",
+      "publisher": "UK Defence Science and Technology Laboratory",
+      "title": "Developing drone technology for future warfare",
+      "url": "https://www.gov.uk/government/case-studies/developing-drone-technology-for-future-warfare",
+      "publishedAt": "2026-07-27"
+    },
+    {
+      "id": "uk-mod-drones-2025",
+      "publisher": "UK Ministry of Defence",
+      "title": "Groundbreaking Ukraine tech sharing agreement to deliver drones and support jobs",
+      "url": "https://www.gov.uk/government/news/groundbreaking-ukraine-tech-sharing-agreement-to-deliver-drones-and-support-jobs",
+      "publishedAt": "2025-09-10"
+    }
+  ],
+  "insights": [
+    {
+      "title": "결과를 네 칸으로 분리",
+      "finding": "차량 손상 · 탑승자 피해 · 회수 여부 · 운용 복귀는 별개입니다. 생존 사례에 중상 또는 운행 불가가 동반될 수 있습니다.",
+      "type": "사례 기반 해석",
+      "caseIds": [
+        "humvee-2005",
+        "bushmaster-debbie-2012",
+        "mrap-2010-repair"
+      ]
+    },
+    {
+      "title": "위협 종류보다 먼저 사건을 중복 제거",
+      "finding": "같은 차량의 피탄, 방치, 견인, 정비 사진이 각각 하나의 손실로 집계될 수 있습니다. 사건 ID와 차량 식별 근거를 먼저 연결해야 합니다.",
+      "type": "자료 관리 제안",
+      "caseIds": [
+        "stryker-bdr-record"
+      ]
+    },
+    {
+      "title": "확인된 손실 수와 위험도는 다름",
+      "finding": "사진 수에는 공개 여부·촬영 빈도·회수 가능성·투입 규모가 섞여 있습니다. 노출량과 비공개 사건을 모르므로 차종별 피격확률·생존율·위험 순위를 계산하지 않습니다.",
+      "type": "분석 방법의 한계",
+      "caseIds": []
+    },
+    {
+      "title": "공식이라는 말과 독립 검증은 다름",
+      "finding": "공식 조사, 군 홍보 기사, 당사국 발표를 구분합니다. 여러 매체가 같은 원문을 인용해도 독립된 증거는 늘지 않습니다.",
+      "type": "근거 평가 원칙",
+      "caseIds": [
+        "gulf-1991-fratricide",
+        "bradley-ukraine-2023"
+      ]
+    },
+    {
+      "title": "현대전으로의 단순 외삽 금지",
+      "finding": "이 초기 자료는 IED 사례가 많고 특정 국가의 공개 기록에 치우쳐 있습니다. 드론·포격·지뢰 등이 섞인 다른 전장에 이 비중을 그대로 적용하지 않습니다.",
+      "type": "표본 편향",
+      "caseIds": []
+    },
+    {
+      "title": "정비·회수도 결과 데이터",
+      "finding": "최초 손상 보고에 수리 완료일, 미복구 기능, 최종 처분을 연결합니다. 수리 중이라는 발표를 운용 복귀로 바꾸지 않습니다.",
+      "type": "자료 관리 제안",
+      "caseIds": [
+        "mrap-2010-repair",
+        "bradley-ukraine-2023",
+        "stryker-bdr-record"
+      ]
+    }
+  ],
+  "limitations": [
+    "사례 선택은 공개성과 확인 가능성에 좌우됩니다. 성공 사례·유명 차량·영어권 자료 편향이 있습니다.",
+    "상이한 시대·임무·차량 형식을 동일 조건의 시험처럼 비교할 수 없습니다.",
+    "사건일, 발표일, 정비일을 구분합니다. 확인되지 않은 값은 0이 아니라 ‘미확인’입니다.",
+    "피탄 위치·약점 지도·관통 확률·공격 효율 또는 차종별 전투 우열을 산출하는 기능이 아닙니다."
+  ],
+  "trends": [
+    {
+      "id": "drone-observation-2025-2026",
+      "title": "드론 위협: 개별 피격 기록과 구분한 최신 관측",
+      "period": "2025–2026 공개자료",
+      "category": "추세·정책 자료",
+      "finding": "영국 Dstl은 2026년 자료에서 우크라이나 전쟁의 드론이 병력과 작전에 영향을 주는 주요 과제라고 설명했습니다. 영국 국방부는 2025년 드론 공급 확대와 우크라이나와의 관련 산업 협력을 발표했습니다.",
+      "interpretation": "드론 관련 자료는 별도 범주로 수집하되, 영상에서 드론이 보인다는 이유만으로 손상 원인을 확정하지 않습니다. 개별 사건의 최초 손상·후속 공격·회수 결과를 분리해서 기록하는 것이 필요합니다.",
+      "limitation": "이 자료는 위협 인식·정책 변화의 근거입니다. 특정 차종의 손실률, 드론의 전체 피해 기여율, 방호장치 효과를 입증하지 않습니다.",
+      "verification": "2025년 영국 국방부 발표와 2026년 Dstl 원문을 대조. 조달 계획은 납품 실적이나 피격 실적으로 변환하지 않았습니다.",
+      "sourceIds": [
+        "dstl-drones-2026",
+        "uk-mod-drones-2025"
+      ]
+    }
+  ],
+  "threatComparison": [
+    {
+      "category": "직접 화력",
+      "evidence": "1991년 걸프전 아군 오인사격 조사",
+      "observation": "차량 파괴와 인명피해가 기록됐습니다. 적 공격과 아군 오인사격을 같은 원인으로 합산하지 않습니다.",
+      "needed": "정확한 사건 경과와 조사 판정. 이 사례를 다른 직접 화력 피해의 대표값으로 사용하지 않음.",
+      "sourceIds": [
+        "gao-osi-93-4",
+        "ota-1993"
+      ]
+    },
+    {
+      "category": "지뢰·IED",
+      "evidence": "2003–2012년 Stryker·Humvee·MRAP·Bushmaster 기록",
+      "observation": "탑승자 생존과 중상·차량 운행 불가가 함께 나타납니다. 생존, 부상, 수리 결과를 나눠 확인합니다.",
+      "needed": "폭발 조건·차량 형식·장기 의료 및 최종 정비 기록. 수록 사례가 많아도 실제 발생 빈도를 뜻하지 않음.",
+      "sourceIds": [
+        "af-grogan-2013",
+        "ng-mrap-2010",
+        "awm-debbie-2020"
+      ]
+    },
+    {
+      "category": "간접 화력",
+      "evidence": "2023년 Bradley 로켓 포격 관련 당사국 발표",
+      "observation": "피탄·화재 후 대피 및 수리 중이라는 발표가 있습니다. 수리 중 상태를 운용 복귀로 바꾸지 않습니다.",
+      "needed": "손상 원인의 독립 확인, 수리 완료와 이후 운용 기록. 발언 전재를 독립 검증으로 세지 않음.",
+      "sourceIds": [
+        "maliar-bradley-2023",
+        "ukrinform-bradley-2023"
+      ]
+    },
+    {
+      "category": "드론",
+      "evidence": "2025–2026년 영국 정부 정책·시험 동향",
+      "observation": "별도 위협 동향으로 다룹니다. 이번 수록 자료에는 독립 확인된 드론 피탄 개별 사건이 없습니다.",
+      "needed": "개별 사건·최초 손상·후속 공격·회수 결과의 연결. 특정 차종 손실률이나 피해 기여율은 미추정.",
+      "sourceIds": [
+        "uk-mod-drones-2025",
+        "dstl-drones-2026"
+      ]
+    }
+  ]
+}

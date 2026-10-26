@@ -32,7 +32,7 @@ for (const v of versions) {
   html = html.replace("<body>", `<body><script>if(location.pathname.endsWith('/')&&!/^\\/versions\\/v[0-9]+\\/$/.test(location.pathname)){history.replaceState(null,'',location.pathname.slice(0,-1)+location.search+location.hash)}</script><nav style="padding:10px 20px;background:#10283d;color:white;font:14px system-ui;display:flex;justify-content:space-between;gap:16px"><span>${escape(v.id)} · ${escape(v.title)} · ${escape(v.status)}</span></nav>`);
   writeFileSync(join(dir, "index.html"), html);
   const equipment = JSON.parse(readFileSync(join(dir, "data/equipment.json"), "utf8"));
-  for (const route of ["insights", "sources", "equipment", "compare", "development", "technologies", "cases", ...(v.id === manifest.current ? ["feedback"] : []), ...equipment.map(e => `equipment/${e.id}`)]) {
+  for (const route of ["insights", "sources", "equipment", "compare", "development", "technologies", "cases", ...(v.id === manifest.current ? ["feedback", "evidence", "options", "changes", "interiors"] : []), ...equipment.map(e => `equipment/${e.id}`)]) {
     mkdirSync(join(dir, route), { recursive: true });
     writeFileSync(join(dir, route, "index.html"), html);
   }

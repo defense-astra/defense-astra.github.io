@@ -40,7 +40,7 @@ for (const version of release.versions) {
   html = html.replace("<body>",`<body><script>if(location.pathname.endsWith('/')&&location.pathname!==${JSON.stringify(versionBase)}){history.replaceState(null,'',location.pathname.slice(0,-1)+location.search+location.hash)}</script><nav style="padding:10px 20px;background:#10283d;color:white;font:14px system-ui"><strong>${version.id}</strong></nav>`);
   writeFileSync(join(dir,"index.html"),html);
   const equipment = JSON.parse(readFileSync(join(dir,"data/equipment.json"),"utf8"));
-  for (const route of ["insights","sources","equipment","compare","development","technologies","cases",...(version.id === release.current ? ["feedback"] : []),...equipment.map(e=>`equipment/${e.id}`)]) {
+  for (const route of ["insights","sources","equipment","compare","development","technologies","cases",...(version.id === release.current ? ["feedback", "evidence", "options", "changes", "interiors"] : []),...equipment.map(e=>`equipment/${e.id}`)]) {
     mkdirSync(join(dir,route),{recursive:true});writeFileSync(join(dir,route,"index.html"),html);
   }
 }

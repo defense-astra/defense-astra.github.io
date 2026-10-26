@@ -1,0 +1,788 @@
+{
+  "title": "차종별 계열형·옵션 카탈로그",
+  "checkedAt": "2026-10-26",
+  "scope": "공개자료 기반의 참고 구성표. 구매 가능 여부·가격·납기·국가별 수출승인은 별도 확인이 필요합니다.",
+  "rules": [
+    "계열형은 한 대의 차량에 중복 장착하는 옵션이 아니라 임무에 따라 고르는 별도 구성입니다.",
+    "제조사의 예시 옵션, 실제 납품 구성, 개발·계약 상태를 분리합니다.",
+    "국가·Block·차체 세대가 다른 구성을 합쳐 실제 조합 가능하다고 표시하지 않습니다.",
+    "선택 체크박스는 관심 사양을 정리하는 용도이며 적합성·성능·견적을 보증하지 않습니다.",
+    "미확인 항목은 불가가 아니라 공개자료 미확인으로 표시합니다.",
+    "상태는 인용자료가 확인한 범위입니다. 과거 운용·납품 이력은 2026년 현재 운용 여부나 신조 주문 가능 여부를 보장하지 않습니다."
+  ],
+  "statusLegend": [
+    {
+      "id": "fielded",
+      "label": "운용·납품 이력 확인"
+    },
+    {
+      "id": "contracted",
+      "label": "계약·도입 확인"
+    },
+    {
+      "id": "catalogue",
+      "label": "제조사 제안 사양"
+    },
+    {
+      "id": "development",
+      "label": "개발·시험 단계"
+    },
+    {
+      "id": "unverified",
+      "label": "운용 여부 미확인"
+    },
+    {
+      "id": "historic",
+      "label": "과거 구성"
+    },
+    {
+      "id": "documented",
+      "label": "공개 사양 확인"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "boxer",
+      "name": "BOXER",
+      "tagline": "구동모듈 + 임무모듈 방식의 계열화",
+      "summary": "임무모듈을 바꾸는 플랫폼이지만 국가별 계약 구성과 제안 사양은 구분해야 합니다.",
+      "sources": [
+        "artec-family",
+        "nl-boxer",
+        "uk-boxer"
+      ],
+      "variants": [
+        {
+          "id": "boxer-apc",
+          "name": "APC / Infantry Carrier",
+          "nameKo": "병력수송형",
+          "market": "영국(이번 표의 상태 기준) / 독일 등",
+          "role": "보병 수송",
+          "equipment": "병력 탑승 공간·국가별 원격무장 및 통신 구성",
+          "status": "contracted",
+          "confidence": "높음",
+          "note": "이번 표의 계약·도입 상태는 영국 공식 초기 도입 구성을 기준으로 합니다. 독일 APC와 영국 Infantry Carrier는 국가별 세부 구성과 도입 상태가 다릅니다.",
+          "sources": [
+            "artec-family",
+            "uk-boxer"
+          ],
+          "evidenceDate": null
+        },
+        {
+          "id": "boxer-command",
+          "name": "Command Post",
+          "nameKo": "지휘소형",
+          "market": "네덜란드 등",
+          "role": "지휘·통신",
+          "equipment": "지휘 운용석 및 통신 장비",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "네덜란드 국방부의 현행 5개 계열형에 포함됩니다.",
+          "sources": [
+            "artec-family",
+            "nl-boxer"
+          ],
+          "evidenceDate": null
+        },
+        {
+          "id": "boxer-ambulance",
+          "name": "Ambulance / MedEvac",
+          "nameKo": "의무후송형",
+          "market": "네덜란드 / 영국 등",
+          "role": "환자 후송·처치",
+          "equipment": "환자 탑재·의료장비 구성",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "MedEvac·MedTreat 및 국가별 배치가 다릅니다. 환자 수는 한 값으로 일반화하지 않습니다.",
+          "sources": [
+            "artec-family",
+            "nl-boxer",
+            "uk-boxer"
+          ],
+          "evidenceDate": null
+        },
+        {
+          "id": "boxer-engineer",
+          "name": "Armoured Engineer Group Vehicle",
+          "nameKo": "공병지원형",
+          "market": "네덜란드",
+          "role": "공병인원·장비 수송",
+          "equipment": "공병 임무 장비 적재",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "네덜란드 운용 계열형으로 확인됩니다.",
+          "sources": [
+            "artec-family",
+            "nl-boxer"
+          ],
+          "evidenceDate": null
+        },
+        {
+          "id": "boxer-cargo",
+          "name": "Cargo",
+          "nameKo": "화물수송형",
+          "market": "네덜란드",
+          "role": "보급품 수송",
+          "equipment": "화물 적재 구성",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "일반 병력수송형과 내부 사용 목적이 다른 임무모듈입니다.",
+          "sources": [
+            "artec-family",
+            "nl-boxer"
+          ],
+          "evidenceDate": null
+        },
+        {
+          "id": "boxer-driver",
+          "name": "Driver Training Vehicle",
+          "nameKo": "조종교육형",
+          "market": "네덜란드 등",
+          "role": "조종수 교육",
+          "equipment": "교관·교육용 임무모듈",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "네덜란드 국방부 및 제조사에서 계열형을 확인했습니다.",
+          "sources": [
+            "artec-family",
+            "nl-boxer",
+            "knds-boxer"
+          ],
+          "evidenceDate": null
+        },
+        {
+          "id": "boxer-samson",
+          "name": "IFV SAMSON / Vilkas",
+          "nameKo": "보병전투형",
+          "market": "리투아니아",
+          "role": "기계화보병 지원",
+          "equipment": "SAMSON 계열 원격포탑 구성",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "리투아니아 국방부는 2023년 말 초기 도입분 인도 완료를 발표했습니다. 제조사의 모든 예시 옵션이 리투아니아 차량에 적용됐다는 의미는 아닙니다.",
+          "sources": [
+            "artec-samson",
+            "lt-vilkas"
+          ],
+          "evidenceDate": "2024-01-12"
+        },
+        {
+          "id": "boxer-lance",
+          "name": "LANCE / CRV",
+          "nameKo": "전투정찰형",
+          "market": "호주",
+          "role": "전투정찰",
+          "equipment": "LANCE 포탑 및 정찰·지휘 시스템",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "호주 Block I·II 구성을 분리해서 보아야 합니다. 2025년 호주군 자료에서 Block II 교육·운용을 확인했습니다.",
+          "sources": [
+            "artec-lance",
+            "au-boxer"
+          ],
+          "evidenceDate": "2025-09-15"
+        },
+        {
+          "id": "boxer-skyranger",
+          "name": "Skyranger 30",
+          "nameKo": "기동방공형",
+          "market": "독일",
+          "role": "기동방공",
+          "equipment": "전용 방공 임무모듈",
+          "status": "contracted",
+          "confidence": "높음",
+          "note": "2025년 검증용 차량 인도, 2026년 제조사 자료에서 19대 계약을 확인했습니다. 전체 양산 배치 완료로 표시하지 않습니다.",
+          "sources": [
+            "rh-skyranger-2025",
+            "rh-skyranger-2026"
+          ],
+          "evidenceDate": "2026-06-10"
+        },
+        {
+          "id": "boxer-bridge",
+          "name": "Bridge Layer",
+          "nameKo": "가교형",
+          "market": "제조사 카탈로그",
+          "role": "교량 가설 지원",
+          "equipment": "가교 전용 임무모듈",
+          "status": "catalogue",
+          "confidence": "제품 존재 높음 / 운용 여부 미확인",
+          "note": "ARTEC·KNDS 제품 목록에서 확인했습니다. 이번 조사에서는 특정 군의 운용 상태를 확정하지 않았습니다.",
+          "sources": [
+            "artec-bridge",
+            "knds-boxer"
+          ],
+          "evidenceDate": null
+        }
+      ],
+      "options": [
+        {
+          "id": "boxer-climate",
+          "category": "거주성",
+          "name": "냉방·CBRN 방호",
+          "status": "documented",
+          "appliesTo": [
+            "boxer-samson",
+            "boxer-lance",
+            "boxer-apc"
+          ],
+          "detail": "SAMSON/LANCE 제조사 제품의 기본 특성 및 영국 BOXER 공개 사양에 명시. 유료 선택 옵션 또는 영국 APC의 인도 완료를 뜻하지 않습니다. 국가별 상세 구성은 별도 확인.",
+          "sources": [
+            "uk-boxer",
+            "artec-samson",
+            "artec-lance"
+          ],
+          "selectable": false,
+          "offeringType": "기본/확인 구성"
+        },
+        {
+          "id": "boxer-sa",
+          "category": "시계·안전",
+          "name": "360° 상황인식 시스템",
+          "status": "catalogue",
+          "appliesTo": [
+            "boxer-samson",
+            "boxer-lance"
+          ],
+          "detail": "ARTEC의 예시 옵션. 영국 차량의 외부 카메라는 별도 채택 사례이며 동일 제품이라고 단정하지 않습니다.",
+          "sources": [
+            "artec-samson",
+            "artec-lance",
+            "uk-boxer"
+          ],
+          "selectable": true,
+          "offeringType": "예시 선택 사양"
+        },
+        {
+          "id": "boxer-ecm",
+          "category": "전자장비",
+          "name": "전자대응 장비(ECM)",
+          "status": "catalogue",
+          "appliesTo": [
+            "boxer-samson",
+            "boxer-lance"
+          ],
+          "detail": "제조사 예시 옵션. 장착 여부와 통합 범위는 국가·계약별 확인 대상.",
+          "sources": [
+            "artec-samson",
+            "artec-lance"
+          ],
+          "selectable": true,
+          "offeringType": "예시 선택 사양"
+        },
+        {
+          "id": "boxer-lws",
+          "category": "경보장비",
+          "name": "레이저 경보 시스템",
+          "status": "catalogue",
+          "appliesTo": [
+            "boxer-samson",
+            "boxer-lance"
+          ],
+          "detail": "제조사 예시 옵션이며 기본 탑재라고 표시하지 않습니다.",
+          "sources": [
+            "artec-samson",
+            "artec-lance"
+          ],
+          "selectable": true,
+          "offeringType": "예시 선택 사양"
+        },
+        {
+          "id": "boxer-aps",
+          "category": "방호장비",
+          "name": "능동방호체계(APS)",
+          "status": "catalogue",
+          "appliesTo": [
+            "boxer-samson",
+            "boxer-lance"
+          ],
+          "detail": "ARTEC 예시 옵션. 영국 자료의 APS는 향후 설치를 고려한 설계 준비이며 장착 완료 근거가 아닙니다.",
+          "sources": [
+            "artec-samson",
+            "artec-lance",
+            "uk-boxer"
+          ],
+          "selectable": true,
+          "offeringType": "예시 선택 사양"
+        },
+        {
+          "id": "boxer-protection",
+          "category": "방호장비",
+          "name": "모듈식 방호 패키지",
+          "status": "catalogue",
+          "appliesTo": [
+            "boxer-samson",
+            "boxer-lance"
+          ],
+          "detail": "제조사 예시 옵션. 구체 방호등급·두께·성능 수치는 이번 표에 포함하지 않습니다.",
+          "sources": [
+            "artec-samson",
+            "artec-lance"
+          ],
+          "selectable": true,
+          "offeringType": "예시 선택 사양"
+        }
+      ]
+    },
+    {
+      "id": "stryker",
+      "name": "STRYKER",
+      "tagline": "공통 차체를 기반으로 전개한 다목적 계열",
+      "summary": "기본 계열형은 과거 운용·생산 이력을 확인한 참고 목록입니다. 계열형 선택과 DVH/A1 차체 개량을 구분하며, 2026년 현재 운용·신조 발주 가능성을 일괄 보장하지 않습니다.",
+      "sources": [
+        "gdls-family-pdf",
+        "army-stryker-family",
+        "gdls-current"
+      ],
+      "variants": [
+        {
+          "id": "stryker-icv",
+          "name": "Infantry Carrier Vehicle",
+          "nameKo": "병력수송형",
+          "market": "미 육군",
+          "role": "보병 수송",
+          "equipment": "병력 탑승 공간",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "초기형·DVH·A1 및 30 mm 계열은 별도 구성입니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-stryker-family"
+          ],
+          "evidenceDate": "2012-03-29",
+          "statusScope": "과거 생산·운용 계열 이력. 2026년 현재 상태는 별도 확인."
+        },
+        {
+          "id": "stryker-rv",
+          "name": "Reconnaissance Vehicle",
+          "nameKo": "정찰형",
+          "market": "미 육군",
+          "role": "감시·정찰",
+          "equipment": "정찰 관측·통신 장비",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "기본 계열형 존재를 확인한 것이며 현행 신조 가능성을 뜻하지 않습니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-stryker-family"
+          ],
+          "evidenceDate": "2012-03-29",
+          "statusScope": "과거 생산·운용 계열 이력. 2026년 현재 상태는 별도 확인."
+        },
+        {
+          "id": "stryker-command",
+          "name": "Commander’s Vehicle",
+          "nameKo": "지휘형",
+          "market": "미 육군",
+          "role": "지휘·통신",
+          "equipment": "지휘통제 장비",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "국가·도입 시기별 구성이 다를 수 있습니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-stryker-family"
+          ],
+          "evidenceDate": "2012-03-29",
+          "statusScope": "과거 생산·운용 계열 이력. 2026년 현재 상태는 별도 확인."
+        },
+        {
+          "id": "stryker-medical",
+          "name": "Medical Evacuation Vehicle",
+          "nameKo": "의무후송형",
+          "market": "미 육군",
+          "role": "환자 후송·처치",
+          "equipment": "의료 장비·환자 공간",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "내부 의료 구성은 전투계열형과 구분됩니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-stryker-family"
+          ],
+          "evidenceDate": "2012-03-29",
+          "statusScope": "과거 생산·운용 계열 이력. 2026년 현재 상태는 별도 확인."
+        },
+        {
+          "id": "stryker-engineer",
+          "name": "Engineer Squad Vehicle",
+          "nameKo": "공병지원형",
+          "market": "미 육군",
+          "role": "공병 지원",
+          "equipment": "공병 임무 장비",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "계열형별 임무장비는 별도 사양입니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-stryker-family"
+          ],
+          "evidenceDate": "2012-03-29",
+          "statusScope": "과거 생산·운용 계열 이력. 2026년 현재 상태는 별도 확인."
+        },
+        {
+          "id": "stryker-mortar",
+          "name": "Mortar Carrier",
+          "nameKo": "박격포 운반형",
+          "market": "미 육군",
+          "role": "화력 지원",
+          "equipment": "박격포 임무 구성",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "병력수송형에 단순 선택 장착하는 소비재 옵션으로 취급하지 않습니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-stryker-family"
+          ],
+          "evidenceDate": "2012-03-29",
+          "statusScope": "과거 생산·운용 계열 이력. 2026년 현재 상태는 별도 확인."
+        },
+        {
+          "id": "stryker-atgm",
+          "name": "Anti-Tank Guided Missile Vehicle",
+          "nameKo": "대전차 유도무기형",
+          "market": "미 육군",
+          "role": "대전차 지원",
+          "equipment": "전용 유도무기 임무 구성",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "공개 계열형 분류만 수록했습니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-stryker-family"
+          ],
+          "evidenceDate": "2012-03-29",
+          "statusScope": "과거 생산·운용 계열 이력. 2026년 현재 상태는 별도 확인."
+        },
+        {
+          "id": "stryker-fsv",
+          "name": "Fire Support Vehicle",
+          "nameKo": "화력지원 관측형",
+          "market": "미 육군",
+          "role": "관측·화력지원 협조",
+          "equipment": "관측·통신 장비",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "직접 사격 차량인 MGS와 혼동하지 않습니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-stryker-family"
+          ],
+          "evidenceDate": "2012-03-29",
+          "statusScope": "과거 생산·운용 계열 이력. 2026년 현재 상태는 별도 확인."
+        },
+        {
+          "id": "stryker-nbcrv",
+          "name": "NBC Reconnaissance Vehicle",
+          "nameKo": "화생방 정찰형",
+          "market": "미 육군",
+          "role": "화생방 위험 탐지·보고",
+          "equipment": "화생방 탐지 임무 구성",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "일반적인 승무원 CBRN 방호와 화생방 정찰 임무장비는 서로 다릅니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-stryker-family"
+          ],
+          "evidenceDate": "2012-03-29",
+          "statusScope": "과거 생산·운용 계열 이력. 2026년 현재 상태는 별도 확인."
+        },
+        {
+          "id": "stryker-stout",
+          "name": "SGT Stout / M-SHORAD",
+          "nameKo": "기동방공형",
+          "market": "미 육군",
+          "role": "기동방공",
+          "equipment": "전용 방공 임무 구성",
+          "status": "fielded",
+          "confidence": "높음",
+          "note": "미 육군 2024년 전력화 및 GAO 2025년 보고서로 교차확인. 구형 홍보자료의 Hellfire 구성을 현행 표준으로 일반화하지 않습니다.",
+          "sources": [
+            "army-stout",
+            "gao-stout"
+          ],
+          "evidenceDate": "2025-06-17",
+          "statusScope": "2024년 전력화 발표 및 2025년 GAO 보고서 기준."
+        }
+      ],
+      "options": [
+        {
+          "id": "stryker-a1",
+          "category": "차체 세대",
+          "name": "DVH A1 구성",
+          "status": "fielded",
+          "appliesTo": [
+            "stryker-icv",
+            "stryker-stout"
+          ],
+          "detail": "개량 차체·동력계·디지털 기반을 포함하는 구성. 모든 구형 계열형에 동일하게 제공된다는 뜻은 아닙니다.",
+          "sources": [
+            "gdls-current",
+            "gao-mcws",
+            "gao-stout"
+          ],
+          "selectable": true,
+          "offeringType": "개량 패키지"
+        },
+        {
+          "id": "stryker-digital",
+          "category": "전자장비",
+          "name": "A1 디지털·전력 패키지",
+          "status": "documented",
+          "appliesTo": [
+            "stryker-icv",
+            "stryker-stout"
+          ],
+          "detail": "GDLS가 공개한 DVH A1 구성에 포함되는 전력·디지털 기반입니다. 별도 추가 옵션이 아니므로 선택 개수나 견적에 중복 집계하지 않습니다.",
+          "sources": [
+            "gdls-current",
+            "gao-stout"
+          ],
+          "selectable": false,
+          "offeringType": "기본/확인 구성",
+          "includedIn": "stryker-a1"
+        },
+        {
+          "id": "stryker-mcws",
+          "category": "임무 구성",
+          "name": "30 mm MCWS 적용형",
+          "status": "contracted",
+          "appliesTo": [
+            "stryker-icv"
+          ],
+          "detail": "생산·통합 사업 확인. 기존 Dragoon과 다른 차체·포탑을 사용하는 사업으로 별도 구분. 이번 조사에서 전체 전력화 완료는 확정하지 않았습니다.",
+          "sources": [
+            "army-mcws-contract",
+            "gao-mcws"
+          ],
+          "selectable": true,
+          "offeringType": "개량 패키지"
+        },
+        {
+          "id": "stryker-nexus",
+          "category": "제안 구성",
+          "name": "NEXUS 이동 지휘소",
+          "status": "catalogue",
+          "appliesTo": [
+            "stryker-command"
+          ],
+          "detail": "GDLS 현행 제품 소개의 제안 구성. 미 육군 일반 전력화 여부는 이번 조사에서 확인하지 않았습니다.",
+          "sources": [
+            "gdls-current"
+          ],
+          "selectable": true,
+          "offeringType": "별도 임무형"
+        },
+        {
+          "id": "stryker-leonidas",
+          "category": "제안 구성",
+          "name": "Leonidas 대드론 구성",
+          "status": "catalogue",
+          "appliesTo": [],
+          "detail": "GDLS·Epirus 협력의 전용 구성 소개. 기존 10개 계열형의 공통 추가 옵션으로 표시하지 않습니다.",
+          "sources": [
+            "gdls-current"
+          ],
+          "selectable": true,
+          "offeringType": "별도 임무형"
+        }
+      ],
+      "historicalNotes": [
+        {
+          "name": "M1128 Mobile Gun System",
+          "status": "historic",
+          "detail": "구형 브로슈어의 10개 계열형에는 포함되지만, 미 육군은 2021-05-12에 FY2022 말까지 퇴역시키는 계획을 발표했습니다. 현행 선택 목록에서 제외합니다.",
+          "sources": [
+            "gdls-family-pdf",
+            "army-mgs-retire"
+          ]
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "artec-family",
+      "publisher": "ARTEC",
+      "title": "Vehicles",
+      "url": "https://www.artec-boxer.com/vehicles/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-26",
+      "ref": "turn2view0"
+    },
+    {
+      "id": "nl-boxer",
+      "publisher": "네덜란드 국방부",
+      "title": "Boxer-pantserwielvoertuig",
+      "url": "https://www.defensie.nl/onderwerpen/m/materieel/voertuigen/boxer",
+      "publishedAt": null,
+      "accessedAt": "2026-10-26",
+      "ref": "turn2view2"
+    },
+    {
+      "id": "uk-boxer",
+      "publisher": "영국 육군",
+      "title": "Boxer",
+      "url": "https://www.army.mod.uk/learn-and-explore/equipment/combat-vehicles/boxer/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-26",
+      "ref": "turn11view0"
+    },
+    {
+      "id": "artec-samson",
+      "publisher": "ARTEC",
+      "title": "Infantry Fighting Vehicle Samson",
+      "url": "https://www.artec-boxer.com/vehicles/infantry-fighting-vehicle/samson/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-26",
+      "ref": "turn11view2"
+    },
+    {
+      "id": "artec-lance",
+      "publisher": "ARTEC",
+      "title": "Infantry Fighting Vehicle LANCE",
+      "url": "https://www.artec-boxer.com/vehicles/infantry-fighting-vehicle/lance/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-26",
+      "ref": "turn11view3"
+    },
+    {
+      "id": "lt-vilkas",
+      "publisher": "리투아니아 국방부",
+      "title": "Completed acquisition of Boxer-Vilkas",
+      "url": "https://kam.lt/en/our-infantry-fighting-vehicles-are-among-the-best-what-nato-allies-have-minister-of-national-defence-a-anusauskas-review-recently-completed-acquisition-of-the-wolves/",
+      "publishedAt": "2024-01-12",
+      "accessedAt": "2026-10-26",
+      "ref": "turn13search6"
+    },
+    {
+      "id": "au-boxer",
+      "publisher": "호주 국방부",
+      "title": "New armoured vehicle a game-changer",
+      "url": "https://www.defence.gov.au/news-events/news/2025-09-15/new-armoured-vehicle-game-changer",
+      "publishedAt": "2025-09-15",
+      "accessedAt": "2026-10-26",
+      "ref": "turn13search15"
+    },
+    {
+      "id": "rh-skyranger-2025",
+      "publisher": "Rheinmetall",
+      "title": "Verification model of Skyranger 30 handed over",
+      "url": "https://www.rheinmetall.com/en/media/news-watch/news/2025/02/2025-02-05-rheinmetall-hands-over-verification-model-of-skyranger-30-to-the-bundeswehr",
+      "publishedAt": "2025-02-05",
+      "accessedAt": "2026-10-26",
+      "ref": "turn1search2"
+    },
+    {
+      "id": "rh-skyranger-2026",
+      "publisher": "Rheinmetall",
+      "title": "Rheinmetall at ILA — Skyranger 30",
+      "url": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/06/2026-06-10-Rheinmetall-at-ILA-Skyranger-30.pdf",
+      "publishedAt": "2026-06-10",
+      "accessedAt": "2026-10-26",
+      "ref": "turn1search5"
+    },
+    {
+      "id": "artec-bridge",
+      "publisher": "ARTEC",
+      "title": "BOXER Bridge Layer",
+      "url": "https://www.artec-boxer.com/vehicles/bridge-layer/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-26",
+      "ref": "turn13view1"
+    },
+    {
+      "id": "knds-boxer",
+      "publisher": "KNDS",
+      "title": "BOXER",
+      "url": "https://knds.com/en/products/boxer",
+      "publishedAt": null,
+      "accessedAt": "2026-10-26",
+      "ref": "turn17view3"
+    },
+    {
+      "id": "gdls-family-pdf",
+      "publisher": "General Dynamics Land Systems",
+      "title": "Stryker Combat Vehicles (기존 계열 브로슈어)",
+      "url": "https://international.gdls.com/english/files/StrykerCombatVehicles.pdf",
+      "publishedAt": null,
+      "accessedAt": "2026-10-26",
+      "ref": "turn6view0",
+      "note": "350 hp 초기 사양과 MGS가 포함된 과거 자료. 계열형 분류 확인에만 사용."
+    },
+    {
+      "id": "army-stryker-family",
+      "publisher": "미 육군",
+      "title": "ANAD, GDLS mark 10 years of Stryker",
+      "url": "https://www.army.mil/article/76821/anad_gdls_mark_10_years_of_stryker",
+      "publishedAt": "2012-03-29",
+      "accessedAt": "2026-10-26",
+      "ref": "turn13view0"
+    },
+    {
+      "id": "gdls-current",
+      "publisher": "General Dynamics Land Systems",
+      "title": "STRYKER",
+      "url": "https://www.gdls.com/stryker/",
+      "publishedAt": null,
+      "accessedAt": "2026-10-26",
+      "ref": "turn2view1",
+      "note": "A1·NEXUS·Leonidas 소개. Sgt Stout의 세부 무장은 GAO 후속 보고와 차이가 있어 상세 합성하지 않음."
+    },
+    {
+      "id": "army-stout",
+      "publisher": "미 육군",
+      "title": "Army names the M-SHORAD after Vietnam War Medal of Honor recipient",
+      "url": "https://www.army.mil/article/277291/army_names_the_m_shorad_after_vietnam_war_medal_of_honor_recipient",
+      "publishedAt": "2024-06-15",
+      "accessedAt": "2026-10-26",
+      "ref": "turn11view1"
+    },
+    {
+      "id": "gao-stout",
+      "publisher": "U.S. GAO",
+      "title": "GAO-25-107491 Air and Missile Defense Efforts",
+      "url": "https://files.gao.gov/reports/GAO-25-107491/index.html",
+      "publishedAt": "2025-06-17",
+      "accessedAt": "2026-10-26",
+      "ref": "turn17view1"
+    },
+    {
+      "id": "army-mcws-contract",
+      "publisher": "미 육군",
+      "title": "Army announces contract award for production of Stryker MCWS",
+      "url": "https://www.army.mil/article/247193/army_announces_contract_award_for_production_of_stryker_mcws",
+      "publishedAt": "2021-06-03",
+      "accessedAt": "2026-10-26",
+      "ref": "turn6search8"
+    },
+    {
+      "id": "gao-mcws",
+      "publisher": "U.S. GAO",
+      "title": "GAO-24-106590 Stryker upgrade",
+      "url": "https://www.gao.gov/products/gao-24-106590",
+      "publishedAt": "2024-03-20",
+      "updatedAt": "2024-04-03",
+      "accessedAt": "2026-10-26",
+      "ref": "turn17view0"
+    },
+    {
+      "id": "army-mgs-retire",
+      "publisher": "미 육군",
+      "title": "Army announces divestiture of the Stryker Mobile Gun System",
+      "url": "https://www.army.mil/article/246274/army_announces_divestiture_of_the_stryker_mobile_gun_system",
+      "publishedAt": "2021-05-12",
+      "accessedAt": "2026-10-26",
+      "ref": "turn1search1"
+    }
+  ],
+  "factChecks": [
+    "1차: 제조사 카탈로그로 계열형 명칭·옵션 존재 확인.",
+    "2차: 운용국 군·국방부·GAO 자료로 계약·납품·퇴역·제안 상태 대조.",
+    "Stryker 기본 계열 9종은 과거 운용 계열형의 존재를 확인한 값이며 현재 신조 발주 가능 여부를 뜻하지 않습니다.",
+    "NEXUS·Leonidas는 제조사 자료만 확인되어 전력화로 분류하지 않았습니다.",
+    "일부 제조사 페이지는 발행일을 제공하지 않으므로 확인일만 표시합니다.",
+    "2차 편집 검토: 기본 사양과 예시 옵션을 offeringType으로 분리. 영국 APC 계약 상태와 냉방·CBRN 사양 공개를 별도 표현. Stryker A1 디지털 기반은 중복 선택하지 않는 포함 항목으로 설정."
+  ]
+}

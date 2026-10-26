@@ -23,6 +23,7 @@ import { EquipmentHistory } from "./components/EquipmentHistory";
 import { LatestUpdates, EquipmentReview } from "./components/LatestUpdates";
 import { FeedbackPage } from "./components/FeedbackPage";
 import { loadFeedbackDraft, saveFeedbackDraft } from "./feedback";
+import { V10Workspace } from "./components/V10Workspace";
 import octoberReview from "./content/october-review.json";
 
 const VehicleModelPanel = lazy(() => import("./components/VehicleModelPanel"));
@@ -168,6 +169,10 @@ const catalogPresets: CatalogPreset[] = [
 const navItems = [
   { path: "/", label: "장비 검색" },
   { path: "/insights", label: "전장 인사이트" },
+  { path: "/evidence", label: "피탄·손상 분석" },
+  { path: "/options", label: "차종 옵션표" },
+  { path: "/interiors", label: "차량 내부사진" },
+  { path: "/changes", label: "V10 변경사항" },
   { path: "/sources", label: "출처" },
   { path: "/feedback", label: "개선 의견" }
 ];
@@ -699,7 +704,11 @@ export function App() {
   const isSourcesPath = canonicalPath === "/sources";
   const isFeedbackPath = canonicalPath === "/feedback";
 
+  const v10Pages = { "/evidence": "evidence", "/options": "options", "/changes": "changes", "/interiors": "interiors" } as const;
+  const v10Page = v10Pages[canonicalPath as keyof typeof v10Pages];
+
   function isNavActive(itemPath: string) {
+    if (itemPath in v10Pages) return canonicalPath === itemPath;
     if (itemPath === "/insights") return isInsightsPath;
     if (itemPath === "/sources") return isSourcesPath;
     if (itemPath === "/feedback") return isFeedbackPath;
@@ -774,19 +783,21 @@ export function App() {
 
       <header className="topbar">
         <div>
-          <p className="eyebrow">Global equipment catalog</p>
+          <p className="eyebrow">DEFENSE ASTRA · V10</p>
           <h1>전 세계 지상 장비 검색</h1>
           <p className="hero-subtitle">장비를 검색하고 외형·임무 구성·공개 자료의 변화까지 확인합니다.</p>
         </div>
-        <div className="kpi-strip" aria-label="자료 현황">
+        <div className="kpi-strip" aria-label="기존 장비 DB 현황">
           <div><strong>{data.equipment.length}</strong><span>장비</span></div>
           <div><strong>{data.variants.length}</strong><span>계열/파생형</span></div>
-          <div><strong>{data.incidents.length}</strong><span>전장 사례</span></div>
-          <div><strong>{uniqueSources.length}</strong><span>공개 출처</span></div>
+          <div><strong>{data.incidents.length}</strong><span>기존 DB 사례</span></div>
+          <div><strong>{uniqueSources.length}</strong><span>기존 DB 출처</span></div>
         </div>
       </header>
 
-      {isFeedbackPath ? (
+      {v10Page ? (
+        <V10Workspace key={v10Page} page={v10Page} onNavigate={navigate} />
+      ) : isFeedbackPath ? (
         <FeedbackPage draft={feedbackDraft} onChange={setFeedbackDraft} equipment={data.equipment} />
       ) : isInsightsPath ? (
         <FieldInsightsPage

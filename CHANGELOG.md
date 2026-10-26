@@ -496,3 +496,11 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - GitHub Pages 실행 39709830961 completed/success.
 - 공개 HTTP 검사: /versions/v6/, /versions/v6/equipment/boxer/, /versions/, /presentations/ai-curiosity/versions/v9/, /presentations/ai-curiosity/versions/ 모두 HTTP 200. 버전 목록·버전 기록 및 사용자 GitHub 저장소 링크 부재 확인.
 - 수정 커밋의 V6·V9 HTML 재조회도 통과. 기존 공개 URL 사용. 브라우저 화면 및 실물 기기 재검증은 수행하지 않음.
+
+
+## 웹앱 V10 · 2026-10-26
+- 공개 피탄·손상 사례와 위협범주 비교/근거중심 분석 추가.
+- BOXER·STRYKER 계열·옵션 비교, 관심구성 복사·CSV.
+- 실제 V6/V10 캡처 비교 및 청중질문3개와 현장의견 이동.
+- 4차종 내부사진7장·확대·출처·사용조건 추가.
+- V6 snapshot 보존, V10 독립경로 추가.
