@@ -556,3 +556,21 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - HTTPS 옵션표에서 360° 상황인식 항목 선택 후 관심 구성 복사 성공. 실제 클립보드의 차종·계열형·선택 항목·주의문 확인.
 - 공개 변경사항 화면에서 실제 캡처4장과 기능 이동 버튼 확인. 화면 증거 qa/v10-live-changes.jpg, HTTP 검증 qa/v10-public-verification.json.
 - 빌드·33개 테스트·자료 검증 통과. 기존 발표자료 전체 lint 문제와 자동화 브라우저 OSM 타일403은 앞선 검증 기록의 범위·한계를 유지함.
+
+
+## 웹앱 버전 정정 V10 → V7 · 2026-10-26
+- 상태: new_task → planned → executing. 사용자의 버전 변경 지시를 구현·기존 공개주소 반영 승인으로 적용.
+- 목표: 기능·자료는 그대로 두고 웹앱의 버전과 공개 경로를 V7로 정정. 별도 발표자료 버전은 변경하지 않음.
+- 수정: releases.json, App/V10Workspace 표시·내보내기, 이미지 크레딧, 실제 화면 캡처, 버전 별칭 생성 스크립트.
+- 위험: 공유된 V10 링크 단절과 캡처 안의 V10 잔존. V10 → V7 경로별 자동이동과 신규 캡처로 해소. 내부 파일·CSS 식별자는 호환성 유지를 위해 유지.
+- 검증: 빌드·기존 테스트·변경 파일 검사, 독립 범위 검토, 공개 V7 화면과 기존 V10 경로 이동 확인.
+
+
+## 웹앱 V7 버전 정정 완료 · 2026-10-26
+- 상태: executing → verifying → completed. 기능은 유지하고 정식 버전을 V7로 정정. UI·복사 제목·CSV 파일명·크레딧과 실제 캡처3장 동기화.
+- 공개 commit: 89825d46e58102aa97da101c0de87c62b89ec584. GitHub Pages 실행40288728168 completed/success.
+- 공개 URL: https://defense-astra.github.io/versions/v7/changes
+- 검증: npm run build 및 node scripts/build-public-release.mjs 통과, npm run test 7파일33개 통과, 변경 TS/TSX/스크립트 ESLint 및 git diff --check 통과. 기존 번들 크기 경고 유지.
+- 독립 재검토: 별칭28경로×slash/no-slash/index.html 형태 총84건에서 경로·쿼리·해시 보존 확인.
+- 공개 브라우저: /versions/v10/changes 접속 후 /versions/v7/changes 자동이동, V7 배너·메뉴·본문·캡처4장 정상 표시 확인. 증거 qa/v7-live-changes.jpg.
+- 발표자료와 기존 버전 보관자료는 변경하지 않음. 내부 V10 컴포넌트/CSS/미디어 경로는 식별자로 유지하며, 과거 V10 기록은 정정 이력으로 보존.

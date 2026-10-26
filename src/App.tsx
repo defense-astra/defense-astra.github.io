@@ -172,7 +172,7 @@ const navItems = [
   { path: "/evidence", label: "피탄·손상 분석" },
   { path: "/options", label: "차종 옵션표" },
   { path: "/interiors", label: "차량 내부사진" },
-  { path: "/changes", label: "V10 변경사항" },
+  { path: "/changes", label: "V7 변경사항" },
   { path: "/sources", label: "출처" },
   { path: "/feedback", label: "개선 의견" }
 ];
@@ -783,7 +783,7 @@ export function App() {
 
       <header className="topbar">
         <div>
-          <p className="eyebrow">DEFENSE ASTRA · V10</p>
+          <p className="eyebrow">DEFENSE ASTRA · V7</p>
           <h1>전 세계 지상 장비 검색</h1>
           <p className="hero-subtitle">장비를 검색하고 외형·임무 구성·공개 자료의 변화까지 확인합니다.</p>
         </div>

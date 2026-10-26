@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, renameSync, cpSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { createHash } from "node:crypto";
+import { writeVersionAliases } from "./version-aliases.mjs";
 
 const manifest = JSON.parse(readFileSync("releases.json", "utf8"));
 const versions = manifest.versions;
@@ -37,6 +38,7 @@ for (const v of versions) {
     writeFileSync(join(dir, route, "index.html"), html);
   }
 }
+writeVersionAliases("dist", manifest);
 writeFileSync("dist/releases.json", JSON.stringify(manifest, null, 2));
 const landing = `<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>세계 장비 검색</title><script>location.replace('/versions/${manifest.current}/'+location.search+location.hash)</script><a href="/versions/${manifest.current}/">사이트 열기</a></html>`;
 writeFileSync("dist/index.html", landing);

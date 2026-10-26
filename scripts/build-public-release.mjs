@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, mkdirSync, readdirSync, cpSync, rmSync } f
 import { join } from "node:path";
 import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
+import { writeVersionAliases } from "./version-aliases.mjs";
 
 const release = JSON.parse(readFileSync("releases.json", "utf8"));
 if (release.current !== release.baseline || !/^v\d+$/.test(release.current)) throw new Error("Approve the current release before publishing");
@@ -48,5 +49,6 @@ const redirect = `<!doctype html><html lang="ko"><meta charset="utf-8"><meta nam
 writeFileSync("dist-public/index.html",redirect);writeFileSync("dist-public/404.html",redirect);writeFileSync("dist-public/.nojekyll","");
 writeFileSync("dist-public/versions/index.html",`<!doctype html><html lang="ko"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>세계 장비 검색</title><script>location.replace(${JSON.stringify(base)}+location.search+location.hash)</script><a href="${base}">사이트 열기</a></html>`);
 writeFileSync("dist-public/releases.json",JSON.stringify(release,null,2));
+writeVersionAliases("dist-public", release, root);
 cpSync("presentations", "dist-public/presentations", { recursive: true });
 console.log(`Public versions ready: ${release.versions.map(v=>v.id).join(', ')}`);
