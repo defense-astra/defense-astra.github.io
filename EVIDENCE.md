@@ -1452,3 +1452,13 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - 모바일: 390px iframe 3화면 및 CV90 필터 확인, 옵션 body clientWidth/scrollWidth=375/375. 실물기기 시험은 아님.
 - 검증 한계: HTTP preview에서 Clipboard API 미지원으로 수동복사 fallback 확인; HTTPS 공개본에서 복사 재확인 예정. 기존 외부 OSM 타일은 자동화 브라우저에서403으로 표시됨, 지도코드는 미변경.
 - 기존 V6 37파일은 gh-pages176e369 원본과 바이트 일치. 발표 V9와 이전 배포파일 유지.
+
+
+## 웹앱 V10 공개 완료 · 2026-10-26
+- 상태: verifying → completed. 신규 4개 탭 및 실제 캡처·내부사진 공개 완료.
+- 소스: 793bcefd1183370a412fa818852981606c75ac76. 공개: de9edc67a84afe4a2ac71e71d41eac4d3c19d552. GitHub Pages 실행40287033269 completed/success.
+- 공개 URL: https://defense-astra.github.io/versions/v10/changes
+- 공개 검증: V10 기본·신규4경로, 캡처4장, 내부사진2장, V6, 발표V9 등13개 URL 모두 HTTP200 및 배포 빌드와 바이트 일치.
+- HTTPS 옵션표에서 360° 상황인식 항목 선택 후 관심 구성 복사 성공. 실제 클립보드의 차종·계열형·선택 항목·주의문 확인.
+- 공개 변경사항 화면에서 실제 캡처4장과 기능 이동 버튼 확인. 화면 증거 qa/v10-live-changes.jpg, HTTP 검증 qa/v10-public-verification.json.
+- 빌드·33개 테스트·자료 검증 통과. 기존 발표자료 전체 lint 문제와 자동화 브라우저 OSM 타일403은 앞선 검증 기록의 범위·한계를 유지함.

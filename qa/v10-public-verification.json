@@ -1,0 +1,80 @@
+[
+  {
+    "path": "versions/v10/",
+    "status": 200,
+    "bytes": 731,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/evidence/",
+    "status": 200,
+    "bytes": 731,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/options/",
+    "status": 200,
+    "bytes": 731,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/changes/",
+    "status": 200,
+    "bytes": 731,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/interiors/",
+    "status": 200,
+    "bytes": 731,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/media/v10/screenshots/before.jpg",
+    "status": 200,
+    "bytes": 116745,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/media/v10/screenshots/evidence.jpg",
+    "status": 200,
+    "bytes": 87825,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/media/v10/screenshots/options.jpg",
+    "status": 200,
+    "bytes": 100822,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/media/v10/screenshots/interiors.jpg",
+    "status": 200,
+    "bytes": 152478,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/media/v10/interiors/boxer-crew.jpg",
+    "status": 200,
+    "bytes": 177763,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v10/media/v10/interiors/stryker-mev.jpg",
+    "status": 200,
+    "bytes": 403371,
+    "matchesBuild": true
+  },
+  {
+    "path": "versions/v6/",
+    "status": 200,
+    "bytes": 727,
+    "matchesBuild": true
+  },
+  {
+    "path": "presentations/ai-curiosity/versions/v9/",
+    "status": 200,
+    "bytes": 3235,
+    "matchesBuild": true
+  }
+]
