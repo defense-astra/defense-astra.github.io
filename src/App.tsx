@@ -1,3 +1,4 @@
+import { TigonSeating } from "./components/TigonSeating";
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import type {
   BattlefieldCase,
@@ -174,6 +175,7 @@ const navItems = [
   { path: "/options", label: "차종 옵션표" },
   { path: "/interiors", label: "차량 내부사진" },
   { path: "/sightline", label: "시야각 검토" },
+  { path: "/tigon-seating", label: "타이곤 착좌 검토" },
   { path: "/changes", label: "V7 변경사항" },
   { path: "/sources", label: "출처" },
   { path: "/feedback", label: "개선 의견" }
@@ -271,6 +273,7 @@ function isCatalogPath(path: string) {
 }
 
 function canonicalRouteFor(path: string) {
+  if (path === "/tigon-seating/index.html") return "/tigon-seating";
   if (path === "/sightline/index.html") return "/sightline";
   if (path === "/compare") return "/";
   if (path === "/development" || path === "/technologies" || path === "/cases") return "/insights";
@@ -720,6 +723,7 @@ export function App() {
     if (itemPath === "/sources") return isSourcesPath;
     if (itemPath === "/feedback") return isFeedbackPath;
     if (itemPath === "/sightline") return isSightlinePath;
+    if (itemPath === "/tigon-seating") return canonicalPath === itemPath;
     return canonicalPath === "/" || canonicalPath === "/equipment" || Boolean(equipmentPathMatch);
   }
 
@@ -809,7 +813,7 @@ export function App() {
         </div>
       )}
 
-      {isSightlinePath ? null : v10Page ? (
+      {canonicalPath === "/tigon-seating" ? <TigonSeating /> : isSightlinePath ? null : v10Page ? (
         <V10Workspace key={v10Page} page={v10Page} onNavigate={navigate} />
       ) : isFeedbackPath ? (
         <FeedbackPage draft={feedbackDraft} onChange={setFeedbackDraft} equipment={data.equipment} />
