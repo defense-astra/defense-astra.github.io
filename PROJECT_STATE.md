@@ -654,3 +654,13 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - 검증 통과: Vitest 33개, 측정 12개+PDF 7개(총 19개), `node --import tsx scripts/validate-data.mjs`, `node scripts/build-public-release.mjs`.
 - 독립 VM/jsdom 11개 그룹 통과: 실제 제원 선택 이벤트→축척/길이/지상고, 근거·차량별 독립성·undo/redo·V1/V2, 단일/이중 PDF 데이터 일치, 업로드 사진 출처 처리, 비동기 스냅샷·중복 저장 방지·실패 복구, 실제 사진 스냅샷의 반전 및 지상고선 좌표.
 - 한계: 이미지 기반 PDF이므로 본문 검색·텍스트 복사·출처 링크 클릭은 지원하지 않음. 편집 가능한 기록은 프로젝트 JSON으로 별도 보관. 실물 기기 검증 및 기존 전체 린트의 한계는 앞 기록과 동일.
+
+
+## V7 측정 PDF·공개 높이 제원 공개 완료 · 2026-11-10
+- 상태: verifying → completed. 기존 공개주소 https://defense-astra.github.io/versions/v7/sightline 유지.
+- 기능 소스56b431bf7660de63c5dd237be560b0b5710547a1, 배포65e33900a9b231b3c40d480e0f26342e9ad7e168. GitHub Pages 실행42752195393 completed/success.
+- 공개 Chrome의 V7 iframe에서 PDF 버튼·높이 제원과 출처 표시, Freccia 차체2040 mm 입력 확인. 공개 독립 스튜디오에서 실제 PDF 다운로드 파일 확인, 사진10/10 로딩.
+- iframe의 PDF 완료 토스트/오류 로그 없음은 확인했으나 자동화 도구의 iframe 다운로드 이벤트 대기는 시간초과. 별도 크게 열기 경로에서는 실제 PDF 파일 수신 성공. iframe 파일 수신 자체까지 검증했다고 해석하지 않음.
+- 미리보기 단일3페이지 및 2차량6페이지 PDF 전 페이지 렌더 검토, 기능·회귀 검증 상세는 EVIDENCE.md 해당 항목.
+- 변경37개 공개 파일은 versions/v7에 한정. V6/V5·발표자료·구형 번들 보존. 소스/배포 Git 트리 해시가 로컬과 일치하며 브랜치 반영 후 동기화 확인.
+- 화면 증거: docs/evidence/v7-pdf-specs-live-20261110.png. 회사 PC와 실물 Android 다운로드 정책은 미검증.
