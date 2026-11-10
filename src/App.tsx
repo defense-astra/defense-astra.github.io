@@ -24,6 +24,7 @@ import { LatestUpdates, EquipmentReview } from "./components/LatestUpdates";
 import { FeedbackPage } from "./components/FeedbackPage";
 import { loadFeedbackDraft, saveFeedbackDraft } from "./feedback";
 import { V10Workspace } from "./components/V10Workspace";
+import { SightlineWorkspace } from "./components/SightlineWorkspace";
 import octoberReview from "./content/october-review.json";
 
 const VehicleModelPanel = lazy(() => import("./components/VehicleModelPanel"));
@@ -172,6 +173,7 @@ const navItems = [
   { path: "/evidence", label: "피탄·손상 분석" },
   { path: "/options", label: "차종 옵션표" },
   { path: "/interiors", label: "차량 내부사진" },
+  { path: "/sightline", label: "시야각 검토" },
   { path: "/changes", label: "V7 변경사항" },
   { path: "/sources", label: "출처" },
   { path: "/feedback", label: "개선 의견" }
@@ -269,6 +271,7 @@ function isCatalogPath(path: string) {
 }
 
 function canonicalRouteFor(path: string) {
+  if (path === "/sightline/index.html") return "/sightline";
   if (path === "/compare") return "/";
   if (path === "/development" || path === "/technologies" || path === "/cases") return "/insights";
   return path;
@@ -453,6 +456,7 @@ export function App() {
   const [data, setData] = useState<AppData | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [path, setPath] = useState(() => normalizeRoute(window.location.pathname));
+  const [sightlineVisited, setSightlineVisited] = useState(() => normalizeRoute(window.location.pathname) === "/sightline");
   const [family, setFamily] = useState<EquipmentFamily>(initialCatalogState.family);
   const [category, setCategory] = useState<EquipmentCategory | "all">(initialCatalogState.category);
   const [catalogFilters, setCatalogFilters] = useState<CatalogFilters>(initialCatalogState.filters);
@@ -481,6 +485,7 @@ export function App() {
     const onPopState = () => {
       const nextCatalogState = readCatalogStateFromLocation();
       setPath(normalizeRoute(window.location.pathname));
+      if (normalizeRoute(window.location.pathname) === "/sightline") setSightlineVisited(true);
       setFamily(nextCatalogState.family);
       setCategory(nextCatalogState.category);
       setCatalogFilters(nextCatalogState.filters);
@@ -576,6 +581,7 @@ export function App() {
   }, [data]);
 
   function navigate(nextPath: string) {
+    if (nextPath === "/sightline") setSightlineVisited(true);
     if (nextPath === "/feedback" && canonicalPath !== "/feedback") {
       const relatedUrl = window.location.href;
       setFeedbackDraft(draft => ({ ...draft, relatedUrl: draft.relatedUrl || relatedUrl }));
@@ -703,6 +709,7 @@ export function App() {
   const isInsightsPath = canonicalPath === "/insights";
   const isSourcesPath = canonicalPath === "/sources";
   const isFeedbackPath = canonicalPath === "/feedback";
+  const isSightlinePath = canonicalPath === "/sightline";
 
   const v10Pages = { "/evidence": "evidence", "/options": "options", "/changes": "changes", "/interiors": "interiors" } as const;
   const v10Page = v10Pages[canonicalPath as keyof typeof v10Pages];
@@ -712,6 +719,7 @@ export function App() {
     if (itemPath === "/insights") return isInsightsPath;
     if (itemPath === "/sources") return isSourcesPath;
     if (itemPath === "/feedback") return isFeedbackPath;
+    if (itemPath === "/sightline") return isSightlinePath;
     return canonicalPath === "/" || canonicalPath === "/equipment" || Boolean(equipmentPathMatch);
   }
 
@@ -795,7 +803,13 @@ export function App() {
         </div>
       </header>
 
-      {v10Page ? (
+      {(sightlineVisited || isSightlinePath) && (
+        <div hidden={!isSightlinePath}>
+          <SightlineWorkspace />
+        </div>
+      )}
+
+      {isSightlinePath ? null : v10Page ? (
         <V10Workspace key={v10Page} page={v10Page} onNavigate={navigate} />
       ) : isFeedbackPath ? (
         <FeedbackPage draft={feedbackDraft} onChange={setFeedbackDraft} equipment={data.equipment} />

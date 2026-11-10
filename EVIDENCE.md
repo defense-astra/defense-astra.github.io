@@ -1480,3 +1480,16 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - 독립 재검토: 별칭28경로×slash/no-slash/index.html 형태 총84건에서 경로·쿼리·해시 보존 확인.
 - 공개 브라우저: /versions/v10/changes 접속 후 /versions/v7/changes 자동이동, V7 배너·메뉴·본문·캡처4장 정상 표시 확인. 증거 qa/v7-live-changes.jpg.
 - 발표자료와 기존 버전 보관자료는 변경하지 않음. 내부 V10 컴포넌트/CSS/미디어 경로는 식별자로 유지하며, 과거 V10 기록은 정정 이력으로 보존.
+
+
+## V7 시야각 검토 통합 검증 · 2026-11-10
+- 상태: executing → verifying. /sightline 메뉴 및 같은 출처의 독립 스튜디오 추가, 방문 후 iframe 유지.
+- 원본: qkfhvnfrl-ux/defense-trends-web gh-pages 8225747e34e8eee1e4dab8039d86d6850ded75f8의 afv-8x8-lab. 모든 원본 파일 바이트 일치, 사진/크레딧/라이선스 보존.
+- npm run build 및 node scripts/build-public-release.mjs 통과. 기존 큰 번들 경고 유지.
+- npm test: 7파일 33개 통과. node --import tsx scripts/validate-data.mjs 통과.
+- npm run validate:data는 환경의 tsx IPC EPERM으로 실행 불가하여 동일 검증을 node --import tsx로 완료.
+- 변경 TS/TSX/빌드 스크립트 ESLint, git diff --check 및 내장 앱 구문 검사 통과.
+- 독립 검토: 경로·메뉴 활성화·자산·iframe 생명주기·JSON 호환 확인. /sightline/index.html 정규화 보완.
+- Chrome 미리보기: 사진 10/10 로딩, BOXER 선 측정 18.4°, 다른 탭 복귀 시 기록 유지, 새로고침 후 기록·두 차량 선택 복원, 비교표 10행, index.html 직접 접속 정규화 확인.
+- 공개본 후보: 변경 경로를 versions/v7 및 versions/v10 별칭으로 제한. 기존 발표자료·V6/V5와 기타 공개 경로 유지.
+- 한계: 회사 PC·실물 휴대폰·기존 3D 전체 재검증은 미포함. 기존 다른 origin 기록은 JSON으로 이전 필요.

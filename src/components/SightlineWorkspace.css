@@ -1,0 +1,14 @@
+.sightline-workspace { min-width: 0; }
+.sightline-heading { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 12px; }
+.sightline-heading h2 { margin: 3px 0 8px; font-size: 26px; }
+.sightline-heading p { margin: 0; color: var(--muted); line-height: 1.6; }
+.sightline-heading .eyebrow { color: var(--green-deep); }
+.sightline-open { flex-shrink: 0; display: inline-flex; align-items: center; min-height: 42px; padding: 9px 16px; border: 1px solid var(--green); border-radius: 8px; background: var(--surface); color: var(--green-deep); text-decoration: none; font-weight: 700; }
+.sightline-open:hover { background: var(--green-soft); }
+.sightline-note { margin: 0 0 14px; padding: 12px 16px; border-radius: 8px; background: var(--green-soft); color: var(--green-deep); font-size: 13px; line-height: 1.7; }
+.sightline-frame { display: block; width: 100%; height: max(840px, 88vh); border: 1px solid var(--line); border-radius: 12px; background: #f7f8fa; }
+@media (max-width: 640px) {
+  .sightline-heading { align-items: flex-start; flex-wrap: wrap; }
+  .sightline-heading h2 { font-size: 23px; }
+  .sightline-frame { height: 1100px; }
+}
