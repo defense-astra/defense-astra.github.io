@@ -674,3 +674,9 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 ## TIGON 착좌 갤러리 구현 검증 · 2026-11-10
 - 상태: verifying. 기존 제작5종을 Library에서 확인하고 원본 종횡비 유지 WebP로 재수록. 별도 /tigon-seating 탭·큰 이미지 선택·크게 보기 추가.
 - 원본5개 육안확인, Vitest33개/TypeScript/공개 빌드 통과. Chrome 미리보기 6/6 이미지로딩 및 1→3번 선택·링크 변경 확인. 치수 가정/AI합성 구분 표시. 공개 반영은 후속 배포 기록 참조.
+
+## TIGON 착좌 검토 공개 완료 · 2026-11-10
+- 상태: completed. 소스f5ed13cf52126e0fce6afe4209ade5ec4fdbf561 / 배포d68b687b36dee3b9440f80adc28915d7ab6be13e. Pages 실행42753529080.
+- https://defense-astra.github.io/versions/v7/tigon-seating 공개에서 메뉴활성/5종목록/6개 이미지로딩/3번선택·확대링크 전환 확인. 기존 테스트33개, 공개빌드, 변경React 린트 통과.
+- 공개 변경은 versions/v7 내38개 파일. 기존 시야각 앱과 V6/V5·발표자료 유지. 화면 증거 docs/evidence/tigon-seating-live-20261110.webp.
+- 5개 합성안은 가정치 시각화이며 실측이나 인체공학 적합성 검증 자료가 아님. 별도 신규 이미지 생성 없음.
