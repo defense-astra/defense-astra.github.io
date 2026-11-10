@@ -1532,3 +1532,15 @@ Chrome: 신규10~12장 및9장 목록 확인, 번호 입력 이동, 나선 자�
 - 미리보기에서 PNG 다운로드 및 실제 이미지의 길이·지상고 라벨/축척/추정값 안내/사진 크레딧 확인.
 - 소스/배포 전송 후 Git 트리 SHA를 로컬 예상값과 대조. 공개 변경은 versions/v7 내부로만 한정, V6/V5·발표자료·구형 캐시 번들 보존.
 - 수치·저장·브라우저 검증 범위와 기존 전체 린트 한계는 위 기록 참조.
+
+## V7 측정 PDF·공개 높이 제원 검증 · 2026-11-10
+- 상태: executing → verifying. 공개 배포는 후속 기록에서 확정.
+- 브라우저 직접 PDF: Freccia 공개 차체 높이 2040 mm 선택 → 사진 기준 구간 → 지면 기준선 → 하단 점 측정 → 패널 PDF 다운로드 확인. 임의 QA 측정 지상고 약686 mm는 실제 차량 지상고가 아님.
+- 실제 PDF를 Poppler pdfinfo/pdftoppm으로 검사: A4 가로841.89×595.28pt, PDF1.4, 3페이지,812334bytes, 비암호화/JavaScript없음. 전 페이지 한글·사진비율·측정선·기록·축척·공개 제원·긴 URL·사진 주의사항의 잘림/겹침 없음을 두 검토자가 확인.
+- `npm test`: 기존 Vitest33개 통과. `node --test scripts/test-sightline-measurement.mjs scripts/test-sightline-pdf.mjs`:19개 통과. PDF의 xref 바이트 위치, JPEG payload 보존, 다중 페이지, 120개 기록 누락/줄바꿈, 잘못된 입력 거부 포함.
+- `node --import tsx scripts/validate-data.mjs` 통과. `node scripts/build-public-release.mjs`의 TypeScript·Vite·버전 패키징 통과. 기존 대형 번들 경고는 유지.
+- 변경 app.js/pdf-report.mjs/SightlineWorkspace.tsx/test-sightline-pdf.mjs의 ESLint 통과(독립 브라우저 스크립트는 browser globals 명시). 전체 저장소의 기존 린트846건 미해결 이력은 앞 항목 참조.
+- 독립 VM/jsdom11개 그룹 통과: 실제10차종33개 치수의 양수값/ID/출처연결, 제원 선택/축척 재적용/입력근거/undo-redo/차량별 독립성/V1·V2 호환, 단일·2차량 PDF snapshot 일치, 비동기 상태 고정·중복 방지·오류 복구, 확대·반전과 무관한 원본 전체 캔버스 및 지상고선 좌표.
+- 자료 교차 확인: IDV와 CIO의 Freccia 차체2040 mm/포탑포함3180 mm 일치. Patria AMV XP의 기본/선택 차체높이2400/2700 mm, ARTEC Samson의 포탑지붕3470 mm를 원문과 대조. K808의2016인용치, Stryker2002형, BTR의2725/2750상충, 높이끝점 미명시 값은 조건 확인으로 표기. K808기사 전폭2.1 m 및 VBCI의부정확한 한계값은 기준 선택에서 제외.
+- 한계: 사진 원근/촬영 평면/차량 형식/현가·하중/장비구성이 맞아야 하며, 높이를 가장 정확한 기준으로 보장하지 않음. PDF는 한글 폰트 이식성을 위한 래스터 페이지 방식으로 본문 텍스트 선택·URL 클릭은 지원하지 않음. 회사 PC·실물 Android의 다운로드 정책은 별도 환경으로 미검증.
+- 2차량 실제 PDF: Freccia3페이지+K8083페이지, 총6페이지/1651865bytes. K808 좌우반전·각 차량 축척·서로 다른 기록·페이지번호·사진조건 보존, 전체 렌더 정상. QA값은 공인 제원으로 사용하지 않음.
