@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#18242e"><meta name="description" content="주요 8×8 차륜형 장갑차 10종의 공개 제원과 측면 사진을 비교하고 사진 위의 각도·길이·지상고를 측정하는 연구용 웹앱.">
 <title>8×8 Vehicle Lab · 차륜형 장갑차 비교</title>
-<link rel="stylesheet" href="./style.css?v=20261110-scale">
+<link rel="stylesheet" href="./style.css?v=20261110-pdf-specs">
 </head>
 <body>
 <div class="app-shell">
@@ -16,16 +16,22 @@
  <div class="sidebar-footer"><span class="live-dot"></span>공개 자료 기반 연구용 도구<p>제원은 차량 형식과 장비 구성에 따라 달라질 수 있습니다.</p></div>
 </aside>
 <div class="main-shell">
-<header class="topbar"><div><span class="eyebrow">MOBILITY / VISIBILITY STUDY</span><h1>8×8 차륜형 장갑차 비교</h1></div><div class="top-actions"><span id="save-state" class="save-state">기기에 자동 저장</span><button id="import-project" class="button ghost">프로젝트 열기</button><button id="export-project" class="button dark">프로젝트 저장 <span>↓</span></button></div></header>
+<header class="topbar"><div><span class="eyebrow">MOBILITY / VISIBILITY STUDY</span><h1>8×8 차륜형 장갑차 비교</h1></div><div class="top-actions"><span id="save-state" class="save-state">기기에 자동 저장</span><button id="export-pdf" class="button report-button" title="현재 표시된 차량의 측정 사진·기록·제원·출처를 PDF로 저장">측정 PDF 저장 ↓</button><button id="import-project" class="button ghost">프로젝트 열기</button><button id="export-project" class="button dark">프로젝트 저장 <span>↓</span></button></div></header>
 <nav class="tabs" aria-label="주요 메뉴"><button class="tab active" data-tab="studio">측정 스튜디오</button><button class="tab" data-tab="compare">제원 비교 <span>10</span></button><button class="tab" data-tab="sources">자료·출처</button><span class="tabs-note">공개 제원 + 사용자 사진 측정</span></nav>
 <main>
 <section id="studio-tab" class="tab-content">
  <div class="section-heading"><div><span class="eyebrow">SIDE PROFILE ANALYSIS</span><h2>측면 형상 · 각도 · 길이 측정</h2></div><label class="switch-label"><input type="checkbox" id="dual-view"><span class="switch"></span>두 차량 나란히 보기</label></div>
- <div class="method-note"><span class="note-mark">i</span><div><strong>사진에서 측정한 2D 각도입니다.</strong> 실제 조종수 시야각·잠망경 시야각이 아닙니다. 정측면이 아닌 사진은 원근 오차가 있으며, 기준선과 조종수 눈 위치는 사용자가 지정합니다.</div><button id="help-open" class="link-button">사용 방법</button></div>
+ <div class="method-note"><span class="note-mark">i</span><div><strong>사진 기반 각도·길이·지상고 추정값입니다.</strong> 실제 조종수 시야각·잠망경 시야각이 아닙니다. 정측면이 아닌 사진은 원근 오차가 있으며, 기준선과 조종수 눈 위치는 사용자가 지정합니다.</div><button id="help-open" class="link-button">사용 방법</button></div>
  <section class="scale-panel" aria-labelledby="scale-title">
   <div class="scale-heading"><div><span class="eyebrow">PHOTO SCALE</span><h3 id="scale-title">축척 설정 · 길이 측정</h3></div><strong id="reference-vehicle"></strong></div>
   <div class="scale-inputs"><button type="button" id="draw-reference" class="button dark">① 기준 구간 지정</button><label for="reference-length">② 실제 길이</label><div class="reference-value"><input id="reference-length" type="number" min="0.001" step="any" inputmode="decimal" placeholder="예: 1092" aria-label="기준 구간의 실제 길이"><select id="reference-unit" aria-label="기준 길이 단위"><option value="mm">mm</option><option value="cm">cm</option><option value="m">m</option></select></div><button type="button" id="apply-reference" class="button">기준 길이 적용</button></div>
   <p id="scale-status" class="scale-status" role="status"></p><p id="scale-reference-detail" class="scale-detail"></p>
+  <section class="spec-reference-box" aria-labelledby="spec-reference-title">
+   <div class="spec-reference-heading"><h4 id="spec-reference-title">공개 차량 제원으로 기준 길이 선택</h4><span>높이 우선 표기 · 사진 기준점 일치 필요</span></div>
+   <div class="spec-reference-controls"><select id="spec-reference" aria-label="공개 차량 기준 제원"><option value="">공개 높이·치수 선택</option></select><button type="button" id="use-spec-reference" class="button" disabled>선택 제원 넣기</button></div>
+   <p id="spec-reference-definition" class="spec-reference-definition"></p><p id="spec-reference-note"></p><p id="spec-reference-links"></p><div id="spec-reference-list" class="spec-reference-list"></div>
+   <p class="height-caution">높이가 항상 가장 정확한 기준은 아닙니다. 차체 상단·포탑 지붕·무장 포함 여부를 맞추고, 같은 평면에서 기준 구간을 길게 잡으세요. 현가·적재 상태와 원근에 따라 오차가 생깁니다.</p>
+  </section>
   <details class="tire-example"><summary>공개 타이어 규격으로 기준 길이 예시 보기</summary><div class="tire-example-body"><div class="tire-example-header"><strong id="tire-reference-title"></strong><button type="button" id="use-tire-reference" class="button ghost">예시 길이 넣기</button></div><p id="tire-reference-note"></p><p id="tire-fitment-note"></p><p id="tire-reference-links"></p><p>타이어 바깥 지름을 지정하세요. 림 직경이나 접지 상태의 반경×2와 혼동하지 마세요. 정확한 제품 외경을 알면 직접 입력한 값을 우선 사용하세요.</p></div></details>
   <p class="scale-caution">③ <b>길이</b>: 두 점 사이 거리 · <b>지상고</b>: ‘지면 기준선’을 그린 뒤 차체 하단 클릭. 같은 평면의 기준 길이를 사용하세요. 원근·렌즈 왜곡·타이어 변형을 보정하지 않는 사진 기반 추정값입니다.</p>
  </section>
@@ -35,14 +41,14 @@
  <div class="studio-bottom"><section class="annotation-panel"><div class="panel-title"><h3>측정 기록 <span id="annotation-count">0</span></h3><button id="clear-all" class="link-button muted">현재 차량 기록 지우기</button></div><div id="annotation-list"></div><div id="annotation-edit" hidden><label>선택한 기록 이름 <input id="annotation-label" maxlength="60" placeholder="예: 전방 하향 시선"></label><button id="delete-annotation" class="button danger">선택 삭제</button></div></section><section class="context-panel"><div class="panel-title"><h3>비교 시 확인사항</h3><span class="small-tag">READ FIRST</span></div><ol><li>전투중량·총중량·설계 최대중량은 서로 다릅니다.</li><li>타이어 표기는 규격 그대로 비교합니다.</li><li>사진의 눈 위치와 기준선은 실제 설계 좌표가 아닙니다.</li></ol><button class="link-button" id="current-sources">현재 차량 제원 근거·사진 라이선스 보기 →</button></section></div>
 </section>
 <section id="compare-tab" class="tab-content" hidden><div class="section-heading"><div><span class="eyebrow">VEHICLE SPECIFICATIONS</span><h2>공개 제원 한눈에 비교</h2></div><button id="export-csv" class="button dark">비교표 CSV 저장 ↓</button></div><div class="method-note"><span class="note-mark">i</span><div>수치는 출처에 적힌 중량 기준과 형식을 함께 확인하세요. <strong>미확인은 0이 아니며, 사진 측정값은 공인 제원이 아닙니다.</strong></div></div><div class="table-toolbar"><label><input type="checkbox" id="selected-only"> 스튜디오에서 선택한 차량만</label><span>열 제목을 눌러 정렬할 수 있습니다.</span></div><div class="table-wrap"><table id="compare-table"><thead></thead><tbody></tbody></table></div><p class="table-footnote">조종수 위치의 좌·우는 차량 진행 방향 기준입니다. 사진을 좌우 반전해도 차량의 실제 좌·우 정의는 바뀌지 않습니다.</p></section>
-<section id="sources-tab" class="tab-content" hidden><div class="section-heading"><div><span class="eyebrow">SOURCE REGISTER</span><h2>자료·출처 및 사진 정보</h2></div><span class="small-tag">조사 기준 2026.10.28</span></div><div class="method-note"><span class="note-mark">i</span><div>확인된 공개 자료만 수록했습니다. 제조사·정부 자료, 사진의 촬영 형식, 저작자와 이용 조건을 아래에서 확인할 수 있습니다.</div></div><div id="sources-list"></div></section>
+<section id="sources-tab" class="tab-content" hidden><div class="section-heading"><div><span class="eyebrow">SOURCE REGISTER</span><h2>자료·출처 및 사진 정보</h2></div><span class="small-tag">치수 추가 확인 2026.11.10</span></div><div class="method-note"><span class="note-mark">i</span><div>확인된 공개 자료만 수록했습니다. 제조사·정부 자료, 사진의 촬영 형식, 저작자와 이용 조건을 아래에서 확인할 수 있습니다.</div></div><div id="sources-list"></div></section>
 </main>
 <footer class="footer"><span>8×8 VEHICLE LAB</span><span>공개 자료 비교 · 사진 좌표 기반 수동 측정</span></footer>
 </div></div>
 <input id="project-file" type="file" accept="application/json,.json" hidden><input id="image-file" type="file" accept="image/png,image/jpeg,image/webp" hidden>
-<dialog id="help-dialog"><div class="dialog-head"><h2>각도·길이·지상고 측정 사용 방법</h2><button id="help-close" class="icon-button" aria-label="도움말 닫기">×</button></div><div class="help-steps"><div><b>01</b><h3>차량과 사진 선택</h3><p>왼쪽 목록에서 차량을 선택합니다. 더 정확한 정측면 사진이 있다면 ‘내 사진’을 불러오세요.</p></div><div><b>02</b><h3>축척과 지면 기준선 지정</h3><p>‘축척 기준’으로 실제 길이를 아는 구간을 그리고 mm·cm·m로 길이를 적용합니다. 타이어 규격 예시는 계산 외경이므로 실제 제품 치수와 다를 수 있습니다. ‘기준선’ 도구로 사진 속 지면을 따라 두 점을 찍습니다. 직선 각도는 이 기준선에 대해 계산됩니다. 미지정 시 이미지 수평선 기준입니다.</p></div><div><b>03</b><h3>각도·길이·지상고</h3><p>‘길이’는 두 점의 거리를 측정합니다. ‘지상고’는 지면 기준선을 그린 뒤 차체 하단 점을 클릭하면 수직거리를 계산합니다. ‘직선 각도’는 두 점 클릭 또는 드래그, ‘세 점 각도’는 끝점 → 꼭짓점 → 끝점 순서로 클릭합니다. ‘눈 위치’는 사용자가 추정한 점을 표시합니다.</p></div><div><b>04</b><h3>편집·비교·저장</h3><p>‘선택’ 도구에서 기록을 클릭하고 끝점을 드래그해 수정하세요. 사진 PNG와 프로젝트 JSON을 저장할 수 있습니다. 프로젝트에는 축척 기준·길이·지상고·각도 기록과 내 사진이 포함됩니다. 기준 길이 또는 기준선 변경 시 측정값이 다시 계산됩니다.</p></div></div><p class="dialog-note">직선 각도: 기준선에 대한 작은 각 0–90°. 세 점 각도: 꼭짓점의 내각 0–180°. 원근 보정이나 실제 시야각 산출 기능은 아닙니다. Esc: 그리기 취소 · Delete: 선택 삭제 · Ctrl/Cmd+Z: 실행 취소.</p><button id="help-done" class="button dark">측정 시작</button></dialog>
+<dialog id="help-dialog"><div class="dialog-head"><h2>각도·길이·지상고 측정 사용 방법</h2><button id="help-close" class="icon-button" aria-label="도움말 닫기">×</button></div><div class="help-steps"><div><b>01</b><h3>차량과 사진 선택</h3><p>왼쪽 목록에서 차량을 선택합니다. 더 정확한 정측면 사진이 있다면 ‘내 사진’을 불러오세요.</p></div><div><b>02</b><h3>축척과 지면 기준선 지정</h3><p>‘축척 기준’으로 실제 길이를 아는 구간을 그리고 mm·cm·m로 길이를 적용합니다. 공개 차량 높이·전장 등은 ‘선택 제원 넣기’로 입력하되 출처의 기준점을 사진에 맞추세요. 타이어 규격 예시는 계산 외경이므로 실제 제품 치수와 다를 수 있습니다. ‘기준선’ 도구로 사진 속 지면을 따라 두 점을 찍습니다. 직선 각도는 이 기준선에 대해 계산됩니다. 미지정 시 이미지 수평선 기준입니다.</p></div><div><b>03</b><h3>각도·길이·지상고</h3><p>‘길이’는 두 점의 거리를 측정합니다. ‘지상고’는 지면 기준선을 그린 뒤 차체 하단 점을 클릭하면 수직거리를 계산합니다. ‘직선 각도’는 두 점 클릭 또는 드래그, ‘세 점 각도’는 끝점 → 꼭짓점 → 끝점 순서로 클릭합니다. ‘눈 위치’는 사용자가 추정한 점을 표시합니다.</p></div><div><b>04</b><h3>편집·비교·저장</h3><p>‘선택’ 도구에서 기록을 클릭하고 끝점을 드래그해 수정하세요. 상단 ‘측정 PDF 저장’은 현재 표시된 차량 전체를, 사진 아래 ‘PDF 저장’은 해당 차량을 저장합니다. 측정 사진·기록·축척·공개 제원·출처가 포함됩니다. PNG와 프로젝트 JSON도 저장할 수 있습니다. 프로젝트에는 축척 기준·길이·지상고·각도 기록과 내 사진이 포함됩니다. 기준 길이 또는 기준선 변경 시 측정값이 다시 계산됩니다.</p></div></div><p class="dialog-note">직선 각도: 기준선에 대한 작은 각 0–90°. 세 점 각도: 꼭짓점의 내각 0–180°. 원근 보정이나 실제 시야각 산출 기능은 아닙니다. Esc: 그리기 취소 · Delete: 선택 삭제 · Ctrl/Cmd+Z: 실행 취소.</p><button id="help-done" class="button dark">측정 시작</button></dialog>
 <dialog id="confirm-dialog"><div class="dialog-head"><h2 id="confirm-title">기록 지우기</h2></div><p id="confirm-message"></p><div class="confirm-actions"><button id="confirm-cancel" class="button ghost">취소</button><button id="confirm-yes" class="button danger">지우기</button></div></dialog>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
-<script type="module" src="./app.js?v=20261110-scale"></script>
+<script type="module" src="./app.js?v=20261110-pdf-specs"></script>
 </body>
 </html>
